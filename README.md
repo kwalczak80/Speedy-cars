@@ -25,3 +25,14 @@ The primary goal of the website from a site user’s perspective is as follows:
 - To view opening hours and address
 - To read more about the business
 - ** To view other customer’s testimonials about Speedy Cars
+
+## User Requirements and Expectations
+
+- Easy to navigate by using the few buttons
+- Appealing dashboard with a functional overview
+- No broken links
+- Appropirate error handling
+- Responsive and visually appealing on all devices.
+- Ability to make an inquiry about the car
+- Ability to book a test drive
+- Ability to edit or cancel a test drive
