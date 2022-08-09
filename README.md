@@ -86,3 +86,25 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 - In the event that the desired page cannot be located, the user should be able to return through the website's navigational structure without hitting the back button on their browser
 
+## Wireframes - Desktop
+
+### Home page
+
+![Home page](images/wireframes/desktop/home_page_desktop.png)
+
+### Search page
+
+![Search page](images/wireframes/desktop/search_page_desktop.png)
+
+### About page
+
+![About page](images/wireframes/desktop/about_page_desktop.png)
+
+### Log in page
+
+![Log in page](images/wireframes/desktop/log_in_page_desktop.png)
+
+### Registration page
+
+![Registration page](images/wireframes/desktop/registration_page_desktop.png)
+
