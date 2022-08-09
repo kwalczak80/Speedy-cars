@@ -1,1 +1,1 @@
-web: gunicorn codestar.wsgi
+web: gunicorn speedy_cars.wsgi
