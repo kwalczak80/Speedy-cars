@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'home',
+    'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
