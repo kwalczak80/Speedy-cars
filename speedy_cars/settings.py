@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'home.apps.HomeConfig',
+    'cars.apps.CarsConfig',
 ]
 
 MIDDLEWARE = [
