@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'home.apps.HomeConfig',
     'cars.apps.CarsConfig',
+    'employees.apps.EmployeesConfig',
 ]
 
 MIDDLEWARE = [
