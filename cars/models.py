@@ -3,7 +3,7 @@ from cloudinary.models import CloudinaryField
 import datetime
 
 class Car(models.Model):
-    title = models.CharField(max_length=300, null=False, blank=False)
+    title = models.CharField(max_length=300, null=False, blank=False, default='')
     MAKE = [
         ('Audi', 'Audi'),
         ('Bmw', 'Bmw'),
@@ -20,7 +20,7 @@ class Car(models.Model):
     ]
     make = models.CharField(max_length=50, choices=MAKE)
     model = models.CharField(max_length=50)
-    price = models.IntegerField()
+    price = models.IntegerField(null=False, blank=False)
     FUEL_TYPE = (
         ('Petrol', 'Petrol'),
         ('Diesel', 'Diesel'),
@@ -45,10 +45,10 @@ class Car(models.Model):
         ('Automatic', 'Automatic'),
     )
     transmmission = models.CharField(max_length=50, choices=TRANSMISSION)
-    colour = models.CharField(max_length=50)
-    owners = models.IntegerField()
-    milage = models.FloatField()
-    description = models.TextField()
+    colour = models.CharField(max_length=50, null=False, blank=False, default='')
+    owners = models.IntegerField(null=False, blank=False)
+    milage = models.FloatField(null=False, blank=False)
+    description = models.TextField(null=False, blank=False, default='')
     date = models.DateField(auto_now_add=True)
     picture = CloudinaryField('image')
 
