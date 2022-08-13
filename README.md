@@ -90,21 +90,26 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 ### Home page
 
-![Home page](images/wireframes/desktop/home_page_desktop.png)
+![Home page](docs/wireframes/desktop/home_page_desktop.png)
 
 ### Search page
 
-![Search page](images/wireframes/desktop/search_page_desktop.png)
+![Search page](docs/wireframes/desktop/search_page_desktop.png)
 
 ### About page
 
-![About page](images/wireframes/desktop/about_page_desktop.png)
+![About page](docs/wireframes/desktop/about_page_desktop.png)
 
 ### Log in page
 
-![Log in page](images/wireframes/desktop/log_in_page_desktop.png)
+![Log in page](docs/wireframes/desktop/log_in_page_desktop.png)
 
 ### Registration page
 
-![Registration page](images/wireframes/desktop/registration_page_desktop.png)
+![Sign Up page](docs/wireframes/desktop/registration_page_desktop.png)
 
+## Site Map
+
+The information architecture was organized in such a way as to ensure that users can navigate through the site easily.
+
+![Site Map](docs/site_map/speedy_cars_site_map.jpg)

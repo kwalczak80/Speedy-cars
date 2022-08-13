@@ -1,13 +1,12 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
-# import datetime
 
 class Car(models.Model):
     title = models.CharField(max_length=300, null=False, blank=False, default='')
-    MAKE = [
+    MAKE = (
         ('Audi', 'Audi'),
         ('Bmw', 'Bmw'),
-        ('Citroën', 'Citroën'),
+        ('Citroen', 'Citroen'),
         ('Ford', 'Ford'),
         ('Mazda', 'Mazda'),
         ('Skoda', 'Skoda'),
@@ -17,7 +16,7 @@ class Car(models.Model):
         ('Mercedes', 'Mercedes'),
         ('Volkswagen', 'Volksvagen'),
         ('Volvo', 'Volvo'),
-    ]
+    )
     make = models.CharField(max_length=50, choices=MAKE)
     model = models.CharField(max_length=50)
     picture = CloudinaryField('image')
