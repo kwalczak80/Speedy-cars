@@ -18,17 +18,17 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='car',
             name='engine_size',
-            field=models.FloatField(default=''),
+            field=models.FloatField(),
         ),
         migrations.AddField(
             model_name='car',
             name='milage',
-            field=models.FloatField(default=''),
+            field=models.FloatField(),
         ),
         migrations.AddField(
             model_name='car',
             name='owners',
-            field=models.IntegerField(default=''),
+            field=models.IntegerField(),
         ),
         migrations.AddField(
             model_name='car',
