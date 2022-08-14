@@ -1,6 +1,7 @@
+import datetime
 from django.db import models
 from cloudinary.models import CloudinaryField
-import datetime
+
 
 class Car(models.Model):
     title = models.CharField(max_length=300, null=False, blank=False, default='')
