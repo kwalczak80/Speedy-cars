@@ -65,6 +65,7 @@ class Car(models.Model):
     engine_size = models.CharField(max_length=20, choices=ENGINE_SIZE, default=ENGINE_SIZE[0][0])
     milage = models.IntegerField(default=1)
     description = models.TextField(default='')
+    is_for_sale = models.BooleanField(default=True)
     photo_main = CloudinaryField('image') 
     photo_1 = CloudinaryField('image', blank=True)
     photo_2 = CloudinaryField('image', blank=True)
