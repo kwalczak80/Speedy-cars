@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'cars.apps.CarsConfig',
     'employees.apps.EmployeesConfig',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
