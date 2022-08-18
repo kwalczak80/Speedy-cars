@@ -39,24 +39,20 @@
                                 <i class="fa-solid fa-car-side"></i> Body type: {{ car.body_type }}</div>
                         </div>
                         <hr>
-                        <!--   <div class="row py-2 text-secondary">
-                  <div class="col-12">
-                    <i class="fas fa-user"></i>Transmission: {{ car.transmission }}</div>
-                </div> -->
                         <div class="row text-secondary pb-2">
                             <div class="col-6">
                                 <i class="fas fa-clock"></i> Posted: {{ car.date | timesince }}</div>
                         </div>
                         <hr>
-                        
-                            <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block">More Info</a>
-                       
+
+                        <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block">More Info</a>
+
                     </div>
                 </div>
             </div>
             {% endfor %}
             {% else %}
-                
+
             {% endif %}
 
         </div>
@@ -64,8 +60,39 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="pagination">
-
-                </ul>
+                    {% if cars.has_other_pages %}
+                    <ul class="pagination">
+                        {% if cars.has_previous %}
+                        <li class="page-item">
+                            <a href="?page={{cars.previous_page_number}}" class="page-link">&laquo;</a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <a class="page-link">&laquo;</a>
+                        </li>
+                        {% endif %}
+                        {% for i in cars.paginator.page_range %}
+                        {% if cars.number == i %}
+                        <li class="page-item active">
+                            <a class="page-link">{{i}}</a>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a href="?page={{i}}" class="page-link">{{i}}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% if cars.has_next %}
+                        <li class="page-item">
+                            <a href="?page={{cars.next_page_number}}" class="page-link">&raquo;</a>
+                        </li>
+                        {% else %}
+                        <li class="page-item disabled">
+                            <a class="page-link">&raquo;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    {% endif %}
             </div>
         </div>
     </div>

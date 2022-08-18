@@ -5,7 +5,7 @@ from .models import Car
 
 def index(request):
     cars = Car.objects.all()
-    paginator = Paginator(cars, 6)
+    paginator = Paginator(cars, 3)
     page = request.GET.get('page')
     paged_cars = paginator.get_page(page)
 
