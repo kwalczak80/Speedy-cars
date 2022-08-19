@@ -12,8 +12,12 @@ h1 {
     z-index: -1;
     overflow: hidden;
   }
-/*
-  .navbar {
+
+div.card-img-overlay {
+  pointer-events: none;  
+  }
+
+.navbar {
     border-bottom: #008ed6 2px solid;
     opacity: 0.6;
-}*/
+}

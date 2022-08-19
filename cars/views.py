@@ -14,7 +14,7 @@ def index(request):
     }
     return render(request, 'cars/cars.html', context)
 
-def listing(request):
+def car(request, car_id):
     return render(request, 'cars/car.html')
 
 def search(request):
