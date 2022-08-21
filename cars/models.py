@@ -1,10 +1,10 @@
 import datetime
 from django.db import models
-from employees.models import Employee
 from cloudinary.models import CloudinaryField
-
+from employees.models import Employee
 
 class Car(models.Model):
+    sales_person = models.ForeignKey(Employee, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=300, null=False, blank=False, default='')
     MAKE = (
         ('Audi', 'Audi'),
