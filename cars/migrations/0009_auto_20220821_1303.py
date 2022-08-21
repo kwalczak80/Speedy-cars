@@ -36,6 +36,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='car',
             name='sales_person',
-            field=models.ForeignKey(default='', on_delete=django.db.models.deletion.DO_NOTHING, to='employees.employee'),
+            field=models.ForeignKey(default=True, on_delete=django.db.models.deletion.DO_NOTHING, to='employees.employee'),
         ),
     ]
