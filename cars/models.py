@@ -66,6 +66,9 @@ class Car(models.Model):
     engine_size = models.CharField(max_length=20, choices=ENGINE_SIZE, default=ENGINE_SIZE[0][0])
     milage = models.IntegerField(default=1)
     description = models.TextField(default='')
+    previous_owners = models.IntegerField(default=1)
+    road_tax = models.IntegerField(default=1)
+    nct = date = models.DateField(auto_now=True)
     is_for_sale = models.BooleanField(default=True)
     photo_main = CloudinaryField('image') 
     photo_1 = CloudinaryField('image', blank=True)
@@ -73,6 +76,7 @@ class Car(models.Model):
     photo_3 = CloudinaryField('image', blank=True)
     photo_4 = CloudinaryField('image', blank=True)
     photo_5 = CloudinaryField('image', blank=True)
+    photo_6 = CloudinaryField('image', blank=True)
     date = models.DateField(auto_now=True)
 
     def __str__(self):
