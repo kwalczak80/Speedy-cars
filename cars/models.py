@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 from employees.models import Employee
 
 class Car(models.Model):
-    sales_person = models.ForeignKey(Employee, on_delete=models.DO_NOTHING)
+    sales_person = models.ForeignKey(Employee, on_delete=models.DO_NOTHING, default='')
     title = models.CharField(max_length=300, null=False, blank=False, default='')
     MAKE = (
         ('Audi', 'Audi'),
