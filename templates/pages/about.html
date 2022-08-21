@@ -1,5 +1,83 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-<h1>About</h1>
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About Speedy Cars</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>We Search For The Perfect Car</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <img src="https://res.cloudinary.com/dm8mfw14u/image/upload/v1660988754/_about-deal_qrkrx5.png" alt="" class="img-fluid">
+          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
+            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="container demo-bg">
+            <div class="business-hours">
+              <h2 class="title">Opening Hours</h2>
+              <ul class="list-unstyled opening-hours">
+              <li>Monday <span class="pull-right">9:00-22:00</span></li>
+              <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+              <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+              <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+              <li>Friday <span class="pull-right">9:00-23:30</span></li>
+              <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+              <li>Sunday <span class="pull-right">Closed</span></li>
+              </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <hr>
+    <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row text-center">
+          {% if employees %}
+            {% for employee in employees %}
+            <div class="col-md-4">
+              <img src="{{ employee.photo.url }}" alt="" class="rounded-circle mb-3 img-fluid">
+              <h4>{{ employee.name }}</h4>
+              <p class="text-success">{{ employee.description }}</p>
+              <hr>
+              <p>
+                <i class="fa-solid fa-phone"></i> {{ employee.phone }}</p>
+              <p>
+                <i class="fa-solid fa-envelope-open"></i> {{ employee.email }}</p>
+            </div>
+            {% endfor %}
+
+          {% else %}
+          <div class="col-md-12">
+            <p>No employees available</p>
+          </div>
+          {% endif %}
+      </div>
+    </div>
+  </section>
 {% endblock %}
