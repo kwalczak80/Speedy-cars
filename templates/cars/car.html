@@ -112,7 +112,7 @@
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-road"></i> Road tax:
-                                <span>180 Euro</span>
+                                <span>{{ car.road_tax }} €</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-user"></i> Owners:
@@ -120,7 +120,7 @@
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-screwdriver-wrench"></i> NCT:
-                                <span>02/07/2023</span>
+                                <span>{{ car.nct | date:"d M Y" }}</span>
                             </li>
 
 
