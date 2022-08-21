@@ -1,5 +1,165 @@
 {% extends 'base.html' %}
+{% load humanize %}
 
 {% block content %}
-<h1>Finding your dream car has never been easier</h1>
+<!-- Showcase -->
+<section id="showcase">
+    <div class="container text-center">
+        <div class="home-search p-5">
+            <div class="overlay p-5">
+                <h1 class="display-4 mb-4">
+                    Car searching Just Got So Easy
+                </h1>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
+                    eveniet
+                    vel nostrum magnam
+                    voluptatum tempore! Consectetur, id commodi!</p>
+                <div class="search">
+                    <form action="{% url 'search_results' %}">
+                        <!-- Form Row 1 -->
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label class="sr-only">Keywords</label>
+                                <input type="text" name="keywords" class="form-control"
+                                    placeholder="Keyword (Make, Model, Fuel Type, etc)" value="{{ values.keywords }}">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="sr-only">State</label>
+                                <select name="make" class="form-control">
+                                    <option selected="true" disabled="disabled">Make (All)</option>
+                                    {% for key,value in make_choices.items %}
+                                        <option value="{{ key }}"
+                                        {% if key == values.make %}
+                                            selected
+                                        {% endif %}
+                                        >{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Form Row 2 -->
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label class="sr-only">Fuel Type</label>
+                                <select name="fuel_type" class="form-control">
+                                    <option selected="true" disabled="disabled">Fuel Type (All)</option>
+                                    {% for key,value in fuel_type_choices.items %}
+                                    <option value="{{ key }}"
+                                        {% if key == values.fuel_type %}
+                                            selected
+                                        {% endif %}                             
+                                        >{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select name="body_type" class="form-control" id="type">
+                                    <option selected="true" disabled="disabled">Body Type (Any)</option>
+                                    {% for key,value in body_type_choices.items %}
+                                    <option value="{{ key }}"
+                                        {% if key == values.body_type %}
+                                            selected
+                                        {% endif %}                                   
+                                        >{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Form Row 2 -->
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label class="sr-only">Engine</label>
+                                <select name="engine_size" class="form-control">
+                                    <option selected="true" disabled="disabled">Engine Size (Any)</option>
+                                    {% for key,value in engine_size_choices.items %}
+                                    <option value="{{ key }}"
+                                        {% if key == values.engine_size %}
+                                            selected
+                                        {% endif %}                                   
+                                    >{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select name="price" class="form-control" id="type">
+                                    <option selected="true" disabled="disabled">Price (Any)</option>
+                                    {% for key,value in price_choices.items %}
+                                    <option value="{{ key }}"
+                                        {% if key == values.price %}
+                                            selected
+                                        {% endif %}                                   
+                                    >{{ value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Listings -->
+<section id="cars" class="py-4">
+    <div class="container">
+        <div class="row">
+            {% if cars %}
+            {% for car in cars %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="{{ car.photo_main.url }}" alt="Photo of the car">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge bg-success text-white">€ {{ car.price | intcomma }}</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">{{ car.title }}</h4>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fa-solid fa-gas-pump"></i> {{ car.fuel_type }}</div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> {{ car.engine_size }}</div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fa-solid fa-gauge"></i> {{ car.milage }} km</div>
+                            <div class="col-6">
+                                <i class="fa-solid fa-calendar-days"></i> {{ car.year }}</div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fa-solid fa-gears"></i> {{ car.transmission }}</div>
+                            <div class="col-6">
+                                <i class="fa-solid fa-car-side"></i> {{ car.body_type }}</div>
+                        </div>
+                        <hr>
+                        <div class="row text-secondary pb-2">
+                            <div class="col-6">
+                                <i class="fas fa-clock"></i> Posted: {{ car.date | timesince }}</div>
+                        </div>
+                        <hr>
+                        <div class="row text-center">
+                            <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+                <div class="col-md-12">
+                    <p>No cars available to view.</p>
+                </div>
+            {% endif %}
+            
+
+        </div>
+    </div>
+</section>
 {% endblock %}
