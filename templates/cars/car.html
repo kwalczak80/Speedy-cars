@@ -14,7 +14,7 @@
     </div>
 </section>
 
-<!-- Listing -->
+<!-- Car -->
 <section id="car" class="py-4 mt-5">
     <div class="container">
         <a href="{% url 'cars' %}" class="btn btn-light mb-4">Back To Listings</a>
@@ -142,7 +142,7 @@
                         <h6 class="text-secondary">{{ car.sales_person }}</h6>
                     </div>
                 </div>
-                <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Make An
+                <button class="btn-primary btn-block btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">Make An
                     Inquiry</button>
             </div>
         </div>
@@ -150,42 +150,42 @@
 </section>
 
 <!-- Inquiry Modal -->
-<div class="modal fade" id="inquiryModal" role="dialog">
+<div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
-                <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="property_name" class="col-form-label">Property:</label>
-                        <input type="text" name="listing" class="form-control" value="45 Drivewood Cirlce" disabled>
-                    </div>
-                    <div class="form-group">
-                        <label for="name" class="col-form-label">Name:</label>
-                        <input type="text" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-form-label">Email:</label>
-                        <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="col-form-label">Phone:</label>
-                        <input type="text" name="phone" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="col-form-label">Message:</label>
-                        <textarea name="message" class="form-control"></textarea>
-                    </div>
-                    <hr>
-                    <input type="submit" value="Send" class="btn btn-block btn-secondary">
-                </form>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="car_name" class="form-label">Car:</label>
+              <input type="text" name="car" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" name="car" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" name="phone" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" class="form-control"></textarea>
+            </div>            
+        </form>  
+        </div>    
+        <div class="modal-footer">
+          
+          <input class="btn btn-primary" type="submit" value="Submit">          
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 {% endblock %}
