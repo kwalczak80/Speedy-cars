@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %} | {{ car.title }} {% endblock %}
 {% load humanize %}
 {% load static %}
 {% block content %}
@@ -8,15 +9,13 @@
         <div class="row text-center">
             <div class="col-md-12">
                 <h1 class="display-4">{{ car.title }}</h1>
-                <p class="lead">
-                    <i class="fas fa-map-marker"></i> Norwood MA, 02062</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Listing -->
-<section id="listing" class="py-4 mt-5">
+<section id="car" class="py-4 mt-5">
     <div class="container">
         <a href="{% url 'cars' %}" class="btn btn-light mb-4">Back To Listings</a>
         <div class="row img-fluid">
