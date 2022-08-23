@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'cars.apps.CarsConfig',
     'employees.apps.EmployeesConfig',
+    'booking.apps.BookingConfig',
     'django.contrib.humanize',
 ]
 
