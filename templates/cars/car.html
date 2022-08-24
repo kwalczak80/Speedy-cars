@@ -142,7 +142,8 @@
                         <h6 class="text-secondary">{{ car.sales_person }}</h6>
                     </div>
                 </div>
-                <button class="btn-primary btn-block btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">Make An
+                <button class="btn-primary btn-block btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">Make
+                    An
                     Inquiry</button>
             </div>
         </div>
@@ -152,42 +153,53 @@
 <!-- Inquiry Modal -->
 <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form action="{% url 'booking' %}" method="POST">
-                {% csrf_token %}
-            <div class="mb-3">
-              <label for="car" class="form-label">Car:</label>
-              <input type="text" name="car" class="form-control" value="{{ car.title }}">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name:</label>
-              <input type="text" name="name" class="form-control" value="{{ user.username }}" required>
+            <div class="modal-body">
+                <form action="{% url 'booking' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="car" class="form-label">Car:</label>
+                        <input type="text" name="car" class="form-control" value="{{ car.title }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" class="form-control" value="{{ user.username }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" name="email" class="form-control" value="{{ user.email }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="text" name="phone" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Select date of your test drive</label>
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" name="date">
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-white d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" class="form-control"></textarea>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </form>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" name="email" class="form-control" value="{{ user.email }}" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone</label>
-              <input type="text" name="phone" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea name="message" class="form-control"></textarea>
-            </div>
-            <input class="btn btn-primary" type="submit" value="Submit">             
-        </form>  
-        </div>    
-       <!-- <div class="modal-footer">
+            <!-- <div class="modal-footer">
           
-          <input class="btn btn-primary" type="submit" value="Submit">          
-        </div> -->
-      </div>
+                <input class="btn btn-primary" type="submit" value="Submit">          
+            </div> -->
+        </div>
     </div>
-  </div>
+</div>
 {% endblock %}
