@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} | Dashboard {% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<section id="dashboard" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Welcome {{ user.username }}</h2>
+          {% if booking %}
+          <p>Here are the booking test drives that you have made with Speedy Cars</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">#</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#</td>
+                <td>#</td>
+                <td>
+                  <a class="btn btn-light" href="#">Edit</a>
+                </td>
+              </tr>
+                 </tbody>
+          </table>
+          {% else %}
+          <p>You nave not booked any test drives yet.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
