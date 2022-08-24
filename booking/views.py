@@ -18,6 +18,13 @@ def booking(request):
         messages.add_message(request, messages.INFO, 'Congratulations !! You have booked your test drive succesfuly !!')
         return redirect('/cars')
 
+def dashboard(request):
+    user_booking = Booking.objects.all().filter(user_id=request.user.id)
+
+    context = {
+        'booking': user_booking
+    }
+    return render(request, 'booking/dashboard.html', context)
 
 
        
