@@ -21,6 +21,11 @@
                     <a href="{% url 'about' %}" class="nav-link fs-5 text-white ">About</a>
                 </li>
                 {% if user.is_authenticated %}
+                <li {% if 'dashboard' in reqest.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3"
+                    {% endif %}>
+                    <a href="{% url 'dashboard' %}" class="nav-link fs-5 text-white ">
+                        <i class="fas fa-sign-in-alt"></i>Welcome {{ user.username }} (Dashboard)</a>
+                </li>
                 <li class="nav-item">
                     <a href="{% url 'account_logout' %}" class="nav-link fs-5 text-white ">
                         <i class="fas fa-sign-in-alt"></i>Logout</a>
