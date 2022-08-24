@@ -10,8 +10,9 @@ def booking(request):
         phone = request.POST['phone']
         date = request.POST['date']
         message = request.POST['message']
+        user_id = request.POST['user_id']
 
-        booking_obj = Booking(car=car, name=name, email=email, phone=phone, date=date, message=message)
+        booking_obj = Booking(car=car, name=name, email=email, phone=phone, date=date, message=message, user_id=user_id)
 
         booking_obj.save()
         messages.add_message(request, messages.INFO, 'Congratulations !! You have booked your test drive succesfuly !!')

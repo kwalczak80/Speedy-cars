@@ -155,12 +155,13 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+                <h5 class="modal-title" id="inquiryModalLabel">Book test drive</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form action="{% url 'booking' %}" method="POST">
                     {% csrf_token %}
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
                     <div class="mb-3">
                         <label for="car" class="form-label">Car:</label>
                         <input type="text" name="car" class="form-control" value="{{ car.title }}">
