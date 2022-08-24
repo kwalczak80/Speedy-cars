@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Booking
 
 def booking(request):
@@ -9,9 +10,10 @@ def booking(request):
         phone = request.POST['phone']
         message = request.POST['message']
 
-        booking = Booking(car=car, name=name, email=email, phone=phone, message=message)
+        booking_obj = Booking(car=car, name=name, email=email, phone=phone, message=message)
 
-        booking.save()
+        booking_obj.save()
+        messages.add_message(request, messages.INFO, 'Congratulations !! You have booked your test drive succesfuly !!')
         return redirect('/cars')
 
 
