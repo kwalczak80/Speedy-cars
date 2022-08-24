@@ -142,15 +142,17 @@
                         <h6 class="text-secondary">{{ car.sales_person }}</h6>
                     </div>
                 </div>
-                <button class="btn-primary btn-block btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">Make
-                    An
-                    Inquiry</button>
+                {% if user.is_authenticated %}
+                <button class="btn-primary btn-block btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">Book Test Drive</button>
+                {% else %}
+                <p>Please login to book a test drive.</p>
+                {% endif %}
             </div>
         </div>
     </div>
 </section>
 
-<!-- Inquiry Modal -->
+<!-- Booing Test Drive Modal -->
 <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

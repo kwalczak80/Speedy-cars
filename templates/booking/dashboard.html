@@ -11,23 +11,25 @@
         <div class="col-md-12">
           <h2>Welcome {{ user.username }}</h2>
           {% if booking %}
-          <p>Here are the booking test drives that you have made with Speedy Cars</p>
+          <p>Here are the booked test drives that you have made with Speedy Cars</p>
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">#</th>
+                <th scope="col">Car</th>
+                <th scope="col">Test drive date</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
+              {% for item in booking %}
               <tr>
-                <td>#</td>
-                <td>#</td>
+                <td>{{ item.car }}</td>
+                <td>{{ item.date }}</td>
                 <td>
                   <a class="btn btn-light" href="#">Edit</a>
                 </td>
               </tr>
+              {% endfor %}
                  </tbody>
           </table>
           {% else %}
