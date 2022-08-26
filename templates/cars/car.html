@@ -164,6 +164,7 @@
                 <form action="{% url 'booking' %}" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="user_id" value="{{ user.id }}">
+                    <input type="hidden" name="car_id" value="{{ car.id }}">
                     <div class="mb-3">
                         <label for="car" class="form-label">Car:</label>
                         <input type="text" name="car" class="form-control" value="{{ car.title }}">
