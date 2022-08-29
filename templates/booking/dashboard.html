@@ -29,6 +29,8 @@
                 <td>{{ item.car }}</td>
                 <td>{{ item.date }}</td>
                 <td>
+                  <a class="btn btn-info" href="{% url 'car' item.car_id %}">View</a>
+                </td>
                 <td>
                   <a class="btn btn-danger" href="{% url 'cancellation' item.id %}">Cancel</a>
                 </td>
