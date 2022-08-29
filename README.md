@@ -126,3 +126,5 @@ The information architecture was organized in such a way as to ensure that users
 - The search page where user can find a car with specific searching criteria
 - Search form "remembers" options selected by the user
 - Customized tabs showing current page name
+- Once clicked thumbinals are nicely presented on the screen (Lightbox) to allow user to view a car in details
+- Messages system to provide feedback to the user
