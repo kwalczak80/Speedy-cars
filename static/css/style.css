@@ -25,3 +25,9 @@ div.card-img-overlay {
   padding-left: 20vw;
   padding-right: 20vw;
 }
+
+footer {
+  bottom:0;
+  position:fixed;
+  width: 100vw;
+}
