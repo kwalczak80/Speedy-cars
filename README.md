@@ -113,3 +113,16 @@ The primary goal of the website from a site user’s perspective is as follows:
 The information architecture was organized in such a way as to ensure that users can navigate through the site easily.
 
 ![Site Map](docs/site_map/speedy_cars_site_map.jpg)
+
+## Features
+
+- Responsive design
+- Navigation Menu
+- Postgress databases to store information and user login/profile information
+- Ability to book a test drive with a specific car (only for logged-in users)
+- Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality)
+- Customized Admin (business owner) panel
+- Admin panel – ability to select cars that will be displayed on the page.
+- The search page where user can find a car with specific searching criteria
+- Search form "remembers" options selected by the user
+- Customized tabs showing current page name
