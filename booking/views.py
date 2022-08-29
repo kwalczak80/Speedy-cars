@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Booking
+from .forms import BookingForm
 
 def booking(request):
     if request.method == 'POST':
@@ -33,5 +34,16 @@ def cancellation(request, booking_id):
     messages.add_message(request, messages.INFO, 'Your test drive has been cancelled !!!')
     return redirect('dashboard')
 
-def edit(request, id):
-    pass       
+def edit(request, booking_id):
+    booking_id = get_object_or_404(Booking, pk=booking_id)
+    if request.method == "POST":
+        form = BookingForm(request.POST, instance=booking_id)
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, messages.INFO, 'You have edited your test drive details succesfully')
+            return redirect('dashboard')
+    form = BookingForm(instance=booking_id)
+    context = {
+        'form': form
+    }
+    return render(request, 'booking/edit.html', context)     
