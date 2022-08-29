@@ -21,3 +21,8 @@ div.card-img-overlay {
     border-bottom: #008ed6 2px solid;
     opacity: 0.6;
 }
+
+.action_field {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
