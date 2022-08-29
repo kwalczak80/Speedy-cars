@@ -32,4 +32,6 @@ def cancellation(request, booking_id):
     booking_cancellation.delete()
     messages.add_message(request, messages.INFO, 'Your test drive has been cancelled !!!')
     return redirect('dashboard')
-       
+
+def edit(request, id):
+    pass       
