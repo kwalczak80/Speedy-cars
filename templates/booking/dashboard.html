@@ -29,9 +29,8 @@
                 <td>{{ item.car }}</td>
                 <td>{{ item.date }}</td>
                 <td>
-                  <a class="btn btn-light" href="#">View</a>
-                  <a class="btn btn-light" href="#">Edit</a>
-                  <a class="btn btn-light" href="#">Cancel</a>
+                <td>
+                  <a class="btn btn-danger" href="{% url 'cancellation' item.id %}">Cancel</a>
                 </td>
               </tr>
               {% endfor %}
