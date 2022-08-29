@@ -17,6 +17,9 @@
               <tr>
                 <th scope="col">Car</th>
                 <th scope="col">Test drive date</th>
+                <th scope="col">View</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Cancel</th>
                 <th></th>
               </tr>
             </thead>
@@ -26,7 +29,9 @@
                 <td>{{ item.car }}</td>
                 <td>{{ item.date }}</td>
                 <td>
+                  <a class="btn btn-light" href="#">View</a>
                   <a class="btn btn-light" href="#">Edit</a>
+                  <a class="btn btn-light" href="#">Cancel</a>
                 </td>
               </tr>
               {% endfor %}
