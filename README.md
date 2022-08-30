@@ -1,6 +1,5 @@
 # Speedy Cars
 
-
 ## User Experience (UX)
 
 ### Primary Goal
@@ -122,9 +121,40 @@ The information architecture was organized in such a way as to ensure that users
 - Ability to book a test drive with a specific car (only for logged-in users)
 - Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality)
 - Customized Admin (business owner) panel
-- Admin panel – ability to select cars that will be displayed on the page.
+- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website.
 - The search page where user can find a car with specific searching criteria
 - Search form "remembers" options selected by the user
-- Customized tabs showing current page name
+- Dynamic page titles
 - Once clicked thumbinals are nicely presented on the screen (Lightbox) to allow user to view a car in details
 - Messages system to provide feedback to the user
+
+## Structure
+
+### Code Structure
+
+The project is organized into various applications, as constructed using the Django Framework.
+App details are as follows:
+
+- Home - this app contains information about the Speedy Cars home page with quick links to the about and search pages via the nav bar.
+- Booking - this app contains information related to the test drive booking system (for users to view, edit or cancel booked test drives).
+- Cars - this app is for the users to view the cars or to view the search results.
+- Employees - this app is for the business owner to manage Speedy Cars staff via admin panel.
+
+To complement the apps there are
+
+- Speedy Cars: Speedy Cars level files - settings.py for project level settings and urls.py to route the website urls.
+- templates: Containing the base.html, allauth(django authentication). The partial folder contains the navbar and footer HTML.
+- templates (app level): some of the apps have their own templates directory for HTML to consider portability and reuse.
+- urls (app level): each app has its own url.py file to consider portability and reuse.
+- static: Base css and Javascript files.
+- manage.py: This file is used to start the site and perform functions during development.
+- README.md: Readme documentation.
+- Procfile: To run the application on Heroku.
+- Requirements.txt: Containing the project dependencies Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings).
+
+
+
+
+
+
+
