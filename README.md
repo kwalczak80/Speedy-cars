@@ -154,9 +154,29 @@ To complement the apps there are
 
 ### Database design
 
-The data schema was created using 
+The data schema was created using [drawsql](https://drawsql.io "drawsql").
 
-![Log in page](docs/images/data_base_diagram.JPG)
+![Database diagram](docs/images/data_base_diagram.JPG)
+
+#### Models
+
+The following models were created to represent the database model structure for the website
+
+Car model
+
+- The car model contains a collection of data for each car dislpayed on the website. This model is being used by the business owner (via admin panel) each time when a new car is added.
+- The model contains the following fields: sales_person(each car has assigned sales advisor - foreign key from employee model),title, make, model, price, fuel type, transmission, body type, year, engine size, milage, description, previous owners, road tax, nct, is for sale(this determines if the car displayed on the website or not), photo main, photo 1, photo 2, photo 3, photo 4, photo 5, photo 6, date.
+
+Booking model
+
+- The Booking model contains a collection of data submitted by the user when booking a test drive.
+- The model contains the following fields: car, car_id, name, email, phone, date, message, user_id (this is displayed in admin).
+
+Employee model
+
+- The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
+- The model contains the folowing fields: name, photo, description, email, phone, hire date. .  
+
 
 
 
