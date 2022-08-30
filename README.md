@@ -45,45 +45,50 @@ The primary goal of the website from a site user’s perspective is as follows:
   - Diesel
   - Hybrid
   - Electric
-- As a user, I want to see professional descriptions of each car available for sale along with relevant pictures
-- As a user, I want to be able to navigate the website quickly and easily
-- As a user, I want to be able to use the search option to find the car I’m looking for
-- As a user, I want to be able to view the price of the cars
-- **As a user, I want to be able to read other user’s testimonials
-- As a user, I want to be able to make an inquiry about the car
-- As a user, I want to be able to book a test drive
-- As a user, I want to be able to edit or delete a test drive I have made
-- As a user, I want to read more information about the business
-- As a user, I want to be able to see featured cars
-- As a user, I want to be able to sign in to or create an account
-- As a user, I want to be able to log out of an account
-- As a user, I want to be able to view the business’s social media channels
-- As a user, I want to log in after I created an account and see my test drive bookings
-- As a user, I want to be informed if a test drive cannot be completed for any reason
-- As a user, I want to be informed if a test drive was booked successfully
+- As a user, I want to see professional descriptions of each car available for sale along with relevant pictures.
+- As a user, I want to be able to navigate the website quickly and easily.
+- As a user, I want to be able to use the search option to find the car I’m looking for.
+- As a user, I want to be able to view the price of the cars.
+- **As a user, I want to be able to read other user’s testimonials.
+- As a user, I want to be able to make an inquiry about the car.
+- As a user, I want to be able to book a test drive.
+- As a user, I want to be able to edit or delete a test drive I have made.
+- As a user, I want to read more information about the business.
+- As a user, I want to be able to see featured cars.
+- As a user, I want to be able to sign in to or create an account.
+- As a user, I want to be able to log out of an account.
+- As a user, I want to be able to view the business’s social media channels.
+- As a user, I want to log in after I created an account and see my test drive bookings.
+- As a user, I want to be informed if a test drive cannot be booked for any reason.
+- As a user, I want to be informed if a test drive was booked successfully.
 
 ### Site owners Goals
 
-- As a site owner, I want to attract car buyers
-- As a site owner, I want an appealing website with a range of cars
-- As a site owner, I want users to be to view the full range of cars available for sale
-- As a site owner, I want users to be able to view the relevant description of each car along with the price
-- As a site owner, I want users to able to have an option to search for the car they are looking for
-- As a site owner, I want users to be able to make an inquiry about the car
-- As a site owner, I want users to be able to book the test drive with the selected car. These need to include data validation so the user can only book future dates and within valid opening times
-- As a site owner, I want users to be informed if a test drive cannot be booked
-- As a site owner, I want users to be able to edit and cancel a test drive
-- As a site owner, I want users to be able to read about the business
-- As a site owner, I want users to be able to navigate the site easily and quickly
-- As a site owner, I want users to be able to sign in to or create an account
-- As a site owner, I want users to be able to log out of their account
-- As a site owner, I want to be able to add new cars or remove if sold
-- As a site owner, I want users to be able to view the business’ social media
-- ** As a logged-in administrator, I want to be able to add testimonials
+- As a site owner, I want to attract car buyers.
+- As a site owner, I want an appealing website with a range of cars.
+- As a site owner, I want users to be to view the full range of cars available for sale.
+- As a site owner, I want users to be able to view the relevant description of each car along with the price.
+- As a site owner, I want users to able to have an option to search for the car they are looking for.
+- As a site owner, I want users to be able to make an inquiry about the car.
+- As a site owner, I want users to be able to book the test drive with the selected car.
+- As a site owner, I want users to be informed if a test drive cannot be booked.
+- As a site owner, I want users to be able to edit and cancel a test drive.
+- As a site owner, I want users to be able to read about the business.
+- As a site owner, I want users to be able to navigate the site easily and quickly.
+- As a site owner, I want users to be able to sign in to or create an account.
+- As a site owner, I want users to be able to log out of their account.
+- As a site owner, I want to be able to add new cars or remove if sold.
+- As a site owner, I want users to be able to view the business’ social media.
+- ** As a logged-in administrator, I want to be able to add testimonials.
 
 ### Error Flow
 
 - In the event that the desired page cannot be located, the user should be able to return through the website's navigational structure without hitting the back button on their browser
+
+
+## Kanban dashboard
+
+![Site Map](docs/images/kanban_agile.JPG)
 
 ## Wireframes - Desktop
 
