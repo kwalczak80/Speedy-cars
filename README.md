@@ -179,7 +179,7 @@ To complement the apps there are
 
 ### Database design
 
-The data schema was created using [drawsql](https://drawsql.app/ "drawsql").
+The data schema was created using [drawsql](https://drawsql.app/ "drawsql")
 
 ![Database diagram](docs/images/data_base_diagram.JPG)
 
