@@ -2,7 +2,7 @@ body {
   background-color: gray;
 }
 
-/*Background video*/
+/*Background video
 #background-video {
     position: fixed;
     right: 0;
@@ -12,6 +12,18 @@ body {
     z-index: -1;
     overflow: hidden;
   }
+*/
+#background-video {
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+
+}
 
 div.card-img-overlay {
   pointer-events: none;  
