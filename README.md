@@ -140,6 +140,7 @@ The information architecture was organized in such a way as to ensure that users
 - Customized Admin (the business owner) panel,
 - Admin panel - ability to add a new car
 - Admin panel - ability to add a new employee
+- Admin panel - ability to review booked driving tests
 - Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
 - The search page where user can find a car with specific searching criteria,
 - Search form "remembers" options selected by the user,
@@ -173,7 +174,7 @@ To complement the apps there are
 
 ### Database design
 
-The data schema was created using [drawsql](https://drawsql.io "drawsql").
+The data schema was created using [drawsql](https://drawsql.app/ "drawsql").
 
 ![Database diagram](docs/images/data_base_diagram.JPG)
 
