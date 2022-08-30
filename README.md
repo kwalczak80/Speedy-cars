@@ -87,25 +87,42 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 ## Wireframes - Desktop
 
-### Home page
+- [Home page](docs/wireframes/desktop/home_page_desktop.png)
+- [Cars page](docs/wireframes//desktop/cars_page_desktop.png)
+- [Car page](docs/wireframes/desktop/car_page_desktop.png)
+- [About page](docs/wireframes/desktop/about_page_desktop.png)
+- [Search page](docs/wireframes/desktop/search_page_desktop.png)
+- [Login page](docs/wireframes/desktop/login_page_desktop.png)
+- [Logout page](docs/wireframes/desktop/logout_page_desktop.png)
+- [Registration page](docs/wireframes/desktop/registration_page_desktop.png)
+- [Dashboard page](docs/wireframes/desktop/dash_board_desktop.png)
+- [Edit test drive page](docs/wireframes/desktop/edit_test_drive_page_desktop.png)
 
-![Home page](docs/wireframes/desktop/home_page_desktop.png)
+## Wireframes - Tablet
 
-### Search page
+- [Home page](docs/wireframes/tablet/home_page_tablet.png)
+- [Cars page](docs/wireframes/tablet/cars_page_tablet.png)
+- [Car page](docs/wireframes/tablet/car_page_tablet.png)
+- [About page](docs/wireframes/tablet/about_page_tablet.png)
+- [Search page](docs/wireframes/tablet/search_page_tablet.png)
+- [Login page](docs/wireframes/tablet/login_page_tablet.png)
+- [Logout page](docs/wireframes/tablet/logout_page_tablet.png)
+- [Registration page](docs/wireframes/tablet/registration_page_tablet.png)
+- [Dashboard page](docs/wireframes/tablet/dashboard_page_tablet.png)
+- [Edit test drive page](docs/wireframes/tablet/edit_test_drive_page_tablet.png)
 
-![Search page](docs/wireframes/desktop/search_page_desktop.png)
+## Wireframes - Mobile
 
-### About page
-
-![About page](docs/wireframes/desktop/about_page_desktop.png)
-
-### Log in page
-
-![Log in page](docs/wireframes/desktop/log_in_page_desktop.png)
-
-### Registration page
-
-![Sign Up page](docs/wireframes/desktop/registration_page_desktop.png)
+- [Home page](docs/wireframes/mobile/home_page_mobile.png)
+- [Cars page](docs/wireframes/mobile/cars_page_mobile.png)
+- [Car page](docs/wireframes/mobile/car_page_mobile.png)
+- [About page](docs/wireframes/mobile/about_page_mobile.png)
+- [Search page](docs/wireframes/mobile/search_page_mobile.png)
+- [Login page](docs/wireframes/mobile/login_page_mobile.png)
+- [Logout page](docs/wireframes/mobile/logout_page_mobile.png)
+- [Registration page](docs/wireframes/mobile/registration_page_mobile.png)
+- [Dashboard page](docs/wireframes/mobile/dashboard_page_mobile.png)
+- [Edit test drive page](docs/wireframes/mobile/edit_test_drive_page_mobile.png)
 
 ## Site Map
 
