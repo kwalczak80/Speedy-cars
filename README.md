@@ -150,7 +150,14 @@ To complement the apps there are
 - manage.py: This file is used to start the site and perform functions during development.
 - README.md: Readme documentation.
 - Procfile: To run the application on Heroku.
-- Requirements.txt: Containing the project dependencies Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings).
+- Requirements.txt: Containing the project dependencies Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in( listed in .gitignore).
+
+### Database design
+
+The data schema was created using 
+
+![Log in page](docs/images/data_base_diagram.JPG)
+
 
 
 
