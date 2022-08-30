@@ -115,17 +115,19 @@ The information architecture was organized in such a way as to ensure that users
 
 ## Features
 
-- Responsive design
-- Navigation Menu
-- Postgress databases to store information and user login/profile information
-- Ability to book a test drive with a specific car (only for logged-in users)
-- Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality)
-- Customized Admin (business owner) panel
-- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website.
-- The search page where user can find a car with specific searching criteria
-- Search form "remembers" options selected by the user
-- Dynamic page titles
-- Once clicked thumbinals are nicely presented on the screen (Lightbox) to allow user to view a car in details
+- Responsive design,
+- Navigation Menu,
+- Postgress databases to store information and user login/profile information,
+- Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
+- Dashboard page where logged-in users can view/edit/cancel existing test drives (CRUD Functionality),
+- Customized Admin (the business owner) panel,
+- Admin panel - ability to add a new car
+- Admin panel - ability to add a new employee
+- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
+- The search page where user can find a car with specific searching criteria,
+- Search form "remembers" options selected by the user,
+- Dynamic page titles,
+- Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
 - Messages system to provide feedback to the user
 
 ## Structure
