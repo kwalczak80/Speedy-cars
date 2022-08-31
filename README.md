@@ -327,7 +327,7 @@ Error while running '$ python manage.py collectstatic --noinput'.
 
 ### Fix
 
-This issue was resolved by excetuting command **python3 manage.py collectstatic**.
+This issue was resolved by executing the following command **python3 manage.py collectstatic** in gitpod terminal.
 The solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
 <hr>
 
