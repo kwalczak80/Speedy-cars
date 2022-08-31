@@ -345,3 +345,21 @@ I checked the model and I discovered that **date** was missing apostrophes - ''
 
 ![Issue with local variable 'date' model fixed](docs/images/bugs/issue_with_local_variable_date_model_fixed.png)
 <hr>
+
+### Issue
+
+Images displayed on cards had no equal height
+
+![Issue with image height on a card](docs/images/bugs/issue_with_image_height_on_card.JPG)
+
+### Fix
+
+The fix was implmented by adding the following car-img-top class in style.css file
+
+.card-img-top {
+width: 100%;
+height: 30vh;
+object-fit: cover;
+}
+
+The solution was found on [Stack Overflow](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width)
