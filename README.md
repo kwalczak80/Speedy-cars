@@ -333,7 +333,7 @@ The solution was found on [Stack Overflow](https://stackoverflow.com/questions/3
 
 ### Issue
 
-An error related to the local variable referenced before assigment was showing on the screen
+The folowing error related to the local variable referenced before assigment was showing on the screen
 
 ![Issue with local variable 'date'](docs/images/bugs/issue_with_local_variable_date.png)
 
@@ -348,7 +348,7 @@ I checked the model and I discovered that **date** was missing apostrophes - ''
 
 ### Issue
 
-Images displayed on cards had no equal height
+Images displayed on cards had no equal height.
 
 ![Issue with image height on a card](docs/images/bugs/issue_with_image_height_on_card.JPG)
 
