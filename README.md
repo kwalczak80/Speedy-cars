@@ -276,6 +276,18 @@ Employee model
 
 ### Issue
 
+Unable to migrate models to the database
+![Issue with migration to database](docs/images/bugs/issue_with_migration_to_database.png)
+
+### Fix
+
+The problem was in one of the 000X_xxxxxxxxxx.py files in the migrations folder.
+When I created my model I was forced to add a default value to each table i.e. float Field
+By mistake, I added a string value instead of a number value, and that caused all issues.
+To fix this I had to manually edit some parts of migration files (change from str to a number) and then I was able to migrate models to the database.
+
+### Issue
+
 Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached.
 The folowing error was presented on the screen:
 FATAL:  password authentication failed for user "popyrrkqilvwjx"
@@ -284,16 +296,45 @@ FATAL:  no pg_hba.conf entry for host "35.195.38.40", user "popyrrkqilvwjx", dat
 ### Fix
 
 The issue was fixed by adding a new security key in env.py from Heroku
+<hr>
 
 ### Issue
 
 Unable to loop through choices
+![Issue to loop through choices](docs/images/bugs/issue_unable_to_loop_through_choices.png)
 
+### Fix
 
+In error, I omitted to add the ‘items’ command - for key, value in make_choices.items
 
+### Issue
 
+More Info link did not work on the card(unable to click)
+![Issue with More Info Link](docs/images/bugs/issue_with_more_info_link.png)
 
+### Fix
 
+To fix the issue I added the following class to style.css file - **div.card-img-overlay {pointer-events: none;}**
+<hr>
 
+### Issue
 
+Unable to deploy to Heroku as the following error message was displayed on the Heroku panel
+Error while running '$ python manage.py collectstatic --noinput'.
 
+### Fix
+
+This issue was resolved by excetuting command **python3 manage.py collectstatic**
+Solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
+
+### Issue
+
+An error related to the local variable referenced before assigment was showing on the screen
+![Issue with local variable 'date'](docs/images/bugs/issue_with_local_variable_date.png)
+
+I checked the model and I discovered that **date** was missing apostrophes - ''
+![Issue with local variable 'date' model view](docs/images/bugs/issue_with_local_variable_date_model_view.png)
+
+### Fix
+
+![Issue with local variable 'date' model fixed](docs/images/bugs/issue_with_local_variable_date_model_fixed.png)
