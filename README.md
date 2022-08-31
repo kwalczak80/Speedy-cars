@@ -312,6 +312,7 @@ In error, I omitted to add the ‘items’ command - for key, value in make_choi
 ### Issue
 
 More Info link did not work on the card(unable to click)
+
 ![Issue with More Info Link](docs/images/bugs/issue_with_more_info_link.png)
 
 ### Fix
@@ -326,16 +327,18 @@ Error while running '$ python manage.py collectstatic --noinput'.
 
 ### Fix
 
-This issue was resolved by excetuting command **python3 manage.py collectstatic**
-Solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
+This issue was resolved by excetuting command **python3 manage.py collectstatic**.
+The solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
 <hr>
 
 ### Issue
 
 An error related to the local variable referenced before assigment was showing on the screen
+
 ![Issue with local variable 'date'](docs/images/bugs/issue_with_local_variable_date.png)
 
 I checked the model and I discovered that **date** was missing apostrophes - ''
+
 ![Issue with local variable 'date' model view](docs/images/bugs/issue_with_local_variable_date_model_view.png)
 
 ### Fix
