@@ -183,7 +183,7 @@ The data schema was created using [drawsql](https://drawsql.app/ "drawsql")
 
 ![Database diagram](docs/images/data_base_diagram.JPG)
 
-#### Models
+### Models
 
 The following models were created to represent the database model structure for the website
 
@@ -202,15 +202,75 @@ Employee model
 - The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
 - The model contains the folowing fields: name, photo, description, email, phone, hire date. .  
 
-# Technologies Used
+## Technologies Used
 
-## Languages
+### Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+
+#### Python Libraries
+
+- asgiref==3.5.2
+- cloudinary==1.29.0
+- dj-database-url==1.0.0
+- dj3-cloudinary-storage==0.0.6
+- Django==3.2.15
+- django-allauth==0.51.0
+- gunicorn==20.1.0
+- oauthlib==3.2.0
+- psycopg2==2.9.3
+- PyJWT==2.4.0
+- pylint-django==2.5.3
+- pylint-plugin-utils==0.7
+- python3-openid==3.2.0
+- pytz==2022.1
+- requests-oauthlib==1.3.1
+- sqlparse==0.4.2
+- whitenoise==6.2.0
+
+### Database
+
+- [Sqlite](https://www.sqlite.org/index.html)
+  - This database was used in local development.
+- [PostgreSQL](https://www.postgresql.org/)
+  - The site is deployed on Heroku using a Postgress database.
+
+### Frameworks
+
+- [Django](https://www.djangoproject.com/)
+  - The project uses Django as the main framework.
+- [Boostrap 5](https://getbootstrap.com/)
+  - Used for general site layout.
+- [Lightbox](https://trvswgnr.github.io/bs5-lightbox/)
+  - Used to implement a lightbox gallery.
+
+### Programs & Tools
+
+- [Heroku](https://www.heroku.com/)
+  - The project is deployed and hosted by Heroku.
+- [Balsamiq](https://balsamiq.com/)
+  - Used to create the website wireframes.
+- [GitHub](https://github.com/)
+  - GitHub was used to store all the project files written in Gitpod.
+- [Gitpod](https://www.gitpod.io/)
+  - Gitpod was used as a development environment.
+- [Cloudinary](https://cloudinary.com/)
+  - To store static files for the project
+- [Drawsql](https://drawsql.app/)
+  - Drawsql was used to design database model for the project.
+- [W3School](https://www.w3schools.com/)
+  - For problem solving and code searching.
+- [Stack Overflow](https://stackoverflow.com/)
+  - For problem solving and code searching.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used to add icons that represent links to social media.
+-  [PEP8 validator](http://pep8online.com/)
+  - For checking python convention.
 
 
 
