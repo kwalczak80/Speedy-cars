@@ -202,6 +202,17 @@ Employee model
 - The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
 - The model contains the folowing fields: name, photo, description, email, phone, hire date. .  
 
+# Technologies Used
+
+## Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/)
+
+
 
 
 
