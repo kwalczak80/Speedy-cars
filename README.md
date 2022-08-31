@@ -285,6 +285,7 @@ The problem was in one of the 000X_xxxxxxxxxx.py files in the migrations folder.
 When I created my model I was forced to add a default value to each table i.e. float Field
 By mistake, I added a string value instead of a number value, and that caused all issues.
 To fix this I had to manually edit some parts of migration files (change from str to a number) and then I was able to migrate models to the database.
+<hr>
 
 ### Issue
 
@@ -306,6 +307,7 @@ Unable to loop through choices
 ### Fix
 
 In error, I omitted to add the ‘items’ command - for key, value in make_choices.items
+<hr>
 
 ### Issue
 
@@ -326,6 +328,7 @@ Error while running '$ python manage.py collectstatic --noinput'.
 
 This issue was resolved by excetuting command **python3 manage.py collectstatic**
 Solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
+<hr>
 
 ### Issue
 
@@ -338,3 +341,4 @@ I checked the model and I discovered that **date** was missing apostrophes - ''
 ### Fix
 
 ![Issue with local variable 'date' model fixed](docs/images/bugs/issue_with_local_variable_date_model_fixed.png)
+<hr>
