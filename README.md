@@ -285,6 +285,9 @@ FATAL:  no pg_hba.conf entry for host "35.195.38.40", user "popyrrkqilvwjx", dat
 
 The issue was fixed by adding a new security key in env.py from Heroku
 
+### Issue
+
+Unable to loop through choices
 
 
 
