@@ -272,6 +272,19 @@ Employee model
 -  [PEP8 validator](http://pep8online.com/)
   - For checking python convention.
 
+## Bugs
+
+### Issue
+
+Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached.
+The folowing error was presented on the screen:
+FATAL:  password authentication failed for user "popyrrkqilvwjx"
+FATAL:  no pg_hba.conf entry for host "35.195.38.40", user "popyrrkqilvwjx", database "d6tpv8s8mh12kk", no encryption
+
+### Fix
+
+The issue was fixed by adding a new security key in env.py from Heroku
+
 
 
 
