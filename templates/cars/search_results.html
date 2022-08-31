@@ -103,14 +103,14 @@
     </div>
 </section>
 
-<!-- Listings -->
-<section id="cars" class="py-4">
+<!-- Cars-->
+<section class="py-4">
     <div class="container">
         <div class="row">
             {% if cars %}
             {% for car in cars %}
             <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card listing-preview">
+                <div class="card">
                     <img class="card-img-top" src="{{ car.photo_main.url }}" alt="Photo of the car">
                     <div class="card-img-overlay">
                         <h2>
@@ -118,7 +118,7 @@
                         </h2>
                     </div>
                     <div class="card-body">
-                        <div class="listing-heading text-center">
+                        <div class="card-title text-center">
                             <h4 class="text-primary">{{ car.title }}</h4>
                         </div>
                         <hr>
@@ -154,12 +154,13 @@
             </div>
             {% endfor %}
             {% else %}
-                <div class="col-md-12">
-                    <p>No cars available to view.</p>
+            <div class="container-lg">
+                <div class="text-center text-danger">
+                    <h4>No cars have been found.</h4>
+                    <h4>Please change your search criteria.</h4>
                 </div>
+            </div>
             {% endif %}
-            
-
         </div>
     </div>
 </section>
