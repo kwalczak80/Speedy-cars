@@ -22,7 +22,10 @@ body {
   object-fit: cover;
   z-index: -1;
   overflow: hidden;
-
+}
+#slogan {
+  margin-top: 70vh;
+  color: rgb(233, 230, 230);
 }
 
 div.card-img-overlay {
