@@ -18,17 +18,17 @@
 <section id="car" class="py-4 mt-1">
     <div class="container">
         <a href="{% url 'cars' %}" class="btn btn-success mb-4">Back To Cars</a>
-        <div class="row img-fluid">
+        <div class="row justify-content-center">
             <div class="col-md-9">
-                <!-- Home Main Image -->
-                <img src="{{ car.photo_main.url }}" alt="" class="img-main img-fluid mb-2">
-                <!-- Thumbnails -->
+                <!-- Car Main Image -->
+                <img src="{{ car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1">
+                <!-- Car Thumbnails -->
                 <div class="row mb-5 thumbs">
                     {% if car.photo_1 %}
                     <div class="col-md-2">
                         <a href="{{ car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_1.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_1.url }}" alt="Car photo 1" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -36,7 +36,7 @@
                     <div class="col-md-2">
                         <a href="{{ car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_2.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_2.url }}" alt="Car photo 2" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -44,7 +44,7 @@
                     <div class="col-md-2">
                         <a href="{{ car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_3.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_3.url }}" alt="Car photo 3" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -52,7 +52,7 @@
                     <div class="col-md-2">
                         <a href="{{ car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_4.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_4.url }}" alt="Car photo 4" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -60,7 +60,7 @@
                     <div class="col-md-2">
                         <a href="{{ car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_5.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_5.url }}" alt="Car photo 5" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -68,7 +68,7 @@
                     <div class="col-md-2">
                         <a href="{{ car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_6.url }}" alt="" class="img-fluid">
+                            <img src="{{ car.photo_6.url }}" alt="Car photo 6" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
