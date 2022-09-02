@@ -137,9 +137,10 @@
             </div>
             <div class="col-md-3">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales advisor">
+                    <img class="card-img-top photo" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales advisor">
                     <div class="card-body">
-                        <h5 class="card-title">Sales advisor - {{ car.sales_person }}</h5>
+                        <h5 class="card-title">Sales advisor</h5>
+                        <h5 class="lead">{{ car.sales_person }}</h5>
                         <h6 class="text-secondary"><i class="fa-solid fa-phone"></i> {{ car.sales_person.phone }}</h6>
                         <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i> {{ car.sales_person.email }}</h6>
                     </div>
