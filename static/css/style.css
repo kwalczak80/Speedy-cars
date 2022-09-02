@@ -64,3 +64,8 @@ footer {
   height: 30vh;
   object-fit: cover;
 }
+
+.fa-brands
+{ 
+  color: rgba(255,255,255,.55) !important;
+}
