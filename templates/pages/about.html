@@ -4,12 +4,12 @@
 {% load static %}
 
 {% block content %}
-<section id="showcase-inner" class="py-5 text-white">
+<section class="py-5">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
           <h1 class="display-4">Welcome to Speedy Cars</h1>
-          <p class="lead">We are based on the Main Road, Clonmel Town and supply quality, affordable used cars for sale.</p>
+          <p class="lead">We are based on the Main Street, Clonmel Town and supply quality, affordable used cars for sale.</p>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
     <h2 class="display-5">Customer satisfaction above all else</h2>
     <h5>We take great pleasure in being able to guide each of every one of our customers, whether new or returning, through every part of the vehicle ownership lifecycle. </h5>
     <hr>
-    <a href="{% url 'cars' %}" class="btn btn-secondary text-white btn-lg mb-3">View Our Full Cars Stock</a>
+    <a href="{% url 'cars' %}" class="btn btn-info fw-bold text-dark btn-lg mb-3">View Our Full Cars Stock</a>
   </section>
 
   <!-- Team -->
@@ -96,7 +96,7 @@
 
           {% else %}
           <div class="col-md-12">
-            <p>No employees available</p>
+            <p>No employees available to view.</p>
           </div>
           {% endif %}
       </div>
