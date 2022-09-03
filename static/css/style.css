@@ -80,6 +80,20 @@ ul.list-inline {
   margin-bottom: 0;
 }
 
+/* Business Opening Hours Section */
 .business-hours {
-background: rgb(214, 214, 205);
-}
+  background:#212529;
+  padding: 1.5rem 1rem;
+  color: rgba(255,255,255,.55);
+  }
+
+.business-hours li {
+  line-height: 30px;
+  border-bottom: 1px solid #333; 
+  }
+.business-hours li:last-child {
+  border-bottom: none; 
+  }
+.business-hours .opening-hours li.today {
+  color: #ffac0c; 
+  }
