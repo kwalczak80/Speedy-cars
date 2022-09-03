@@ -28,4 +28,13 @@ def search(request):
     }
     return render(request, 'pages/search.html', context)
 
+def error_404(request, exception):
+    """ 404 error page """
+    return render(request, 'pages/404.html', status=404)
+
+
+def error_500(request):
+    """ 500 error page """
+    return render(request, 'pages/500.html', status=500)
+
 
