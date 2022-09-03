@@ -12,20 +12,19 @@
             </ul>
             {% if user.is_authenticated %}
             <ul class="navbar-nav">
-                <li {% if 'dashboard' in reqest.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3"
-                    {% endif %}>
+                <li class="nav-item active mr-3 px-3">
                     <a href="{% url 'dashboard' %}" class="nav-link active">
                         Welcome {{ user.username }} (Dashboard)</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">
+                <li class="nav-item px-3"><a class="nav-link" href="{% url 'account_logout' %}">
                         <i class="fa-solid fa-right-to-bracket"></i>Logout</a>
                 </li>
                 {% else %}
-                <li class="nav-item px-3">
+                <li class="nav-item px-3 py-3">
                     <a href="{% url 'account_login' %}" class="nav-link">
                         <i class="fa-solid fa-right-to-bracket"></i>Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item px-3">
                     <a href="{% url 'account_signup' %}" class="nav-link">
                         <i class="fa-solid fa-user-plus"></i> Register</a>
                 </li>
