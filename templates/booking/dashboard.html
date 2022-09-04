@@ -11,14 +11,14 @@
       <div class="col-md-12">
         <h2>Welcome {{ user.username }}</h2>
         {% if booking %}
-        <p>Here are the booked test drives that you have made with Speedy Cars</p>
+        <p class="lead">Here are the booked test drives that you have made with Speedy Cars</p>
         
           {% for item in booking %}
 
           <div class="row">
             <div class="col-md-8">
-              <div>Car: {{ item.car }}</div>
-              <div>Test Drive Date: {{ item.date | date:"D d M Y" }}</div>
+              <div><strong>Car: {{ item.car }}</strong></div>
+              <div><strong>Test Drive Date: {{ item.date | date:"D d M Y" }}</strong></div>
             </div>
             <div class="col-md-4 d-flex justify-content-evenly">
               <a class="btn btn-info" href="{% url 'car' item.car_id %}">View</a>
@@ -30,7 +30,7 @@
           {% endfor %}
        
         {% else %}
-        <p>You nave not booked any test drives yet.</p>
+        <h3>You nave not booked any test drives yet.</h3>
         {% endif %}
       </div>
     </div>
