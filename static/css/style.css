@@ -13,6 +13,9 @@ body {
     overflow: hidden;
   }
 */
+a.btn {
+  margin: auto;
+}
 
 li.nav-item{
    list-style: none;
