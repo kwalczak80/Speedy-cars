@@ -174,11 +174,11 @@
                     <input type="hidden" name="car_id" value="{{ car.id }}">
                     <div class="mb-3">
                         <label for="car" class="form-label">Car:</label>
-                        <input type="text" name="car" class="form-control" value="{{ car.title }}">
+                        <input type="text" name="car" class="form-control" value="{{ car.title }}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
-                        <input type="text" name="name" class="form-control" value="{{ user.username }}" required>
+                        <input type="text" name="name" class="form-control" value="{{ user.username }}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
@@ -191,7 +191,7 @@
                     <div class="mb-3">
                         <label for="date" class="form-label">Select date of your test drive</label>
                         <div class="input-group date" id="datepicker">
-                            <input type="text" class="form-control" name="date">
+                            <input type="text" class="form-control" name="date" required readonly>
                             <span class="input-group-append">
                                 <span class="input-group-text bg-white d-block">
                                     <i class="fa fa-calendar"></i>
