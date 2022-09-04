@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Orbitron:wght@500&display=swap');
+
 body {
   background-color: lightgray;
+  font-family: 'Abel', sans-serif;
 }
 
-/*Background video
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-*/
+#nav-bar {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+}
+
+#slogan h1{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+}
+
+#dealer-name {
+  font-family: 'Orbitron', sans-serif;
+}
+
+#dealer-name {
+  font-size: 2rem;
+  color: #ffac0c;
+}
+
+#slogan h1 {
+ -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-color: #1c1c1c;
+ -webkit-text-fill-color: #ffac0c;
+}
+
+
 a.btn {
   margin: auto;
 }
