@@ -6,140 +6,128 @@
 <!-- Serach results -->
 
 <section>
-    <div class="container-lg">
-      <div class="text-center">
-        <h1>Car Searching Just Got So Easy</h1>
-        <p class="lead">
-          To find a car that meets your requirements, please complete the form below.
-        </p>
-      </div>
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-          <form action="{% url 'search_results' %}">
-            <div class="mb-1">
-              <input type="text" class="form-control" name="keywords" placeholder="Keyword (Make, Model, Fuel Type, etc)"
-                value="{{ values.keywords }}" />
-            </div>
-            <div class="mb-1">
-              <select name="make" class="form-select">
-                <option selected="true" disabled="disabled">Make (All)</option>
-                {% for key,value in make_choices.items %}
-                <option value="{{ key }}" {% if key == values.make %} selected {% endif %}>{{ value }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="mb-1">
-              <select name="fuel_type" class="form-select">
-                <option selected="true" disabled="disabled">Fuel Type (All)</option>
-                {% for key,value in fuel_type_choices.items %}
-                <option value="{{ key }}" {% if key == values.fuel_type %} selected {% endif %}>{{ value }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="mb-1">
-              <select name="body_type" class="form-select">
-                <option selected="true" disabled="disabled">Body Type (Any)</option>
-                {% for key,value in body_type_choices.items %}
-                <option value="{{ key }}"
-                {% if key == values.body_type %}
-                selected
-            {% endif %}               
-                >{{ value }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="mb-1">
-              <select name="engine_size" class="form-select">
-                <option selected="true" disabled="disabled">Engine Size (Any)</option>
-                {% for key,value in engine_size_choices.items %}
-                <option value="{{ key }}"
-                {% if key == values.engine_size %}
-                selected
-            {% endif %}              
-                >{{ value }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="mb-3">
-              <select name="price" class="form-select">
-                <option selected="true" disabled="disabled">Price (Any)</option>
-                {% for key,value in price_choices.items %}
-                <option value="{{ key }}"
-                {% if key == values.price %}
-                selected
-            {% endif %}               
-                >{{ value }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-secondary" type="submit">Search</button>
-            </div>
-          </form>
-        </div>
+  <div class="container-lg mt-3">
+    <div class="text-center">
+      <h1>Car Searching Just Got So Easy</h1>
+      <p class="lead">
+        To find a car that meets your requirements, please complete the form below.
+      </p>
+    </div>
+    <div class="row justify-content-center my-5">
+      <div class="col-lg-6">
+        <form action="{% url 'search_results' %}">
+          <div class="mb-1">
+            <input type="text" class="form-control" name="keywords" placeholder="Keyword (Make, Model, Fuel Type, etc)"
+              value="{{ values.keywords }}" />
+          </div>
+          <div class="mb-1">
+            <select name="make" class="form-select">
+              <option selected="true" disabled="disabled">Make (All)</option>
+              {% for key,value in make_choices.items %}
+              <option value="{{ key }}" {% if key == values.make %} selected {% endif %}>{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="mb-1">
+            <select name="fuel_type" class="form-select">
+              <option selected="true" disabled="disabled">Fuel Type (All)</option>
+              {% for key,value in fuel_type_choices.items %}
+              <option value="{{ key }}" {% if key == values.fuel_type %} selected {% endif %}>{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="mb-1">
+            <select name="body_type" class="form-select">
+              <option selected="true" disabled="disabled">Body Type (Any)</option>
+              {% for key,value in body_type_choices.items %}
+              <option value="{{ key }}" {% if key == values.body_type %} selected {% endif %}>{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="mb-1">
+            <select name="engine_size" class="form-select">
+              <option selected="true" disabled="disabled">Engine Size (Any)</option>
+              {% for key,value in engine_size_choices.items %}
+              <option value="{{ key }}" {% if key == values.engine_size %} selected {% endif %}>{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="mb-3">
+            <select name="price" class="form-select">
+              <option selected="true" disabled="disabled">Price (Any)</option>
+              {% for key,value in price_choices.items %}
+              <option value="{{ key }}" {% if key == values.price %} selected {% endif %}>{{ value }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="d-grid text-center">
+            <button class="btn btn-warning" type="submit">Search</button>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Cars-->
 <section class="py-4">
-    <div class="container">
-        <div class="row">
-            {% if cars %}
-            {% for car in cars %}
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="{{ car.photo_main.url }}" alt="Photo of the car">
-                    <div class="card-img-overlay">
-                        <h2>
-                            <span class="badge bg-success text-white">€ {{ car.price | intcomma }}</span>
-                        </h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title text-center">
-                            <h4 class="text-primary">{{ car.title }}</h4>
-                        </div>
-                        <hr>
-                        <div class="row py-2 text-secondary">
-                            <div class="col-6">
-                                <i class="fa-solid fa-gas-pump"></i> {{ car.fuel_type }}</div>
-                            <div class="col-6">
-                                <i class="fas fa-car"></i> {{ car.engine_size }}</div>
-                        </div>
-                        <div class="row py-2 text-secondary">
-                            <div class="col-6">
-                                <i class="fa-solid fa-gauge"></i> {{ car.milage }} km</div>
-                            <div class="col-6">
-                                <i class="fa-solid fa-calendar-days"></i> {{ car.year }}</div>
-                        </div>
-                        <div class="row py-2 text-secondary">
-                            <div class="col-6">
-                                <i class="fa-solid fa-gears"></i> {{ car.transmission }}</div>
-                            <div class="col-6">
-                                <i class="fa-solid fa-car-side"></i> {{ car.body_type }}</div>
-                        </div>
-                        <hr>
-                        <div class="row text-secondary pb-2">
-                            <div class="col-6">
-                                <i class="fas fa-clock"></i> Posted: {{ car.date | date:"d M Y" }}</div>
-                        </div>
-                        <hr>
-                        <div class="row text-center">
-                            <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block">More Info</a>
-                        </div>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      {% if cars %}
+      {% for car in cars %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="{{ car.photo_main.url }}" alt="Photo of the car">
+          <div class="card-img-overlay">
+            <h2>
+              <span class="badge bg-success text-white">€ {{ car.price | intcomma }}</span>
+            </h2>
+          </div>
+          <div class="card-body">
+            <div class="card-title text-center">
+              <h4 class="text-primary">{{ car.title }}</h4>
             </div>
-            {% endfor %}
-            {% else %}
-            <div class="container-lg">
-                <div class="text-center text-danger">
-                    <h4>No cars have been found.</h4>
-                    <h4>Please change your search criteria.</h4>
-                </div>
+            <hr>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fa-solid fa-gas-pump"></i> {{ car.fuel_type }}</div>
+              <div class="col-6">
+                <i class="fas fa-car"></i> {{ car.engine_size }}</div>
             </div>
-            {% endif %}
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fa-solid fa-gauge"></i> {{ car.milage }} km</div>
+              <div class="col-6">
+                <i class="fa-solid fa-calendar-days"></i> {{ car.year }}</div>
+            </div>
+            <div class="row py-2 text-secondary">
+              <div class="col-6">
+                <i class="fa-solid fa-gears"></i> {{ car.transmission }}</div>
+              <div class="col-6">
+                <i class="fa-solid fa-car-side"></i> {{ car.body_type }}</div>
+            </div>
+            <hr>
+            <div class="row text-secondary pb-2">
+              <div class="col-6">
+                <i class="fas fa-clock"></i> Posted: {{ car.date | date:"d M Y" }}</div>
+            </div>
+            <hr>
+            <div class="row text-center">
+              <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
         </div>
+      </div>
+      {% endfor %}
+      {% else %}
+      <div class="container-lg">
+        <div class="text-center text-danger">
+          <h4>No cars have been found.</h4>
+          <h4>Please change your search criteria.</h4>
+        </div>
+      </div>
+      {% endif %}
     </div>
+  </div>
 </section>
 {% endblock %}
