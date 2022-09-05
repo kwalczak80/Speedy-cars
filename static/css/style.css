@@ -5,9 +5,12 @@ body {
   font-family: 'Abel', sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 #nav-bar {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.5rem;
 }
 
 #slogan h1{
@@ -114,4 +117,13 @@ ul.list-inline {
   }
 .business-hours .opening-hours li.today {
   color: #ffac0c; 
+  }
+
+@media only screen and (min-width: 768px) {
+    html {
+      font-size: 1.2rem;
+    }
+    #nav-bar {
+      font-size: 1.2rem;
+    }
   }
