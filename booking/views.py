@@ -38,6 +38,7 @@ def cancellation(request, booking_id):
     booking_cancellation = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
         booking_cancellation.delete()
+        messages.add_message(request, messages.INFO, 'Your test drive has been cancelled !!!')
         return redirect('dashboard')
     return render(request, 'booking/booking_cancellation.html')
 
