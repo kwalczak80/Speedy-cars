@@ -15,10 +15,15 @@ def booking(request):
         message = request.POST['message']
         user_id = request.POST['user_id']
         car_id = request.POST['car_id']
+        test_drive_booked = Booking.objects.all().filter(car_id=car_id, user_id=user_id)
+        if test_drive_booked:
+            messages.add_message(request, messages.ERROR,
+            "You have booked a test drive with this car already !!")
+            return redirect('/cars/'+car_id)
         if date >= datetime.today().strftime('%Y-%m-%d'):
             booking_obj = Booking(car=car, name=name, email=email, phone=phone, date=date, message=message, user_id=user_id, car_id=car_id)
             booking_obj.save()
-            messages.add_message(request, messages.INFO, 'Congratulations !! You have booked your test drive succesfuly !!')
+            messages.add_message(request, messages.SUCCESS, 'Congratulations !! You have booked your test drive succesfuly !!')
             return redirect('/cars/'+car_id)
         else:
             messages.add_message(request, messages.WARNING, 'Please select correct date!!')
