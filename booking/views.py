@@ -19,10 +19,10 @@ def booking(request):
             booking_obj = Booking(car=car, name=name, email=email, phone=phone, date=date, message=message, user_id=user_id, car_id=car_id)
             booking_obj.save()
             messages.add_message(request, messages.INFO, 'Congratulations !! You have booked your test drive succesfuly !!')
-            return redirect('/cars')
+            return redirect('/cars/'+car_id)
         else:
             messages.add_message(request, messages.WARNING, 'Please select correct date!!')
-            return redirect('/cars')
+            return redirect('/cars/'+car_id)
 
 
 
