@@ -73,7 +73,7 @@
                     </div>
                     {% endif %}
                 </div>
-                <!-- Fields -->
+                <!-- Car Info -->
                 <div class="row mb-3 fields">
                     <div class="col-md-6">
                         <ul class="list-group list-group-flush">
@@ -125,7 +125,7 @@
                     </div>
                 </div>
 
-                <!-- Description -->
+                <!-- Sales Excecutive -->
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <div class="text-center">
@@ -139,7 +139,7 @@
                 <div class="card mb-3">
                     <img class="card-img-top photo" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales advisor">
                     <div class="card-body">
-                        <h5 class="card-title">Sales Excecutive</h5>
+                        <h5 class="card-title">{{ car.sales_person.description }}</h5>
                         <h5 class="lead">{{ car.sales_person }}</h5>
                         <h6 class="text-secondary"><i class="fa-solid fa-phone"></i> {{ car.sales_person.phone }}</h6>
                         <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i> {{ car.sales_person.email }}</h6>
