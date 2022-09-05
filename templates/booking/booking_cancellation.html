@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} | Page not found {% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="container text-center">
+    <h1 class="display-4">Do you really want to cancel your test drive ?</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger" value="YES">
+        <a class="btn btn-info" href={% url 'dashboard' %}>Cancel</a>
+    </form>
+</div>
+{% endblock %}
