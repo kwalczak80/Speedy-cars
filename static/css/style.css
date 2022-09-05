@@ -4,11 +4,11 @@ body {
   background-color: lightgray;
   font-family: 'Abel', sans-serif;
 }
-
+/*
 html {
 	font-size: 62.5%;
 }
-
+*/
 #nav-bar {
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -118,7 +118,7 @@ ul.list-inline {
 .business-hours .opening-hours li.today {
   color: #ffac0c; 
   }
-
+/*
 @media only screen and (min-width: 768px) {
     html {
       font-size: 1.2rem;
@@ -127,3 +127,4 @@ ul.list-inline {
       font-size: 1.2rem;
     }
   }
+  */
