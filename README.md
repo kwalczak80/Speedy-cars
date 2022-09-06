@@ -192,6 +192,32 @@ Car model
 - The car model contains a collection of data for each car dislpayed on the website. This model is being used by the business owner (via admin panel) each time when a new car is added.
 - The model contains the following fields: sales_person(each car has assigned sales advisor - foreign key from employee model),title, make, model, price, fuel type, transmission, body type, year, engine size, milage, description, previous owners, road tax, nct, is for sale(this determines if the car displayed on the website or not), photo main, photo 1, photo 2, photo 3, photo 4, photo 5, photo 6, date.
 
+| Name | Key | Type | Other Details |
+| -- | -- | -- | -- |
+| sales_person | FK from Employee |  | IntegerField |
+| title| | CharField | Max length 300 Set default as ''|
+| make | | CharField | Max length 50 Set default as 'Audi'|
+| model || CharField | Max length 50 |
+| price ||IntegerField| Set default as 1 |
+| fuel_type ||CharField| Set default as 'Petrol' |
+| transmission ||CharField| Set default as 'Manual |
+| body_type ||CharField| Set default as 'Coupe' |
+| year||IntegerField| Set default - current year |
+| engine_size ||CharField| Set default as '1.0 L' |
+| milage ||IntegerField| Set default as 1 |
+| description ||TextField| Set default as '' |
+| previous_owners ||IntegerField| Set default as 1 |
+| road_text ||IntegerField| Set default as 1 |
+| is_for_sale ||BooleanField| Set default as True |
+| photo_main ||CloudinaryField|  |
+| photo_1 ||CloudinaryField|  |
+| photo_2 ||CloudinaryField|  |
+| photo_3 ||CloudinaryField|  |
+| photo_4 ||CloudinaryField|  |
+| photo_5 ||CloudinaryField|  |
+| photo_6 ||CloudinaryField|  |
+| date ||DateField| Set default as now(timestamp) |
+
 Booking model
 
 - The Booking model contains a collection of data submitted by the user when booking a test drive.
