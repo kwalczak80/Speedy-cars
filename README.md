@@ -240,6 +240,9 @@ Employee model
 
 ### Responsive design
 
+
+### Homepage
+
 ### Navigation Menu
 
 Depending on whether the user is logged in or not, different links are made available in the completely responsive navbar.
@@ -271,16 +274,22 @@ Depending on whether the user is logged in or not, different links are made avai
 ![Navbar for hover effect](docs/images/existing-features/navigation-bar-hover-effect.JPG)
 ![Navbar for hover efect mobile](docs/images/existing-features/navigation-bar-hover-effect-mobile.JPG)
 
-### Homepage,
+### Cars page
 
-### Dashboard,
+### Pagination
 
-### About page,
+### Dashboard
 
-- Cars page,
-- Pagination,
-- Car details,
-- Footer,
+### About page
+
+### Car details page
+
+### Footer
+
+Footer is kept very simple as set of links and the businnes name. Footer layout remians the same on all screen sizes.
+
+![Footer](docs/images/existing-features/footer.JPG)
+
 - Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
 - Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality),
 - Customized Admin (the business owner) panel,
