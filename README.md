@@ -223,6 +223,17 @@ Booking model
 - The Booking model contains a collection of data submitted by the user when booking a test drive.
 - The model contains the following fields: car, car_id, name, email, phone, date, message, user_id (this is displayed in admin).
 
+| Name | Key | Type | Other Details |
+| -- | -- | -- | -- |
+| car | | CharField | Max length 100 |
+| car_id | | IntegerField | Set default date as 0 |
+| name | | CharField | Max length 200|
+| email || CharField | Max length 100 |
+| phone || CharField | Max length 100 |
+| date || DateField | Set default date as today's date |
+| meassage || TextField | |
+| user_id || IntegerField | Set default date as 0 |
+
 Employee model
 
 - The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
