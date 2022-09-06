@@ -134,24 +134,6 @@ The information architecture was organized in such a way as to ensure that users
 
 ![Site Map](docs/site_map/speedy_cars_site_map.jpg)
 
-## Features
-
-- Responsive design,
-- Navigation Menu,
-- Postgress databases to store information and user login/profile information,
-- Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
-- Dashboard page where logged-in users can view/edit/cancel existing test drives (CRUD Functionality),
-- Customized Admin (the business owner) panel,
-- Admin panel - ability to add a new car
-- Admin panel - ability to add a new employee
-- Admin panel - ability to review booked driving tests
-- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
-- The search page where user can find a car with specific searching criteria,
-- Search form "remembers" options selected by the user,
-- Dynamic page titles,
-- Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
-- Messages system to provide feedback to the user
-
 ## Structure
 
 ### Code Structure
@@ -246,12 +228,39 @@ Employee model
 | email || CharField | Max length 50 |
 | hire_date || DateTimeField | Set default date as now |
 
+## Design Choices
+
+### Fonts
+
+### Colours
+
+
+
+## Features
+
+- Responsive design,
+- Navigation Menu,
+- Postgress databases to store information and user login/profile information,
+- Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
+- Dashboard page where logged-in users can view/edit/cancel existing test drives (CRUD Functionality),
+- Customized Admin (the business owner) panel,
+- Admin panel - ability to add a new car
+- Admin panel - ability to add a new employee
+- Admin panel - ability to review booked driving tests
+- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
+- The search page where user can find a car with specific searching criteria,
+- Search form "remembers" options selected by the user,
+- Dynamic page titles,
+- Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
+- Messages system to provide feedback to the user
+
+
 ## Technologies Used
 
 ### Languages
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/)
