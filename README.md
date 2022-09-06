@@ -194,7 +194,7 @@ Car model
 
 | Name | Key | Type | Other Details |
 | -- | -- | -- | -- |
-| sales_person | FK from Employee |  | IntegerField |
+| sales_person | FK from Employee | IntegerField |  |
 | title| | CharField | Max length 300 Set default as ''|
 | make | | CharField | Max length 50 Set default as 'Audi'|
 | model || CharField | Max length 50 |
@@ -227,6 +227,14 @@ Employee model
 
 - The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
 - The model contains the folowing fields: name, photo, description, email, phone, hire date. .  
+
+| Name | Key | Type | Other Details |
+| -- | -- | -- | -- |
+| name | | CharField | Max length 100 Set default as '' |
+| photo | | CloudinaryField | |
+| description | | TextField | Set default as ''|
+| email || CharField | Max length 50 |
+| hire_date || DateTimeField | Set default date as now |
 
 ## Technologies Used
 
