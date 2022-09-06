@@ -12,7 +12,7 @@ The primary goal of the website from the site owner’s perspective is as follow
 - To allow a user to book a test drive
 - To allow a user to easily search a car they are looking for
 - Ability to add a new car for sale
-- ** To allow a user to read testimonials about the Speedy Cars
+- To allow a user to read testimonials about the Speedy Cars
 
 The primary goal of the website from a site user’s perspective is as follows:
 
@@ -23,7 +23,7 @@ The primary goal of the website from a site user’s perspective is as follows:
 - To make an inquiry about the car
 - To view opening hours and address
 - To read more about the business
-- ** To view other customer’s testimonials about Speedy Cars
+- To view other customer’s testimonials about Speedy Cars
 
 ## User Requirements and Expectations
 
@@ -49,7 +49,7 @@ The primary goal of the website from a site user’s perspective is as follows:
 - As a user, I want to be able to navigate the website quickly and easily.
 - As a user, I want to be able to use the search option to find the car I’m looking for.
 - As a user, I want to be able to view the price of the cars.
-- **As a user, I want to be able to read other user’s testimonials.
+- As a user, I want to be able to read other user’s testimonials.
 - As a user, I want to be able to make an inquiry about the car.
 - As a user, I want to be able to book a test drive.
 - As a user, I want to be able to edit or delete a test drive I have made.
@@ -79,12 +79,11 @@ The primary goal of the website from a site user’s perspective is as follows:
 - As a site owner, I want users to be able to log out of their account.
 - As a site owner, I want to be able to add new cars or remove if sold.
 - As a site owner, I want users to be able to view the business’ social media.
-- ** As a logged-in administrator, I want to be able to add testimonials.
+- As a logged-in administrator, I want to be able to add testimonials.
 
 ### Error Flow
 
 - In the event that the desired page cannot be located, the user should be able to return through the website's navigational structure without hitting the back button on their browser
-
 
 ## Kanban dashboard
 
@@ -314,7 +313,7 @@ Employee model
   - For problem solving and code searching.
 - [Font Awesome](https://fontawesome.com/)
   - Font Awesome was used to add icons that represent links to social media.
--  [PEP8 validator](http://pep8online.com/)
+- [PEP8 validator](http://pep8online.com/)
   - For checking python convention.
 
 ## Bugs
