@@ -237,9 +237,9 @@ As I wanted a more attractive and dynamic home page, I decided to use a video as
 
 I visited the Google fonts website to explore available font options for my project. After consideration, three different font types were chosen to be used in different sections of the website.
 
-- Bebas Neue font is used in navigation bar and to display the slogan on the home page.
-- The Orbitron font is used to display the business name on the navbar.
-- Abel font is used to display all other text information.
+- The [Bebas Neue font](https://fonts.google.com/?query=bebas "Bebas Neue font") font is used in navigation bar and to display the slogan on the home page.
+- The [Orbitron font](https://fonts.google.com/?query=orbitron "Orbitron font") font is used to display the business name in the navbar.
+- The [Abel font](https://fonts.google.com/?query=abel "Abel font") font is used to display all other text information.
 
 ### Colours
 
