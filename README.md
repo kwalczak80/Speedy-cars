@@ -227,6 +227,8 @@ Employee model
 
 ## Design Choices
 
+As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that in my opinion was perfect for this project. The clip used in the project reflects the theme of the site very well and at the same time does not distract the user's attention from other parts of the site, so I decided to use it as a looped video background for the site.
+
 ### Fonts
 
 ### Colours
@@ -239,6 +241,12 @@ Employee model
 
 
 ### Homepage
+
+The home page is a simple set of navigation elements, background video and a short slogan displayed on the screen.
+
+The video background fits perfectly into the context of the project and the purpose of the website.
+![Home page](docs/images/existing-features/homepage/home-page.JPG)
+
 
 ### Navigation Menu
 
