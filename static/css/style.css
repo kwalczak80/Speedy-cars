@@ -56,7 +56,6 @@ a.nav-link:hover {
 }
 #slogan {
   margin-top: 70vh;
-  color: rgb(233, 230, 230);
 }
 
 div.card-img-overlay {
@@ -116,8 +115,22 @@ ul.list-inline {
   color: #ffac0c; 
   }
 
+@media only screen and (max-width: 320px) {
+    #slogan h1{
+      font-size: 2rem;
+    }
+    #nav-bar {
+      font-size: 1rem;
+    }
+    #dealer-name {
+      font-size: 1.2rem;
+    }
+  }
+
 @media only screen and (min-width: 768px) {
     #nav-bar {
       font-size: 1.5rem;
     }
   }
+
+
