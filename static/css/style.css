@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Orbitron:wght@500&display=swap');
 
 body {
-  background-color: lightgray;
+  background-color: rgb(212, 209, 209);
   font-family: 'Abel', sans-serif;
 }
-/*
-html {
-	font-size: 62.5%;
-}
-*/
+
 #nav-bar {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.2rem;
