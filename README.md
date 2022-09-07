@@ -243,6 +243,16 @@ I visited the Google fonts website to explore available font options for my proj
 
 ### Colours
 
+- #ffac0c - dealer name
+- #d4d1d1 - background color
+- #212529 - navbar and footer background color
+- #ffffff - cards background color
+- #ffffff8c - navbar, footer and cards text color
+- #008ed6 - hover effect color
+
+
+
+
 
 
 ## Features
