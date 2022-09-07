@@ -227,9 +227,19 @@ Employee model
 
 ## Design Choices
 
-As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that in my opinion was perfect for this project. The clip used in the project reflects the theme of the site very well and at the same time does not distract the user's attention from other parts of the site, so I decided to use it as a looped video background for the site.
+### Home page background
+
+As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that, in my opinion, was perfect for this project. The clip used in the project reflects the theme of the site very well and, at the same time, does not distract the user's attention from other parts of the site, so I decided to use it as a looped video background for the site.
+
+![Home page background](docs/images/existing-features/homepage/home-page-video-background.gif)
 
 ### Fonts
+
+I visited the Google fonts website to explore available font options for my project. After consideration, three different font types were chosen to be used in different sections of the website.
+
+- Bebas Neue font is used in navigation bar and to display the slogan on the home page.
+- The Orbitron font is used to display the business name on the navbar.
+- Abel font is used to display all other text information.
 
 ### Colours
 
@@ -246,6 +256,7 @@ The home page is a simple set of navigation elements, background video and a sho
 
 The video background fits perfectly into the context of the project and the purpose of the website.
 ![Home page](docs/images/existing-features/homepage/home-page.JPG)
+![Home page](docs/images/existing-features/homepage/home-page-mobile.JPG)
 
 
 ### Navigation Menu
@@ -260,8 +271,8 @@ Depending on whether the user is logged in or not, different links are made avai
   - Login - *link to the login page*
   - Register - *link to the user registration page*
 
-![Navbar for not signed in user](docs/images/existing-features/navigation-bar-user-not-signed-in.JPG)
-![Navbar for not signed in user mobile](docs/images/existing-features/navigation-bar-user-not-signed-in-mobile.JPG)
+![Navbar for not signed in user](docs/images/existing-features/navbar/navigation-bar-user-not-signed-in.JPG)
+![Navbar for not signed in user mobile](docs/images/existing-features/navbar/navigation-bar-user-not-signed-in-mobile.JPG)
 
 - For a user that is signed in, the following options are available:
   - Home *link to the home page*
@@ -271,13 +282,13 @@ Depending on whether the user is logged in or not, different links are made avai
   - Welcome User Name (dashboard) - *link to the dashboard page*
   - Logout - *link to the logout page*
 
-![Navbar for signed in user](docs/images/existing-features/navigation-bar-user-signed-in.JPG)
-![Navbar for signed in user mobile](docs/images/existing-features/navigation-bar-user-signed-in-mobile.JPG)
+![Navbar for signed in user](docs/images/existing-features/navbar/navigation-bar-user-signed-in.JPG)
+![Navbar for signed in user mobile](docs/images/existing-features/navbar/navigation-bar-user-signed-in-mobile.JPG)
 
 - A hover effect is implemented to visually highlight menu links(except dash board link) when the user hovers over them.
 
-![Navbar for hover effect](docs/images/existing-features/navigation-bar-hover-effect.JPG)
-![Navbar for hover efect mobile](docs/images/existing-features/navigation-bar-hover-effect-mobile.JPG)
+![Navbar for hover effect](docs/images/existing-features/navbar/navigation-bar-hover-effect.JPG)
+![Navbar for hover efect mobile](docs/images/existing-features/navbar/navigation-bar-hover-effect-mobile.JPG)
 
 ### Cars page
 
