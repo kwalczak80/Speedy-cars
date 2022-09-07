@@ -10,8 +10,8 @@ class BookingForm(forms.ModelForm):
 
         fields = ['car', 'name', 'email', 'phone', 'date', 'message']
         widgets = {
-            'car': forms.TextInput(attrs={'class': 'form-control'}),
-            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'car': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
             'email': forms.TextInput(attrs={'class': 'form-control'}),
             'phone': forms.TextInput(attrs={'class': 'form-control'}),
             'date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
