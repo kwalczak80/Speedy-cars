@@ -304,7 +304,7 @@ Depending on whether the user is logged in or not, different links are made avai
 
 Footer is kept very simple as set of links and the businnes name. Footer layout remians the same on all screen sizes.
 
-![Footer](docs/images/existing-features/footer.JPG)
+![Footer](docs/images/existing-features/footer/footer.JPG)
 
 - Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
 - Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality),
