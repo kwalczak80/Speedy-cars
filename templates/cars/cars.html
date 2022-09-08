@@ -22,7 +22,7 @@
             {% for car in cars %}
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{ car.photo_main.url }}" alt="Photo of the car">
+                    <img class="card-img-top img-fluid" src="{{ car.photo_main.url }}" alt="Photo of the car">
                     <div class="card-img-overlay">
                         <h2>
                             <span class="badge bg-success text-white">€ {{ car.price | intcomma }}</span>

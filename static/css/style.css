@@ -125,12 +125,17 @@ ul.list-inline {
     #dealer-name {
       font-size: 1.2rem;
     }
+    .card-img-top {
+      object-fit: cover;
+    }
   }
 
 @media only screen and (min-width: 768px) {
     #nav-bar {
       font-size: 1.5rem;
     }
+
+    
   }
 
 
