@@ -42,6 +42,7 @@ class Car(models.Model):
                                     default=TRANSMISSION[0][0])
     BODY_TYPE = (
         ('Coupe', 'Coupe'),
+        ('Cabriolet', 'Cabriolet'),
         ('Saloon', 'Saloon'),
         ('Hatchback', 'Hatchback'),
         ('Estate', 'Estate'),

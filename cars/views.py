@@ -6,7 +6,7 @@ from .models import Car
 
 def index(request):
     cars = Car.objects.order_by('-date').filter(is_for_sale=True)
-    paginator = Paginator(cars, 3)
+    paginator = Paginator(cars, 6)
     page = request.GET.get('page')
     paged_cars = paginator.get_page(page)
 
