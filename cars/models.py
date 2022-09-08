@@ -14,6 +14,7 @@ class Car(models.Model):
         ('Bmw', 'Bmw'),
         ('Citroen', 'Citroen'),
         ('Ford', 'Ford'),
+        ('Kia', 'Kia'),
         ('Mazda', 'Mazda'),
         ('Skoda', 'Skoda'),
         ('Toyota', 'Toyota'),
