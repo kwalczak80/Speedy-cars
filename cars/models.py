@@ -77,7 +77,7 @@ class Car(models.Model):
     description = models.TextField(default='')
     previous_owners = models.IntegerField(default=1)
     road_tax = models.IntegerField(default=1)
-    nct = models.DateField(auto_now=True)
+    nct = models.DateField(default=datetime.date.today)
     is_for_sale = models.BooleanField(default=True)
     photo_main = CloudinaryField('image')
     photo_1 = CloudinaryField('image', blank=True)
