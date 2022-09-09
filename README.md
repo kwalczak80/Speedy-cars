@@ -332,7 +332,49 @@ A hover effect is implemented if the user hovers over the social media links
 
 ### Dynamic page titles
 
-Each page has an individual name located on the tab which can help the user quickly fing out on which page they are currently on
+Each page has an individual name located on the tab which can help the user quickly find out on which page they are currently on
+
+- Home page
+
+![Home page tab](docs/images/existing-features/dynamic-page-titles/home-page.JPG)
+
+- Cars page
+
+![Cars page tab](docs/images/existing-features/dynamic-page-titles/cars-page.JPG)
+
+- Car page
+
+![Car page tab](docs/images/existing-features/dynamic-page-titles/car-page.JPG)
+
+- About page
+
+![About us page tab](docs/images/existing-features/dynamic-page-titles/about-us-page.JPG)
+
+- Search page
+
+![Search page tab](docs/images/existing-features/dynamic-page-titles/search-page.JPG)
+
+- Dashboard page
+
+![Dashboard page tab](docs/images/existing-features/dynamic-page-titles/dashboard-page.JPG)
+
+- Login page
+
+![Login page tab](docs/images/existing-features/dynamic-page-titles/login-page.JPG)
+
+- Logout page
+
+![Logout page tab](docs/images/existing-features/dynamic-page-titles/logout-page.JPG)
+
+- Register page
+
+![Register page tab](docs/images/existing-features/dynamic-page-titles/register-page.JPG)
+
+
+
+
+
+
 
 - Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
 - Messages system to provide feedback to the user
