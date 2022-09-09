@@ -316,6 +316,10 @@ Footer is kept very simple as set of links and the businnes name. Footer layout 
 
 ![Footer](docs/images/existing-features/footer/footer.JPG)
 
+A hover effect is implemented if the user hovers over the social media links
+
+![Footer hover effect](docs/images/existing-features/footer/footer-hover-effect.JPG)
+
 - Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
 - Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality),
 - Customized Admin (the business owner) panel,
