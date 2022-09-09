@@ -74,20 +74,11 @@ footer {
   bottom:0;
   width: 100vw;
 }
-/*
-.card-img-top {
-  width: 100;
-  height: 30vh;
-  object-fit: cover;
+
+.fa-brands:hover {
+  color: aqua !important;;
 }
 
-
-.card-img-top.photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-*/
 .fa-brands
 { 
   color: rgba(255,255,255,.55) !important;
