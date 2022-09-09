@@ -370,13 +370,19 @@ Each page has an individual name located on the tab which can help the user quic
 
 ![Register page tab](docs/images/existing-features/dynamic-page-titles/register-page.JPG)
 
+### Thumbinals are presented on the screen using Lightbox to allow the user to view a car in details
 
+When the user clicks on the 'More info' button they will be redirected to the page to view more details about the car they interested about.
 
+![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
 
+On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail it will enlarge and the user will be able to scroll through all available images.
+The user can use the keyboard left or right keys or arrows keys presented on the screen to scroll through all available images.
 
+![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
 
+![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
 
-- Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
 - Messages system to provide feedback to the user
 - Authentication
 - Error handling(403 and 404 page)
