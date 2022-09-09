@@ -11,7 +11,8 @@ def booking(request):
         name = request.POST['name']
         email = request.POST['email']
         phone = request.POST['phone']
-        date = request.POST['date']        
+        test_drive_date = request.POST['date']
+        date = datetime.strptime(test_drive_date, "%d/%m/%Y").strftime('%Y-%m-%d')       
         message = request.POST['message']
         user_id = request.POST['user_id']
         car_id = request.POST['car_id']
