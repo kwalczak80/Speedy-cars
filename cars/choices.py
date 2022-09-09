@@ -3,6 +3,7 @@ make_choices = {
     'Bmw': 'Bmw',
     'Citroen': 'Citroen',
     'Ford': 'Ford',
+    'Kia': 'Kia',
     'Mazda': 'Mazda',
     'Skoda': 'Skoda',
     'Toyota': 'Toyota',
@@ -21,6 +22,7 @@ fuel_type_choices = {
 }
 
 body_type_choices = {
+    'Cabriolet': 'Cabriolet',
     'Coupe': 'Coupe',
     'Saloon': 'Saloon',
     'Hatchback': 'Hatchback',
@@ -57,5 +59,5 @@ price_choices = {
     '35000': '€35000',
     '40000': '€40000',
     '45000': '€45000',
-    '50000': '€50000+',
+    '80000': '€80000',
 }
