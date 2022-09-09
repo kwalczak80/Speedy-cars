@@ -329,7 +329,11 @@ A hover effect is implemented if the user hovers over the social media links
 - Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
 - The search page where user can find a car with specific searching criteria,
 - Preserving search inputs selected by the user,
-- Dynamic page titles,
+
+### Dynamic page titles
+
+Each page has an individual name located on the tab which can help the user quickly fing out on which page they are currently on
+
 - Thumbinals are presented on the screen using Lightbox to allow user to view a car in details,
 - Messages system to provide feedback to the user
 - Authentication
