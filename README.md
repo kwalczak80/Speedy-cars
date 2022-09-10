@@ -361,7 +361,7 @@ If the user has not booked any test drives, the appropriate information will be 
 
 ![Dashboard page no test drives booked](docs/images/existing-features/dashboard/dashboard-page-no-test-drives-booked.JPG)
 
-If the user has booked test drives, all the booked test drives will be displayed on the screen.
+If the user has booked test drives, all of them will be displayed on the screen.
 
 ![Dashboard page with booked test drives](docs/images/existing-features/dashboard/dashboard-page-with-booked-test-drives.JPG)
 
@@ -384,7 +384,19 @@ Important - Car and Name fields are not editable as the user name and the car ar
 
 ### About page
 
+On the "About" page, the user:
 
+- can read information about Speedy Cars' business.
+
+![Info about Speedy Cars](docs/images/existing-features/about-page/info-about-speedy-cars.JPG)
+
+- can check the business's opening hours and its location(a special script is implemented to highlight the current day of the week)
+
+![Info opening hours](docs/images/existing-features/about-page/info-about-opening-hours.JPG)
+
+- can find contact details for the people who are running the business in case of any queries.
+
+![Info about team](docs/images/existing-features/about-page/info-about-team.JPG)
 
 ### Footer
 
