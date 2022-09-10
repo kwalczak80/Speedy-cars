@@ -331,9 +331,22 @@ However, if the number of cars exceeds six, then the pagination is active(displa
 
 ![Pagination](docs/images/existing-features/pagination/pagination.JPG)
 
-
-
 ### Car details page
+
+When a user is interested in a specific car and clicks on the 'More info' button, they will be redirected to a page where they can find additional photos and information about the car.
+This page is divided into sections:
+
+- Photos - additional photos are presented as thumbnails(once clicked, the photo will enlarge and the lightbox function allows the user to view all the photos-please read about thumbnails below).
+- Description section that contains more info about the car.
+- Information about the sales executive who is responsible for selling the car. The information presented on the sales executive card contains:
+  - The picture of the sales executive
+  - Sales executive name
+  - Phone number
+  - Email address
+  
+![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
+
+
 
 ### Dashboard
 
