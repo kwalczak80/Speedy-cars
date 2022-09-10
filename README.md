@@ -405,6 +405,38 @@ Important - Car and Name fields are not editable as the user name and the car ar
 
 ![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
 
+### Messages system to provide feedback to the user
+
+Messages are displayed for continual feedback to the user on their interactions and follow the same layout for both mobile and desktop designs. These interactions include:
+
+- Sign in
+
+![Sign in message](docs/images/existing-features/messages/sing-in-message.JPG)
+
+- Logout
+
+![Sign out message](docs/images/existing-features/messages/sign-out-message.JPG)
+
+- Test drive booking confirmation
+
+![Test drive booking confirmation message](docs/images/existing-features/messages/test-drive-booking-confirmation.JPG)
+
+- Incorrect test drive date selected error message
+
+![Incorrect date error message](docs/images/existing-features/messages/incorrect-date-message.JPG)
+
+- Test drive booking cancellation message
+
+![Test drive booking cancellation message](docs/images/existing-features/messages/test-drive-cancellation-message.JPG)
+
+- Test drive double booking error message
+
+![Double booking error message](docs/images/existing-features/messages/double-booking-error-message.JPG)
+
+- Edit test drive confirmation
+
+![Edit test drive confirmation message](docs/images/existing-features/messages/edit-test-drive-message.JPG)
+
 ### About page
 
 On the "About" page, the user:
@@ -431,8 +463,6 @@ A hover effect is implemented if the user hovers over the social media links
 
 ![Footer hover effect](docs/images/existing-features/footer/footer-hover-effect.JPG)
 
-- Ability to book a test drive with a specific car (only for logged-in users - CRUD Functionality),
-- Dashboard page where logged-in users can edit/cancel existing test drives (CRUD Functionality),
 - Customized Admin (the business owner) panel,
 - Admin panel - ability to add a new car
 - Admin panel - ability to add a new employee
@@ -494,7 +524,7 @@ The user can use the keyboard left or right keys or arrows keys presented on the
 
 ![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
 
-- Messages system to provide feedback to the user
+
 - Authentication
 - Error handling(403 and 404 page)
 

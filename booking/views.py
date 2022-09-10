@@ -27,7 +27,7 @@ def booking(request):
             messages.add_message(request, messages.SUCCESS, 'Congratulations !! You have booked your test drive succesfuly !!')
             return redirect('/cars/'+car_id)
         else:
-            messages.add_message(request, messages.WARNING, 'Please select correct date!!')
+            messages.add_message(request, messages.ERROR, 'Please select correct date!!')
             return redirect('/cars/'+car_id)
 
 
@@ -58,7 +58,7 @@ def edit(request, booking_id):
                 messages.add_message(request, messages.INFO, 'You have edited your test drive details succesfully')
                 return redirect('dashboard')
         else:
-            messages.add_message(request, messages.WARNING, 'Please select correct date!!')
+            messages.add_message(request, messages.ERROR, 'Please select correct date!!')
             return redirect('/cars')
     form = BookingForm(instance=booking_id)
     context = {
