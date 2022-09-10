@@ -343,13 +343,44 @@ This page is divided into sections:
   - Sales executive name
   - Phone number
   - Email address
-  
+  - If the user is logged in, a button to book a test drive will be visible(please read about this feature below).
+
+A user has an option to return to view all cars by clicking on the 'Back to cars' button which is located above the car main photo.
+
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
-
-
 
 ### Dashboard
 
+The dashboard panel is accessible only to logged-in users, and it is accessible from the navigation bar.
+The link to the dashboard is always highlighted in white to stand out from other links.
+
+![Dashboard link](docs/images/existing-features/dashboard/dashboard-page-link.JPG)
+
+On the dashboard page, the user can check if they have booked any test drives.
+If the user has not booked any test drives, the appropriate information will be displayed on the screen.
+
+![Dashboard page no test drives booked](docs/images/existing-features/dashboard/dashboard-page-no-test-drives-booked.JPG)
+
+If the user has booked test drives, all the booked test drives will be displayed on the screen.
+
+![Dashboard page with booked test drives](docs/images/existing-features/dashboard/dashboard-page-with-booked-test-drives.JPG)
+
+The information about booked test drives contains:
+
+- Name of the car that was reserved for a test drive
+- Date when the test drive will take place
+
+The logged-in user has the following options in the dashboard panel if they have booked at least one test drive:
+
+- by using the 'view' button to view the car booked for a test drive
+- by using the 'edit' button to edit the information provided when booking a test drive (i.e. phone number, email address, test drive date).
+Important - Car and Name fields are not editable as the user name and the car are linked together.
+
+![Dashboard edit page](docs/images/existing-features/dashboard/dashboard-edit-booked-test-drive-details.JPG)
+
+- by using the 'cancel' button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they really wants to cancel the test drive.
+
+![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
 
 ### About page
 
