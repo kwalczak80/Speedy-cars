@@ -323,6 +323,16 @@ The 'More info' button allows the user to be redirected to a page where addition
 
 ### Pagination
 
+Each "cars" page may contain up to six featured cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
+
+![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
+
+However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). A user can then change pages by clicking on arrows or directly click on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page 1 is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
+
+![Pagination](docs/images/existing-features/pagination/pagination.JPG)
+
+
+
 ### Car details page
 
 ### Dashboard
