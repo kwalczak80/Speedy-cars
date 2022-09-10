@@ -259,6 +259,7 @@ I visited the Google fonts website to explore available font options for my proj
 
 ### Responsive design
 
+The website has been designed using Bootstrap 5 therefore it's fully responsive on all screen sizes.
 
 ### Homepage
 
