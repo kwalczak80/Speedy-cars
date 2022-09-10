@@ -303,13 +303,34 @@ Depending on whether the user is logged in or not, different links are made avai
 
 ### Cars page
 
+When the user clicks on the 'cars' link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
+
+![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
+
+The form of presentation of each car is the same and consists in displaying a single photo of the car and basic information about the car. The information is presented using icons and text in a minimalist way. The basic information about the car that the user can read is as follows:
+
+- Engine type
+- Engine size
+- Milage
+- Year of manufacture
+- Gearbox type
+- Body type
+- Information since when the car is for sale
+
+The 'More info' button allows the user to be redirected to a page where additional information about the specific car will be presented.
+
+![Car form presentation](docs/images/existing-features/cars-page/car-form-presentation.JPG)
+
 ### Pagination
+
+### Car details page
 
 ### Dashboard
 
+
 ### About page
 
-### Car details page
+
 
 ### Footer
 
