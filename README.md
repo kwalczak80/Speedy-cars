@@ -303,7 +303,7 @@ Depending on whether the user is logged in or not, different links are made avai
 
 ### Cars page
 
-When the user clicks on the 'cars' link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
+When the user clicks on the 'Cars' link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
 
 ![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
 
@@ -323,7 +323,7 @@ The 'More info' button allows the user to be redirected to a page where addition
 
 ### Pagination
 
-Each "cars" page may contain up to six featured cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
+Each "Cars" page may contain up to six cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
 
 ![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
 
@@ -343,11 +343,34 @@ This page is divided into sections:
   - Sales executive name
   - Phone number
   - Email address
-  - If the user is logged in, a button to book a test drive will be visible(please read about this feature below).
+  - If the user is logged in, a button to book a test drive will be also visible(please read about this feature below).
 
-A user has an option to return to view all cars by clicking on the 'Back to cars' button which is located above the car main photo.
+The user has an option to return to view all cars by clicking on the 'Back to cars' button which is located above the car main photo.
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
+
+### Ability to book a test drive with a specific car
+
+In order to book a test drive, the user must be logged in. If the user is not logged in, the "Book test drive" button will not be visible.
+
+![Book test drive user not logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-not-logged-in.JPG)
+
+If the user is logged in, the "Book test drive" button will be visible below the sales executive person card.
+
+![Book test drive user logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-logged-in.JPG)
+
+When the user clicks on the "Book test drive" button a modal window will be opened. The user must provide additional information in order to complete the test drive booking process.
+The following fields can be seen in the modal window:
+
+- Car - this field is automatically populated and cannot be modified(read-only)
+- Name - this field is automatically populated. The user name is pulled from the database and cannot be modified(read-only)
+- Email - this field is automatically populated if the user provided an email address during registration. If not, the user can enter their email address at this stage. This is a required field to complete the booking process.
+- Phone - the user must enter their phone number in order to complete the booking process. This is also a required field.
+- Date - the user must select the date when they want to book a test drive. By default, this field always shows the current date. Important - if the user selects a date that is in the past, the booking process will be cancelled and an appropriate error message will be displayed on the screen(please read about the messages system below).
+
+![Book test drive modal](docs/images/existing-features/book-test-drive/book-test-drive-modal.JPG)
+
+Important - the user cannot book a test drive twice in the same car, as the booking process will be canceled and an appropriate message will be displayed on the screen(please read about the messages system below).
 
 ### Dashboard
 
