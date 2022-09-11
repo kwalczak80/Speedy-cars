@@ -508,12 +508,6 @@ A hover effect is implemented if the user hovers over the social media links
 
 ![Footer hover effect](docs/images/existing-features/footer/footer-hover-effect.JPG)
 
-- Customized Admin (the business owner) panel,
-- Admin panel - ability to add a new car
-- Admin panel - ability to add a new employee
-- Admin panel - ability to review booked driving tests
-- Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
-
 ### Dynamic page titles
 
 Each page has an individual name located on the tab which can help the user quickly find out on which page they are currently on
@@ -594,6 +588,64 @@ The user can return to the home page by pressing the home button. There is no ne
 
 ![404 error page](docs/images/existing-features/404-page/404-error-message.JPG)
 
+### Customized Admin (the business owner) panel
+
+The admin panel was adjusted with the following changes:
+
+- the name of the business is now displayed on the top bar
+- the color scheme has been changed
+- the color of some buttons has also been changed
+
+The changes above were only cosmetic, but thanks to that, the panel looks a little bit different than the standard Django panel.
+
+![Business owner panel](docs/images/existing-features/admin-area/business-owner-panel.JPG)
+
+### Admin panel - ability to add a new car
+
+The business owner can add a new car to the website via the admin panel.
+
+![Add car](docs/images/existing-features/admin-area/add-car.JPG)
+
+### Admin panel - ability to add a new employee
+
+The business owner can add a new employee via the admin panel.
+All the information about the staff(photo, name, email, etc.) that is displayed on the website comes from the database and it's not hard coded in HTML.
+Therefore in case of any changes(i.e. new employee), the updated information will be automatically displayed on the website.
+
+![Add employee](docs/images/existing-features/admin-area/add-employee.JPG)
+
+### Admin panel - ability to review booked driving tests
+
+The business owner can review booked test drives via the booking panel.
+The panel contains the following information regarding booked test drives:
+
+- Booking ID
+- User ID (a user who booked test drive)
+- Name (the user name)
+- Car
+- Car ID
+- Email (email address that user provided during test drive booking process)
+- Phone (phone number that user provided during test drive booking process)
+
+![Test drive booking panel](docs/images/existing-features/admin-area/test-drive-booking-view-panel.JPG)
+
+### Admin panel – ability to select cars that will be displayed on the page
+
+This feature allows the business owner to enable or disable the car to be visible on the website. There is no need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website(i.e. the car is reserved or not ready for sale).
+
+![Is for sale feature](docs/images/existing-features/admin-area/is-for-sale-feature.JPG)
+
+If the check box is selected the car will be shown on the website.
+
+![Two cars selected for sale admin panel](docs/images/existing-features/admin-area/two-cars-selected-for-sale.JPG)
+![Two cars selected for sale cars page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-cars-page.JPG)
+![Two cars selected for sale search page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-search-page.JPG)
+
+If all the check boxes are deselected an appropriate message will be displayed on the screen.
+
+![All cars deselected for sale admin panel](docs/images/existing-features/admin-area/all_cars_deselected-admin-panel.JPG)
+![All cars deselected for sale cars page](docs/images/existing-features/admin-area/all_cars_deselected.JPG)
+![All cars deselected for sale search page](docs/images/existing-features/admin-area/all_cars_deselected-search-page.JPG)
 
 ## Technologies Used
 
