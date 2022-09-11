@@ -654,6 +654,29 @@ If all the check boxes are deselected an appropriate message will be displayed o
 - Ability to View testimonials about Speedy Cars
 - Ability to approve testimonials by the business owner(after approval testimonials can be displayed on the page).
 
+
+## UX testing
+
+| User requirements | Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+|I want to be able to view all available cars in one of the categories:Petrol, Diesel, Hybrid, Electric|Yes|Yes|On the search page, the user can select the cars in each of the four available categories.
+|I want to see professional descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the 'More info' button on the car card, additional photos of the car and a description will be shown.
+|I want to be able to navigate the website quickly and easily|Yes|Yes| The website is uncomplicated in layout and has clear and intuitive navigation.
+|I want to be able to use the search option to find the car I’m looking for|Yes|Yes| The search page has an option to search for a car according to specific user requirements.
+|I want to be able to view the price of the cars|Yes|Yes| Each car presented on the website has a label with the price.
+|I want to be able to read other user’s testimonials|No|No| Future feature - see the section above
+|I want to be able to make an inquiry about the car|No|No| Future feature - see the section above
+|I want to be able to book a test drive|Yes|Yes| When the user is logged in, they have the option to book a test drive by clicking on the **Book test drive** button located beneath the sales executive card.
+|I want to be able to edit or delete a test drive I have made|Yes|Yes| The logged-in user has an option to edit or cancel their booked test drive(CRUD functionality).
+|I want to read more information about the business|Yes|Yes| On the **About** page, the user can find all relevant information about Speedy Cars.
+|I want to be able to see featured cars|Yes|Yes| On the search page, the user can find three recent cars added for sale.
+|I want to be able to sign in to or create an account|Yes|Yes| The user has an option to create a new account or to log in to the one they created.
+|I want to be able to log out of an account|Yes|Yes|The user has the option to log out of their account.
+|I want to be able to view the business’s social media channels|Yes|Yes| All links to the social media channels are available in the footer.
+|I want to log in after I created an account and see my test drive bookings|Yes|Yes| Once the user is logged in, the dashboard panel will be available in the navigation bar. By clicking on the **dashboard** link, the user will be redirected to the page with their test drive booking details.
+|I want to be informed if a test drive cannot be booked for any reason|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive cannot be booked relevant information will be displayed on the screen.
+|I want to be informed if a test drive was booked successfully|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive is booked successfully, relevant information will be displayed on the screen.
+
 ## Technologies Used
 
 ### Languages
