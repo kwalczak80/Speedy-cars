@@ -81,9 +81,9 @@
           {% if employees %}
             {% for employee in employees %}
             <div class="col-md-4">
-              <img src="{{ employee.photo.url }}" alt="" class="rounded-circle mb-3 img-fluid">
+              <img src="{{ employee.photo.url }}" alt="Photo of the employee" class="rounded-circle mb-3 img-fluid">
               <h4>{{ employee.name }}</h4>
-              <p class="text-success">{{ employee.description }}</p>
+              <p>{{ employee.description }}</p>
               <hr>
               <p>
                 <i class="fa-solid fa-phone"></i> {{ employee.phone }}</p>
