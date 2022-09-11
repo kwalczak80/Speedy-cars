@@ -23,7 +23,7 @@
           <p class="lead">We are delighted that you have taken the time to visit our site and if the vehicle you require
             is not present on our current stock list please give us a call as we will do our best to locate a vehicle that
             suits your needs.</p>
-          <img src="https://res.cloudinary.com/dm8mfw14u/image/upload/v1660988754/_about-deal_qrkrx5.png" alt=""
+          <img src="https://res.cloudinary.com/dm8mfw14u/image/upload/v1660988754/_about-deal_qrkrx5.png" alt="Picture of two man making deal"
             class="img-fluid">
           <p class="lead">All our vehicles come with a warranty and are fully inspected on pre-delivery to assure our
             customers of the highest quality.</p>
@@ -70,7 +70,7 @@
     <h2 class="display-5">Customer satisfaction above all else</h2>
     <h5>We take great pleasure in being able to guide each of every one of our customers, whether new or returning, through every part of the vehicle ownership lifecycle. </h5>
     <hr>
-    <a href="{% url 'cars' %}" class="btn btn-danger text-dark fw-bold btn-lg mb-3">View Our Full Cars Stock</a>
+    <a href="{% url 'cars' %}" class="btn btn-danger text-dark fw-bold btn-lg mb-3" aria-label="Link to view full all available cars">View Our Full Cars Stock</a>
   </section>
 
   <!-- Team -->
@@ -81,7 +81,7 @@
           {% if employees %}
             {% for employee in employees %}
             <div class="col-md-4">
-              <img src="{{ employee.photo.url }}" alt="Photo of the employee" class="rounded-circle mb-3 img-fluid">
+              <img src="{{ employee.photo.url }}" alt="Photo of the sales executive" aria-label="Photo of the sales executive" class="rounded-circle mb-3 img-fluid">
               <h4>{{ employee.name }}</h4>
               <p>{{ employee.description }}</p>
               <hr>
