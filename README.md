@@ -524,10 +524,43 @@ The user can use the keyboard left or right keys or arrows keys presented on the
 
 ![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
 
-
 - Authentication
 
-- Error handling(403 and 404 page)
+The authentication process for the application is handled by Django allauth and consists of three parts.
+
+- Sign Up
+
+![Sign Up process](docs/images/existing-features/authentication/registration-page.JPG)
+
+If the user entries are wrong, the relevant error message will be displayed on the screen, informing what needs to be corrected to complete the registration process.
+
+![Sign Up user already exist](docs/images/existing-features/authentication/registration-process-user-already-exist.JPG)
+![Sign Up process passwords do not match](docs/images/existing-features/authentication/registration-process-passwords-dont-match.JPG)
+![Sign Up process issue with password](docs/images/existing-features/authentication/registration-process-issue-with-password.JPG)
+
+- Sign In
+
+The sign-in form requires only two fields to be entered.
+
+- Username
+- Password
+
+![Sign in page](docs/images/existing-features/authentication/sign-in-page.JPG)
+
+If the user name or password is incorrect, an error message will be shown on the screen.
+
+![Sign in page incorrect password or user name](docs/images/existing-features/authentication/sign-in-page-incorrect-password-or-user-name.JPG)
+
+- Log out
+
+If the user decides to log out, they will be redirected to the page to confirm their choice.
+
+![Sign out page](docs/images/existing-features/authentication/sign-out-page.JPG)
+
+
+
+
+- Error handling(404 page)
 
 If the page the user is trying to reach is not accessible, the following error message will be displayed on the screen.
 The user can return to the home page by pressing the home button. There is no need to hit the back button on their browser.
