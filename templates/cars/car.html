@@ -21,12 +21,12 @@
         <div class="row justify-content-center">
             <div class="col-md-9">
                 <!-- Car Main Image -->
-                <img src="{{ car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1">
+                <img src="{{ car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1" aria-label="Main picture of the car">
                 <!-- Car Thumbnails -->
                 <div class="row mb-3 thumbs">
                     {% if car.photo_1 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 1"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_1.url }}" alt="Car photo 1" class="img-fluid mb-1">
                         </a>
@@ -34,7 +34,7 @@
                     {% endif %}
                     {% if car.photo_2 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 2"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_2.url }}" alt="Car photo 2" class="img-fluid mb-1">
                         </a>
@@ -42,7 +42,7 @@
                     {% endif %}
                     {% if car.photo_3 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 3"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_3.url }}" alt="Car photo 3" class="img-fluid mb-1">
                         </a>
@@ -50,7 +50,7 @@
                     {% endif %}
                     {% if car.photo_4 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 4"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_4.url }}" alt="Car photo 4" class="img-fluid mb-1">
                         </a>
@@ -58,7 +58,7 @@
                     {% endif %}
                     {% if car.photo_5 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 5"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_5.url }}" alt="Car photo 5" class="img-fluid mb-1">
                         </a>
@@ -66,7 +66,7 @@
                     {% endif %}
                     {% if car.photo_6 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                        <a href="{{ car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 6"
                             data-height="560" data-width="560">
                             <img src="{{ car.photo_6.url }}" alt="Car photo 6" class="img-fluid mb-1">
                         </a>
@@ -137,7 +137,7 @@
             </div>
             <div class="col-md-3">
                 <div class="card mb-3">
-                    <img class="card-img-top photo" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales advisor">
+                    <img class="card-img-top photo" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales executive" aria-label="Picture of the sales executive">
                     <div class="card-body">
                         <h5 class="card-title">{{ car.sales_person.description }}</h5>
                         <h5 class="lead">{{ car.sales_person }}</h5>
