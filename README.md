@@ -303,7 +303,7 @@ Depending on whether the user is logged in or not, different links are made avai
 
 ### Cars page
 
-When the user clicks on the 'Cars' link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
+When the user clicks on the **Cars** link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
 
 ![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
 
@@ -317,13 +317,13 @@ The form of presentation of each car is the same and consists in displaying a si
 - Body type
 - Information since when the car is for sale
 
-The 'More info' button allows the user to be redirected to a page where additional information about the specific car will be presented.
+The **More info** button allows the user to be redirected to a page where additional information about the specific car will be presented.
 
 ![Car form presentation](docs/images/existing-features/cars-page/car-form-presentation.JPG)
 
 ### Pagination
 
-Each "Cars" page may contain up to six cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
+Each **Cars** page may contain up to six cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
 
 ![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
 
@@ -333,7 +333,7 @@ However, if the number of cars exceeds six, then the pagination is active(displa
 
 ### Car details page
 
-When a user is interested in a specific car and clicks on the 'More info' button, they will be redirected to a page where they can find additional photos and information about the car.
+When a user is interested in a specific car and clicks on the **More info** button, they will be redirected to a page where they can find additional photos and information about the car.
 This page is divided into sections:
 
 - Photos - additional photos are presented as thumbnails(once clicked, the photo will enlarge and the lightbox function allows the user to view all the photos-please read about thumbnails below).
@@ -345,21 +345,21 @@ This page is divided into sections:
   - Email address
   - If the user is logged in, a button to book a test drive will be also visible(please read about this feature below).
 
-The user has an option to return to view all cars by clicking on the 'Back to cars' button which is located above the car main photo.
+The user has an option to return to view all cars by clicking on the **Back to cars** button which is located above the car main photo.
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
 
 ### Ability to book a test drive with a specific car
 
-In order to book a test drive, the user must be logged in. If the user is not logged in, the "Book test drive" button will not be visible.
+In order to book a test drive, the user must be logged in. If the user is not logged in, the **Book test drive** button will not be visible.
 
 ![Book test drive user not logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-not-logged-in.JPG)
 
-If the user is logged in, the "Book test drive" button will be visible below the sales executive person card.
+If the user is logged in, the **Book test drive** button will be visible below the sales executive person card.
 
 ![Book test drive user logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-logged-in.JPG)
 
-When the user clicks on the "Book test drive" button a modal window will be opened. The user must provide additional information in order to complete the test drive booking process.
+When the user clicks on the **Book test drive** button a modal window will be opened. The user must provide additional information in order to complete the test drive booking process.
 The following fields can be seen in the modal window:
 
 - Car - this field is automatically populated and cannot be modified(read-only)
@@ -371,6 +371,35 @@ The following fields can be seen in the modal window:
 ![Book test drive modal](docs/images/existing-features/book-test-drive/book-test-drive-modal.JPG)
 
 Important - the user cannot book a test drive twice in the same car, as the booking process will be canceled and an appropriate message will be displayed on the screen(please read about the messages system below).
+
+### Search page
+
+The search page consists of two sections:
+
+- The search form where the user can enter or select their search criteria
+- Pictures of cars recently added for sale(three recently added cars will be displayed). This section will not be visible once the user clicks on the **Search** button.
+
+The search form allows the user to find a car according to the criteria entered or selected by the user.
+The user can use the following search options:
+
+- Keyword - enter any keyword that will be searched in the database.
+- Make - select a car make from the dropped-down menu
+- Fuel type - select fuel type from the dropped-down menu
+- Body type - select a body type from the dropped-down menu
+- Engine size - select an engine size from the dropped-down menu
+- Price - select a car price from the dropped-down menu. This will display all cars up to the value selected by the user.
+
+![Search page](docs/images/existing-features/search-page/search-page.JPG)
+
+The search criteria can be combined, i.e. the user can select any value ​​from the drop-down menu for each field. The search results (if any) will be displayed below the search form.
+
+![Search page](docs/images/existing-features/search-page/search-results.JPG)
+
+If the search result does not exist an appropriate message will be displayed on the screen.
+
+![Search page no cars found](docs/images/existing-features/search-page/search-results-no-cars-found.JPG)
+
+
 
 ### Dashboard
 
@@ -395,13 +424,13 @@ The information about booked test drives contains:
 
 The logged-in user has the following options in the dashboard panel if they have booked at least one test drive:
 
-- by using the 'view' button to view the car booked for a test drive
-- by using the 'edit' button to edit the information provided when booking a test drive (i.e. phone number, email address, test drive date).
+- by using the **View** button to view the car booked for a test drive
+- by using the **Edit** button to edit the information provided when booking a test drive (i.e. phone number, email address, test drive date).
 Important - Car and Name fields are not editable as the user name and the car are linked together.
 
 ![Dashboard edit page](docs/images/existing-features/dashboard/dashboard-edit-booked-test-drive-details.JPG)
 
-- by using the 'cancel' button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they really wants to cancel the test drive.
+- by using the **Cancel** button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they really wants to cancel the test drive.
 
 ![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
 
@@ -439,7 +468,7 @@ Messages are displayed for continual feedback to the user on their interactions 
 
 ### About page
 
-On the "About" page, the user:
+On the **About** page, the user:
 
 - can read information about Speedy Cars' business.
 
@@ -468,7 +497,6 @@ A hover effect is implemented if the user hovers over the social media links
 - Admin panel - ability to add a new employee
 - Admin panel - ability to review booked driving tests
 - Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
-- The search page where user can find a car with specific searching criteria,
 - Preserving search inputs selected by the user,
 
 ### Dynamic page titles
@@ -511,9 +539,9 @@ Each page has an individual name located on the tab which can help the user quic
 
 ![Register page tab](docs/images/existing-features/dynamic-page-titles/register-page.JPG)
 
-### Thumbinals are presented on the screen using Lightbox to allow the user to view a car in details
+### Thumbinals
 
-When the user clicks on the 'More info' button they will be redirected to the page to view more details about the car they interested about.
+When the user clicks on the **More info** button they will be redirected to the page to view more details about the car they interested about.
 
 ![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
 
@@ -557,10 +585,7 @@ If the user decides to log out, they will be redirected to the page to confirm t
 
 ![Sign out page](docs/images/existing-features/authentication/sign-out-page.JPG)
 
-
-
-
-- Error handling(404 page)
+### Error handling(404 page)
 
 If the page the user is trying to reach is not accessible, the following error message will be displayed on the screen.
 The user can return to the home page by pressing the home button. There is no need to hit the back button on their browser.
