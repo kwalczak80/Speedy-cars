@@ -62,7 +62,7 @@ The primary goal of the website from a site user’s perspective is as follows:
 - As a user, I want to be informed if a test drive cannot be booked for any reason.
 - As a user, I want to be informed if a test drive was booked successfully.
 
-### Site owners Goals
+### Site owner
 
 - As a site owner, I want to attract car buyers.
 - As a site owner, I want an appealing website with a range of cars.
@@ -635,13 +635,13 @@ This feature allows the business owner to enable or disable the car to be visibl
 
 ![Is for sale feature](docs/images/existing-features/admin-area/is-for-sale-feature.JPG)
 
-If the check box is selected the car will be shown on the website.
+If the **Is for sale** check box is selected the car will be shown on the website.
 
 ![Two cars selected for sale admin panel](docs/images/existing-features/admin-area/two-cars-selected-for-sale.JPG)
 ![Two cars selected for sale cars page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-cars-page.JPG)
 ![Two cars selected for sale search page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-search-page.JPG)
 
-If all the check boxes are deselected an appropriate message will be displayed on the screen.
+If all **Is for sale** check boxes are deselected an appropriate message will be displayed on the screen.
 
 ![All cars deselected for sale admin panel](docs/images/existing-features/admin-area/all_cars_deselected-admin-panel.JPG)
 ![All cars deselected for sale cars page](docs/images/existing-features/admin-area/all_cars_deselected.JPG)
@@ -676,6 +676,25 @@ If all the check boxes are deselected an appropriate message will be displayed o
 |I want to log in after I created an account and see my test drive bookings|Yes|Yes| Once the user is logged in, the dashboard panel will be available in the navigation bar. By clicking on the **dashboard** link, the user will be redirected to the page with their test drive booking details.
 |I want to be informed if a test drive cannot be booked for any reason|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive cannot be booked relevant information will be displayed on the screen.
 |I want to be informed if a test drive was booked successfully|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive is booked successfully, relevant information will be displayed on the screen.
+
+| Site owner requirements | Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+|I want to attract car buyers|Yes|Yes|Complete
+|I want an appealing website with a range of cars|Yes|Yes| Complete
+|I want users to be to view the full range of cars available for sale|Yes|Yes| Complete
+|I want users to be able to view the relevant description of each car along with the price|Yes|Yes| Complete
+|I want users to able to have an option to search for the car they are looking for|Yes|Yes| Complete
+|I want users to be able to make an inquiry about the car|No|No| Future feature - see the section above
+|I want users to be able to book the test drive with the selected car|Yes|Yes| Complete
+|I want users to be informed if a test drive cannot be booked|Yes|Yes| Complete
+|I want users to be able to edit and cancel a test drive|Yes|Yes| Complete
+|I want users to be able to read about the business|Yes|Yes| Complete
+|I want users to be able to navigate the site easily and quickly|Yes|Yes| Complete
+|I want users to be able to sign in to or create an account|Yes|Yes| Complete
+|I want users to be able to log out of their account|Yes|Yes| Complete
+|I want to be able to add new cars or remove if sold|Yes|Yes| Complete
+|I want users to be able to view the business’ social media|Yes|Yes| Complete
+|I want to be able to add testimonials|No|No| Future feature - see the section above
 
 ## Technologies Used
 
