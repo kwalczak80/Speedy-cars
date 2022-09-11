@@ -81,9 +81,9 @@ The primary goal of the website from a site user’s perspective is as follows:
 - As a site owner, I want users to be able to view the business’ social media.
 - As a logged-in administrator, I want to be able to add testimonials.
 
-### Error Flow
+### Error Handling
 
-- In the event that the desired page cannot be located, the user should be able to return through the website's navigational structure without hitting the back button on their browser
+- If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser.
 
 ## Kanban dashboard
 
@@ -677,7 +677,7 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 |I want to be informed if a test drive cannot be booked for any reason|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive cannot be booked relevant information will be displayed on the screen.
 |I want to be informed if a test drive was booked successfully|Yes|Yes| The message system provides feedback to the user about their interactions. If a test drive is booked successfully, relevant information will be displayed on the screen.
 
-| Site owner requirements | Implemented | Tested | Comments
+|Business owner requirements | Implemented | Tested | Comments
 | ------------ | ----------- | ------ | --------
 |I want to attract car buyers|Yes|Yes|Complete
 |I want an appealing website with a range of cars|Yes|Yes| Complete
@@ -695,6 +695,11 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 |I want to be able to add new cars or remove if sold|Yes|Yes| Complete
 |I want users to be able to view the business’ social media|Yes|Yes| Complete
 |I want to be able to add testimonials|No|No| Future feature - see the section above
+
+| Error handling| Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+|If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available.
+
 
 ## Technologies Used
 
