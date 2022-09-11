@@ -526,7 +526,13 @@ The user can use the keyboard left or right keys or arrows keys presented on the
 
 
 - Authentication
+
 - Error handling(403 and 404 page)
+
+If the page the user is trying to reach is not accessible, the following error message will be displayed on the screen.
+The user can return to the home page by pressing the home button. There is no need to hit the back button on their browser.
+
+![404 error page](docs/images/existing-features/404-page/404-error-message.JPG)
 
 
 ## Technologies Used
