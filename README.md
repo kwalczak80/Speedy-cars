@@ -647,6 +647,13 @@ If all the check boxes are deselected an appropriate message will be displayed o
 ![All cars deselected for sale cars page](docs/images/existing-features/admin-area/all_cars_deselected.JPG)
 ![All cars deselected for sale search page](docs/images/existing-features/admin-area/all_cars_deselected-search-page.JPG)
 
+## Features to be implemented
+
+- Email notification to the staff that the car was booked for a test drive.
+- Ability to add(by the user) a testimonial about Speedy Cars
+- Ability to View testimonials about Speedy Cars
+- Ability to approve testimonials by the business owner(after approval testimonials can be displayed on the page).
+
 ## Technologies Used
 
 ### Languages
