@@ -349,6 +349,19 @@ The user has an option to return to view all cars by clicking on the **Back to c
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
 
+### Thumbinals
+
+When the user clicks on the **More info** button they will be redirected to the page to view more details about the car they interested about.
+
+![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
+
+On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail it will enlarge and the user will be able to scroll through all available images.
+The user can use the keyboard left or right keys or arrows keys presented on the screen to scroll through all available images.
+
+![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
+
+![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
+
 ### Ability to book a test drive with a specific car
 
 In order to book a test drive, the user must be logged in. If the user is not logged in, the **Book test drive** button will not be visible.
@@ -399,7 +412,26 @@ If the search result does not exist an appropriate message will be displayed on 
 
 ![Search page no cars found](docs/images/existing-features/search-page/search-results-no-cars-found.JPG)
 
+### Preserving search inputs selected by the user
 
+The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful. I.e., the user can search for a specific car model (which they selected earlier) by changing only the price range—no need to make all selections again.
+To reset the form to its default values, the user has to click on the **Search** link located in the navigation bar.
+
+### About page
+
+On the **About** page, the user can:
+
+- read information about Speedy Cars' business.
+
+![Info about Speedy Cars](docs/images/existing-features/about-page/info-about-speedy-cars.JPG)
+
+- check the business's opening hours and its location(a special script is implemented to highlight the current day of the week)
+
+![Info opening hours](docs/images/existing-features/about-page/info-about-opening-hours.JPG)
+
+- find contact details for the people who are running the business in case of any queries.
+
+![Info about team](docs/images/existing-features/about-page/info-about-team.JPG)
 
 ### Dashboard
 
@@ -466,22 +498,6 @@ Messages are displayed for continual feedback to the user on their interactions 
 
 ![Edit test drive confirmation message](docs/images/existing-features/messages/edit-test-drive-message.JPG)
 
-### About page
-
-On the **About** page, the user:
-
-- can read information about Speedy Cars' business.
-
-![Info about Speedy Cars](docs/images/existing-features/about-page/info-about-speedy-cars.JPG)
-
-- can check the business's opening hours and its location(a special script is implemented to highlight the current day of the week)
-
-![Info opening hours](docs/images/existing-features/about-page/info-about-opening-hours.JPG)
-
-- can find contact details for the people who are running the business in case of any queries.
-
-![Info about team](docs/images/existing-features/about-page/info-about-team.JPG)
-
 ### Footer
 
 Footer is kept very simple as set of links and the businnes name. Footer layout remians the same on all screen sizes.
@@ -497,7 +513,6 @@ A hover effect is implemented if the user hovers over the social media links
 - Admin panel - ability to add a new employee
 - Admin panel - ability to review booked driving tests
 - Admin panel – ability to select cars that will be displayed on the page. No need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website,
-- Preserving search inputs selected by the user,
 
 ### Dynamic page titles
 
@@ -539,20 +554,7 @@ Each page has an individual name located on the tab which can help the user quic
 
 ![Register page tab](docs/images/existing-features/dynamic-page-titles/register-page.JPG)
 
-### Thumbinals
-
-When the user clicks on the **More info** button they will be redirected to the page to view more details about the car they interested about.
-
-![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
-
-On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail it will enlarge and the user will be able to scroll through all available images.
-The user can use the keyboard left or right keys or arrows keys presented on the screen to scroll through all available images.
-
-![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
-
-![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
-
-- Authentication
+### Authentication
 
 The authentication process for the application is handled by Django allauth and consists of three parts.
 
