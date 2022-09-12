@@ -700,6 +700,20 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 | ------------ | ----------- | ------ | --------
 |If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available.
 
+## Code Validation
+
+### HTML
+
+The HTML code within the application has been validated by [W3C Markup Validation Service](https://validator.w3.org/). Pages were put through the validator seperatly and the results can be seen below.
+![Home page](docs/images/code-validation/home-page.JPG)
+![Cars page](docs/images/code-validation/cars-page.JPG)
+![Car page](docs/images/code-validation/car-page.JPG)
+![Search page](docs/images/code-validation/search-page.JPG)
+![About page](docs/images/code-validation/about-page.JPG)
+![Dashboard page](docs/images/code-validation/dash-board-page.JPG)
+![Login page](docs/images/code-validation/login-page.JPG)
+![Logout page](docs/images/code-validation/logout-page.JPG)
+![Register page](docs/images/code-validation/signup-page.JPG)
 
 ## Technologies Used
 
