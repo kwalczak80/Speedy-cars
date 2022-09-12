@@ -22,7 +22,8 @@
             {% for car in cars %}
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="{{ car.photo_main.url }}" alt="Photo of the car" aria-label="Photo of the car for sale">
+                    <img class="card-img-top img-fluid" src="{{ car.photo_main.url }}" alt="Photo of the car"
+                        aria-label="Photo of the car for sale">
                     <div class="card-img-overlay">
                         <h2>
                             <span class="badge bg-success text-white">€ {{ car.price | intcomma }}</span>
@@ -58,7 +59,8 @@
                         </div>
                         <hr>
                         <div class="row text-center">
-                            <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block" aria-label="Link to read more information about the car">More Info</a>
+                            <a href="{% url 'car' car.id %}" class="btn btn-primary btn-block"
+                                aria-label="Link to read more information about the car">More Info</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +82,8 @@
                     <ul class="pagination">
                         {% if cars.has_previous %}
                         <li class="page-item">
-                            <a href="?page={{cars.previous_page_number}}" class="page-link" aria-label="Previous page">&laquo;</a>
+                            <a href="?page={{cars.previous_page_number}}" class="page-link"
+                                aria-label="Previous page">&laquo;</a>
                         </li>
                         {% else %}
                         <li class="page-item disabled">
@@ -100,7 +103,8 @@
                         {% endfor %}
                         {% if cars.has_next %}
                         <li class="page-item">
-                            <a href="?page={{cars.next_page_number}}" class="page-link" aria-label="Next page">&raquo;</a>
+                            <a href="?page={{cars.next_page_number}}" class="page-link"
+                                aria-label="Next page">&raquo;</a>
                         </li>
                         {% else %}
                         <li class="page-item disabled">
