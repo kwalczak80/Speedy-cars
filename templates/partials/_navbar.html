@@ -1,14 +1,14 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-xl" id="nav-bar">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" id="dealer-name" href="{% url 'index' %}"><span>Speedy cars</span></a><button
-            class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-3"><span
+        <a class="navbar-brand d-flex align-items-center" id="dealer-name" href="{% url 'index' %}"><span>Speedy
+                cars</span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-3"><span
                 class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div id="navcol-3" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-3"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                 <li class="nav-item px-3"><a class="nav-link" href="{% url 'cars' %}">Cars</a></li>
                 <li class="nav-item px-3"><a class="nav-link" href="{% url 'search' %}">Search</a></li>
-                <li class="nav-item px-3"><a class="nav-link" href="{% url 'about' %}">About</a></li>                
+                <li class="nav-item px-3"><a class="nav-link" href="{% url 'about' %}">About</a></li>
             </ul>
             {% if user.is_authenticated %}
             <ul class="navbar-nav">
@@ -28,8 +28,8 @@
                     <a href="{% url 'account_signup' %}" class="nav-link">
                         <i class="fa-solid fa-user-plus"></i> Register</a>
                 </li>
-                {% endif %}
             </ul>
+            {% endif %}
         </div>
     </div>
 </nav>
