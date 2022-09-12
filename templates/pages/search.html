@@ -12,57 +12,58 @@
       <p class="lead">
         To find a car that meets your requirements, please complete the form below.
       </p>
-    <div class="row justify-content-center my-5">
-      <div class="col-lg-6">
-        <form action="{% url 'search_results' %}">
-          <div class="mb-1">
-            <input type="text" class="form-control" name="keywords" placeholder="Keyword (Make, Model, Fuel Type, etc)"
-              value="{{ values.keywords }}" />
-          </div>
-          <div class="mb-1">
-            <select name="make" class="form-select">
-              <option selected="true" disabled="disabled">Make (All)</option>
-              {% for key,value in make_choices.items %}
-              <option value="{{ key }}" {% if key == values.make %} selected {% endif %}>{{ value }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="mb-1">
-            <select name="fuel_type" class="form-select">
-              <option selected="true" disabled="disabled">Fuel Type (All)</option>
-              {% for key,value in fuel_type_choices.items %}
-              <option value="{{ key }}" {% if key == values.fuel_type %} selected {% endif %}>{{ value }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="mb-1">
-            <select name="body_type" class="form-select">
-              <option selected="true" disabled="disabled">Body Type (Any)</option>
-              {% for key,value in body_type_choices.items %}
-              <option value="{{ key }}">{{ value }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="mb-1">
-            <select name="engine_size" class="form-select">
-              <option selected="true" disabled="disabled">Engine Size (Any)</option>
-              {% for key,value in engine_size_choices.items %}
-              <option value="{{ key }}">{{ value }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="mb-3">
-            <select name="price" class="form-select">
-              <option selected="true" disabled="disabled">Price (Any)</option>
-              {% for key,value in price_choices.items %}
-              <option value="{{ key }}">{{ value }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div class="d-grid text-center">
-            <button class="btn btn-warning" type="submit">Search</button>
-          </div>
-        </form>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form action="{% url 'search_results' %}">
+            <div class="mb-1">
+              <input type="text" class="form-control" name="keywords"
+                placeholder="Keyword (Make, Model, Fuel Type, etc)" value="{{ values.keywords }}" />
+            </div>
+            <div class="mb-1">
+              <select name="make" class="form-select">
+                <option selected="selected" disabled="disabled">Make (All)</option>
+                {% for key,value in make_choices.items %}
+                <option value="{{ key }}" {% if key == values.make %} selected {% endif %}>{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-1">
+              <select name="fuel_type" class="form-select">
+                <option selected="selected" disabled="disabled">Fuel Type (All)</option>
+                {% for key,value in fuel_type_choices.items %}
+                <option value="{{ key }}" {% if key == values.fuel_type %} selected {% endif %}>{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-1">
+              <select name="body_type" class="form-select">
+                <option selected="selected" disabled="disabled">Body Type (Any)</option>
+                {% for key,value in body_type_choices.items %}
+                <option value="{{ key }}">{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-1">
+              <select name="engine_size" class="form-select">
+                <option selected="selected" disabled="disabled">Engine Size (Any)</option>
+                {% for key,value in engine_size_choices.items %}
+                <option value="{{ key }}">{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-3">
+              <select name="price" class="form-select">
+                <option selected="selected" disabled="disabled">Price (Any)</option>
+                {% for key,value in price_choices.items %}
+                <option value="{{ key }}">{{ value }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="d-grid text-center">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
