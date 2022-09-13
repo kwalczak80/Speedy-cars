@@ -700,6 +700,23 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 | ------------ | ----------- | ------ | --------
 |If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available.
 
+## Manual Testing
+
+Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs and fixes were fixed on an ongoing basis during the project. After each fix, manual tests were performed to make sure that everything worked as intended and that the fixes did not cause other errors. Manual tests and checks include:
+
+Navbar
+Footer
+Home Page
+Cars Page
+Car Page
+Search Page
+About Page
+Dashboard Page
+Test drive booking system
+Edit and canellation functionality
+Login and Signup
+Logout
+
 ## Code Validation
 
 ### HTML
