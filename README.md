@@ -705,15 +705,16 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 ### HTML
 
 The HTML code within the application has been validated by [W3C Markup Validation Service](https://validator.w3.org/). Pages were put through the validator seperatly and the results can be seen below.
-![Home page](docs/images/code-validation/home-page.JPG)
-![Cars page](docs/images/code-validation/cars-page.JPG)
-![Car page](docs/images/code-validation/car-page.JPG)
-![Search page](docs/images/code-validation/search-page.JPG)
-![About page](docs/images/code-validation/about-page.JPG)
-![Dashboard page](docs/images/code-validation/dash-board-page.JPG)
-![Login page](docs/images/code-validation/login-page.JPG)
-![Logout page](docs/images/code-validation/logout-page.JPG)
-![Register page](docs/images/code-validation/signup-page.JPG)
+
+- [Home page](docs/images/code-validation/home-page.JPG)
+- [Cars page](docs/images/code-validation/cars-page.JPG)
+- [Car page](docs/images/code-validation/car-page.JPG)
+- [Search page](docs/images/code-validation/search-page.JPG)
+- [About page](docs/images/code-validation/about-page.JPG)
+- [Dashboard page](docs/images/code-validation/dash-board-page.JPG)
+- [Login page](docs/images/code-validation/login-page.JPG)
+- [Logout page](docs/images/code-validation/logout-page.JPG)
+- [Register page](docs/images/code-validation/signup-page.JPG)
 
 ### Python
 
@@ -721,28 +722,32 @@ The Python code within the application has been validated by [PEP8 online valida
 
 ### speedy_cars project
 
-- ![settings.py validation results](docs/validation/python/speedy_cars/speedy_cars-settings-python-validation.JPG)
-- ![urls.py validation results](docs/validation/python/speedy_cars/speedy_cars-urls-python-validation.JPG)
+- [settings.py validation results](docs/validation/python/speedy_cars/speedy_cars-settings-python-validation.JPG)
+- [urls.py validation results](docs/validation/python/speedy_cars/speedy_cars-urls-python-validation.JPG)
 
 ### booking app
 
-- ![admin.py validation results](docs/validation/python/booking/booking-admin-python-validation.JPG)
-- ![apps.py validation results](docs/validation/python/booking/booking-apps-python-validation.JPG)
-- ![forms.py validation results](docs/validation/python/booking/booking-forms-python-validation.JPG)
-- ![models.py validation results](docs/validation/python/booking/booking-models-python-validation.JPG)
-- ![urls.py validation results](docs/validation/python/booking/booking-urls-python-validation.JPG)
-- ![views.py validation results](docs/validation/python/booking/booking-views-python-validation.JPG)
+- [admin.py validation results](docs/validation/python/booking/booking-admin-python-validation.JPG)
+- [apps.py validation results](docs/validation/python/booking/booking-apps-python-validation.JPG)
+- [forms.py validation results](docs/validation/python/booking/booking-forms-python-validation.JPG)
+- [models.py validation results](docs/validation/python/booking/booking-models-python-validation.JPG)
+- [urls.py validation results](docs/validation/python/booking/booking-urls-python-validation.JPG)
+- [views.py validation results](docs/validation/python/booking/booking-views-python-validation.JPG)
 
 ### cars app
 
-- ![admin.py validation results](docs/validation/python/cars/cars-admin-python-validation.JPG)
-- ![apps.py validation results](docs/validation/python/cars/cars-apps-python-validation.JPG)
-- ![choices.py validation results](docs/validation/python/cars/cars-choices-python-validation.JPG)
-- ![models.py validation results](docs/validation/python/cars/cars-models-python-validation.JPG)
-- ![urls.py validation results](docs/validation/python/cars/cars-urls-python-validation.JPG)
-- ![views.py validation results](docs/validation/python/cars/cars-views-python-validation.JPG)
+- [admin.py validation results](docs/validation/python/cars/cars-admin-python-validation.JPG)
+- [apps.py validation results](docs/validation/python/cars/cars-apps-python-validation.JPG)
+- [choices.py validation results](docs/validation/python/cars/cars-choices-python-validation.JPG)
+- [models.py validation results](docs/validation/python/cars/cars-models-python-validation.JPG)
+- [urls.py validation results](docs/validation/python/cars/cars-urls-python-validation.JPG)
+- [views.py validation results](docs/validation/python/cars/cars-views-python-validation.JPG)
 
 ### employees app
+
+- [admin.py validation results](docs/validation/python/employees/employees-admin-python-validation.JPG)
+- [apps.pyvalidation results](docs/validation/python/employees/employees-apps-python-validation.JPG)
+- [models.py validation results](docs/validation/python/employees/employees-models-python-validation.JPG)
 
 ### home
 
