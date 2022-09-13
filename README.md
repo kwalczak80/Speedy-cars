@@ -754,10 +754,6 @@ The Python code within the application has been validated by [PEP8 online valida
 - [apps.py validation results](docs/validation/python/home/home-apps-python-validation.JPG)
 - [urls.py validation results](docs/validation/python/home/home-urls-python-validation.JPG)
 - [views.py validation results](docs/validation/python/home/home-views-python-validation.JPG)
-apps.py
-urls.py
-views.py
-
 
 ## Technologies Used
 
