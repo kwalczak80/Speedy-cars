@@ -752,6 +752,9 @@ The Python code within the application has been validated by [PEP8 online valida
 ### home
 
 
+apps.py
+urls.py
+views.py
 
 
 ## Technologies Used
