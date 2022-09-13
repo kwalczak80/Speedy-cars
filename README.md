@@ -720,12 +720,12 @@ The HTML code within the application has been validated by [W3C Markup Validatio
 
 The Python code within the application has been validated by [PEP8 online validation service](http://pep8online.com/). Files were put through the validator separately and the results can be seen below.
 
-### speedy_cars project
+#### speedy_cars project
 
 - [settings.py validation results](docs/validation/python/speedy_cars/speedy_cars-settings-python-validation.JPG)
 - [urls.py validation results](docs/validation/python/speedy_cars/speedy_cars-urls-python-validation.JPG)
 
-### booking app
+#### booking app
 
 - [admin.py validation results](docs/validation/python/booking/booking-admin-python-validation.JPG)
 - [apps.py validation results](docs/validation/python/booking/booking-apps-python-validation.JPG)
@@ -734,7 +734,7 @@ The Python code within the application has been validated by [PEP8 online valida
 - [urls.py validation results](docs/validation/python/booking/booking-urls-python-validation.JPG)
 - [views.py validation results](docs/validation/python/booking/booking-views-python-validation.JPG)
 
-### cars app
+#### cars app
 
 - [admin.py validation results](docs/validation/python/cars/cars-admin-python-validation.JPG)
 - [apps.py validation results](docs/validation/python/cars/cars-apps-python-validation.JPG)
@@ -743,17 +743,25 @@ The Python code within the application has been validated by [PEP8 online valida
 - [urls.py validation results](docs/validation/python/cars/cars-urls-python-validation.JPG)
 - [views.py validation results](docs/validation/python/cars/cars-views-python-validation.JPG)
 
-### employees app
+#### employees app
 
 - [admin.py validation results](docs/validation/python/employees/employees-admin-python-validation.JPG)
 - [apps.pyvalidation results](docs/validation/python/employees/employees-apps-python-validation.JPG)
 - [models.py validation results](docs/validation/python/employees/employees-models-python-validation.JPG)
 
-### home
+#### home
 
 - [apps.py validation results](docs/validation/python/home/home-apps-python-validation.JPG)
 - [urls.py validation results](docs/validation/python/home/home-urls-python-validation.JPG)
 - [views.py validation results](docs/validation/python/home/home-views-python-validation.JPG)
+
+### CSS
+
+The CSS code within the application has been validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
+
+### JS
+
+The JavaScript and JQuery code within the application has been validated by [JSHint](https://jshint.com/), and the results can be seen below.
 
 ## Technologies Used
 
@@ -916,3 +924,16 @@ object-fit: cover;
 }
 
 The solution was found on [Stack Overflow](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width)
+
+## Content
+
+The artwork used in this project was copied from the following websites:
+
+- [Pexels](https://www.pexels.com/)(images)
+- [Defcon27](https://github.com/Defcon27)(home page video background)
+
+## Acknowledgments
+
+- My Mentor Simen Eventyret_mentor for continuous helpful feedback.
+- Code Institute's Slack community for their support.
+- All family members and friends who helped test this application.
