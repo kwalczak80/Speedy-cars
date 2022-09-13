@@ -1,8 +1,10 @@
 from django import forms
 from .models import Booking
 
+
 class DateInput(forms.DateInput):
     input_type = 'date'
+
 
 class BookingForm(forms.ModelForm):
     class Meta:
@@ -10,10 +12,13 @@ class BookingForm(forms.ModelForm):
 
         fields = ['car', 'name', 'email', 'phone', 'date', 'message']
         widgets = {
-            'car': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
-            'name': forms.TextInput(attrs={'class': 'form-control', 'readonly': 'readonly'}),
+            'car': forms.TextInput(attrs={'class': 'form-control',
+                                          'readonly': 'readonly'}),
+            'name': forms.TextInput(attrs={'class': 'form-control',
+                                           'readonly': 'readonly'}),
             'email': forms.TextInput(attrs={'class': 'form-control'}),
             'phone': forms.TextInput(attrs={'class': 'form-control'}),
-            'date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
+            'date': forms.DateInput(attrs={'class': 'form-control',
+                                           'type': 'date'}),
             'message': forms.Textarea(attrs={'class': 'form-control'}),
         }
