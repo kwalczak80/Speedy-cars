@@ -715,6 +715,26 @@ The HTML code within the application has been validated by [W3C Markup Validatio
 ![Logout page](docs/images/code-validation/logout-page.JPG)
 ![Register page](docs/images/code-validation/signup-page.JPG)
 
+### Python
+
+The Python code within the application has been validated by [PEP8 online validation service](http://pep8online.com/). Files were put through the validator separately and the results can be seen below.
+
+### speedy_cars project
+
+- ![settings.py validation results](docs/validation/python/speedy_cars/speedy_cars-settings-python-validation.JPG)
+- ![urls.py validation results](docs/validation/python/speedy_cars/speedy_cars-urls-python-validation.JPG)
+
+### booking app
+
+### cars app
+
+### employees app
+
+### home
+
+
+
+
 ## Technologies Used
 
 ### Languages
