@@ -735,6 +735,13 @@ The Python code within the application has been validated by [PEP8 online valida
 
 ### cars app
 
+- ![admin.py validation results](docs/validation/python/cars/cars-admin-python-validation.JPG)
+- ![apps.py validation results](docs/validation/python/cars/cars-apps-python-validation.JPG)
+- ![choices.py validation results](docs/validation/python/cars/cars-choices-python-validation.JPG)
+- ![models.py validation results](docs/validation/python/cars/cars-models-python-validation.JPG)
+- ![urls.py validation results](docs/validation/python/cars/cars-urls-python-validation.JPG)
+- ![views.py validation results](docs/validation/python/cars/cars-views-python-validation.JPG)
+
 ### employees app
 
 ### home

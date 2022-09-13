@@ -10,7 +10,7 @@ make_choices = {
     'Opel': 'Opel',
     'Lexus': 'Lexus',
     'Mercedes': 'Mercedes',
-    'Volksvagen': 'Volksvagen',
+    'Volkswagen': 'Volkswagen',
     'Volvo': 'Volvo',
 }
 
