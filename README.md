@@ -704,18 +704,105 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 
 Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs and fixes were fixed on an ongoing basis during the project. After each fix, manual tests were performed to make sure that everything worked as intended and that the fixes did not cause other errors. Manual tests and checks include:
 
-Navbar
-Footer
-Home Page
-Cars Page
-Car Page
-Search Page
-About Page
-Dashboard Page
-Test drive booking system
-Edit and canellation functionality
-Login and Signup
-Logout
+- Navbar
+  - All links navigate to the correct endpoint.
+  - All hover and focus effects are correct.
+  - The dashboard link displays the username, and it is highlighted in white
+color (user logged in).
+  - Different navigation links depending on the user authentication
+  - Responsiveness
+  - Accessibility is correct.
+- Footer
+  - All links navigate to the correct endpoint.
+  - All hover and focus effects are correct.
+  - External links open in a new tab
+  - Accessibility is correct.
+  -Responsiveness
+- Login and Signup
+  - Form is clear
+  - Form completes its task correctly
+  - Message displayed to the user on the homepage when logged in
+- Logout
+  - Options are clear
+  - Message displayed to the user on the homepage when logged out
+- Home Page
+  - Text is clear and easily read.
+  - The video background is correctly displayed.
+  - Responsiveness
+- Cars page
+  - Responsiveness
+  - Pagination occurs when there are more than 6 cars.
+  - The user is able to navigate to the selected page.
+  - The More Info button navigates to the correct page where the user can
+find more details about the car
+  - Images of the cars are displayed correctly
+  - All the font awesome icons and the car details are correctly displayed
+on the cards
+- Car Page
+  - Responsiveness
+-The main picture of the car is displayed correctly.
+  - All thumbnails are displayed correctly underneath the car's main picture.
+  - Thumbnails enlarge once clicked. The lightbox is launched to
+start the car's image presentation.
+  - All the font awesome icons and car details are correctly displayed on
+the card(s)
+  - The car description is presented and readable.
+  - The **Back To Cars** button navigates back to the Cars page.
+  - The sales executive's card is displayed with the image and contact
+details
+  - The **Book test drive** button is presented underneath the sales
+executive card (only if the user is logged in)
+  - The ‘Book test drive’ button is not presented for non-logged-in users
+(relevant message is displayed instead).
+  - The **Book test drive** button opens modal to book a test drive
+- Book test drive modal
+  - Responsiveness
+  - The form is clear and intuitive.
+  - Relevant fields are prepopulated and not editable by the user.
+  - The date picker works correctly.
+  - Required fields must be entered before form submission.
+  - Error message is displayed on the screen if the date selected by the
+user is incorrect (booked in the past)
+  - Confirmation message is displayed on the screen if the test drive
+booking was successful.
+  - The modal is closed if the user clicks in the upper right corner(X button) or
+outside of the modal form.
+  - The **Submit** button works correctly.
+- Search Page
+  - Responsiveness
+  - The form is clear and intuitive.
+  - The drop-down menus are working correctly.
+  - The form preserves the user selections.
+  - The form returns correct search results.
+  - The search results are displayed correctly on the screen.
+  - Recently added cars are displayed correctly.
+- About Page
+  - Responsiveness
+  - Text is clear and easily read
+  - All the images are displayed correctly
+  - The current day of the week is correctly highlighted in the business opening hours section
+  - The footer links are working correctly
+  - The **View Our Full Car Stock** navigates to the correct page
+- Dashboard Page
+  - Responsiveness
+  - The Dashboard link is only visible for logged-in users.
+  - All booked test drives are displayed on the dashboard page
+  - Each test drive contains three buttons:
+    - **View** – the button opens the page with the car booked for a test drive
+    - **Edit** – the button opens the page to edit the test drive
+    - **Cancel** – the button opens the page to confirm if the user wants to cancel a particular test drive
+  - A relevant message is displayed on the screen if the user has no test drives booked yet
+- Edit test drive
+  - Responsiveness
+  - Relevant fields are prepopulated and not editable by the user.
+  - Required fields must be entered before form submission.
+  - An error message is displayed on the screen if the date selected by the user is incorrect (booked in the past)
+  - A confirmation message is displayed on the screen if the test drive booking was successful.
+  - The **Change** button works correctly and the correct page is loaded after the form submission
+- Delete test drive
+  - A proper message is displayed each time when the user wants to cancel the test drive
+  - **Cancel** button returns to the dashboard
+  - The "Yes" button deletes the test drive and returns to the dashboard page.
 
 ## Code Validation
 
