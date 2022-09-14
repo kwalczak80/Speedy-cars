@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Timer showing the allert messages
 setTimeout(function () {
     let messages = document.getElementById('msg');
@@ -11,7 +13,7 @@ $('#datepicker').datepicker({
 });
 $('#datepicker').datepicker("setDate", new Date());
 
-// Highlight current day of the week
+// Highlight the current day of the week
 $(document).ready(function () {
     $('.opening-hours li').eq(new Date().getDay()).addClass('today');
 });
