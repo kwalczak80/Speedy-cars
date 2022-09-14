@@ -18,7 +18,7 @@
         <form action="{% url 'search_results' %}">
           <div class="mb-1">
             <input type="text" class="form-control" name="keywords" placeholder="Keyword (Make, Model, Fuel Type, etc)"
-              value="{{ values.keywords }}" />
+              aria-label="Enter key words" value="{{ values.keywords }}" />
           </div>
           <div class="mb-1">
             <select name="make" class="form-select">
