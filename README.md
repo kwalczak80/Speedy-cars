@@ -1,5 +1,8 @@
 # Speedy Cars
 
+![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
+
+
 ## User Experience (UX)
 
 ### Primary Goal
@@ -64,22 +67,22 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 ### Site owner
 
-- As a site owner, I want to attract car buyers.
-- As a site owner, I want an appealing website with a range of cars.
-- As a site owner, I want users to be to view the full range of cars available for sale.
-- As a site owner, I want users to be able to view the relevant description of each car along with the price.
-- As a site owner, I want users to able to have an option to search for the car they are looking for.
-- As a site owner, I want users to be able to make an inquiry about the car.
-- As a site owner, I want users to be able to book the test drive with the selected car.
-- As a site owner, I want users to be informed if a test drive cannot be booked.
-- As a site owner, I want users to be able to edit and cancel a test drive.
-- As a site owner, I want users to be able to read about the business.
-- As a site owner, I want users to be able to navigate the site easily and quickly.
-- As a site owner, I want users to be able to sign in to or create an account.
-- As a site owner, I want users to be able to log out of their account.
-- As a site owner, I want to be able to add new cars or remove if sold.
-- As a site owner, I want users to be able to view the business’ social media.
-- As a logged-in administrator, I want to be able to add testimonials.
+- As a user, I want to attract car buyers.
+- As a user, I want an appealing website with a range of cars.
+- As a user, I want users to be to view the full range of cars available for sale.
+- As a user, I want users to be able to view the relevant description of each car along with the price.
+- As a user, I want users to able to have an option to search for the car they are looking for.
+- As a user, I want users to be able to make an inquiry about the car.
+- As a user, I want users to be able to book the test drive with the selected car.
+- As a user, I want users to be informed if a test drive cannot be booked.
+- As a user, I want users to be able to edit and cancel a test drive.
+- As a user, I want users to be able to read about the business.
+- As a user, I want users to be able to navigate the site easily and quickly.
+- As a user, I want users to be able to sign in to or create an account.
+- As a user, I want users to be able to log out of their account.
+- As a user, I want to be able to add new cars or remove if sold.
+- As a user, I want users to be able to view the business’ social media.
+- As a user, I want to be able to add testimonials.
 
 ### Error Handling
 
@@ -174,7 +177,7 @@ Car model
 
 | Name | Key | Type | Other Details |
 | -- | -- | -- | -- |
-| sales_person | FK from Employee | IntegerField |  |
+| sales_person | Employee | FK from Employee |  |
 | title| | CharField | Max length 300 Set default as ''|
 | make | | CharField | Max length 50 Set default as 'Audi'|
 | model || CharField | Max length 50 |
@@ -249,11 +252,6 @@ I visited the Google fonts website to explore available font options for my proj
 - #ffffff - cards background color
 - #ffffff8c - navbar, footer and cards text color
 - #008ed6 - hover effect color
-
-
-
-
-
 
 ## Features
 
