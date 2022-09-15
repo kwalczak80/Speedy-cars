@@ -868,6 +868,8 @@ The CSS code within the application has been validated by [W3C CSS Validation Se
 
 The JavaScript and JQuery code within the application has been validated by [JSHint](https://jshint.com/), and the results can be seen below.
 
+[JS validation results](docs/validation/js/js-validation-results.JPG)
+
 ## Technologies Used
 
 ### Languages
