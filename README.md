@@ -808,15 +808,15 @@ outside of the modal form.
 
 The HTML code within the application has been validated by [W3C Markup Validation Service](https://validator.w3.org/). Pages were put through the validator seperatly and the results can be seen below.
 
-- [Home page](docs/images/code-validation/home-page.JPG)
-- [Cars page](docs/images/code-validation/cars-page.JPG)
-- [Car page](docs/images/code-validation/car-page.JPG)
-- [Search page](docs/images/code-validation/search-page.JPG)
-- [About page](docs/images/code-validation/about-page.JPG)
-- [Dashboard page](docs/images/code-validation/dash-board-page.JPG)
-- [Login page](docs/images/code-validation/login-page.JPG)
-- [Logout page](docs/images/code-validation/logout-page.JPG)
-- [Register page](docs/images/code-validation/signup-page.JPG)
+- [Home page](docs/validation/html/home-page.JPG)
+- [Cars page](docs/validation/html/cars-page.JPG)
+- [Car page](docs/validation/html/car-page.JPG)
+- [Search page](docs/validation/html/search-page.JPG)
+- [About page](docs/validation/html/about-page.JPG)
+- [Dashboard page](docs/validation/html/dash-board-page.JPG)
+- [Login page](docs/validation/html/login-page.JPG)
+- [Logout page](docs/validation/html/logout-page.JPG)
+- [Register page](docs/validation/html/signup-page.JPG)
 
 ### Python
 
