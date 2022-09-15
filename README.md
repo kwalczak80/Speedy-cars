@@ -579,12 +579,18 @@ If the user decides to log out, they will be redirected to the page to confirm t
 
 ![Sign out page](docs/images/existing-features/authentication/sign-out-page.JPG)
 
-### Error handling(404 page)
+### Error handling
+
+404 page
 
 If the page the user is trying to reach is not accessible, the following error message will be displayed on the screen.
 The user can return to the home page by pressing the home button. There is no need to hit the back button on their browser.
 
 ![404 error page](docs/images/existing-features/404-page/404-error-message.JPG)
+
+500 page
+
+A 500 server error page was also created to handle internal server errors.
 
 ### Customized Admin (the business owner) panel
 
@@ -1032,6 +1038,40 @@ The solution was found on [Stack Overflow](https://stackoverflow.com/questions/3
 </details>
 
 ## Unfixed bugs
+
+## Deployment
+
+The master branch of this repository has been used for the deployed version of this application.
+
+### Using Github & Gitpod
+
+To deploy this Django application, [The Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used to deploy this Django application.
+To create repository from template above the following steps were taken:
+
+- Click the **Use This** Template button.
+- Add a repository name and brief description.
+- Click the **Create Repository** from Template to create repository.
+- To create a Gitpod workspace click **Gitpod**, this can take a
+few minutes.
+- When on the project it is best to open the workspace from
+Gitpod (rather than Github) as this will open revious workspace rather
+than creating a new one.
+- Committing work should be done often and should have
+clear/explanatory messages, use the following commands to make
+commits:
+  - git add .: adds all modified files to a staging area
+  - git commit -m "A message explaining commit" :commits all changes
+to a local repository.
+  - git push: pushes all your committed changes to the Github repository.
+
+### Deployment to heroku
+
+In the app
+
+- Add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
+- Git add and git commit the changes made
+
+
 
 ## Content
 
