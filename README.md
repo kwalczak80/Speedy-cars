@@ -861,6 +861,9 @@ The Python code within the application has been validated by [PEP8 online valida
 
 The CSS code within the application has been validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
 
+[CSS Admin validation results](docs/validation/css/css-validation-admin-area.JPG)
+[CSS validation results](docs/validation/css/css-validation.jpg)
+
 ### JS
 
 The JavaScript and JQuery code within the application has been validated by [JSHint](https://jshint.com/), and the results can be seen below.

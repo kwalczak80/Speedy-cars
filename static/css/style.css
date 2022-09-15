@@ -4,6 +4,17 @@ body {
   background-color: #d4d1d1;
   font-family: 'Abel', sans-serif;
 }
+/* Background video */
+#background-video {
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
 
 #nav-bar {
   font-family: 'Bebas Neue', sans-serif;
@@ -21,6 +32,10 @@ body {
   color: #ffac0c;
 }
 
+#slogan {
+  margin-top: 70vh;
+}
+
 #slogan h1 {
  -webkit-text-stroke-width: 2px;
  -webkit-text-stroke-color: #1c1c1c;
@@ -31,6 +46,7 @@ a.btn {
   margin: auto;
 }
 
+/* Navigation */
 li.nav-item{
    list-style: none;
 }
@@ -41,20 +57,6 @@ a.nav-link {
 }
 a.nav-link:hover {
   color: aqua;
-}
-
-#background-video {
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  object-fit: cover;
-  z-index: -1;
-  overflow: hidden;
-}
-#slogan {
-  margin-top: 70vh;
 }
 
 div.card-img-overlay {
@@ -106,6 +108,7 @@ ul.list-inline {
   color: #ffac0c; 
   }
 
+/* Media queries */
 @media only screen and (max-width: 320px) {
     #slogan h1{
       font-size: 2rem;
@@ -124,9 +127,7 @@ ul.list-inline {
 @media only screen and (min-width: 768px) {
     #nav-bar {
       font-size: 1.5rem;
-    }
-
-    
+    }    
   }
 
 
