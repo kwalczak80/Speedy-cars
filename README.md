@@ -942,66 +942,65 @@ The JavaScript and JQuery code within the application has been validated by [JSH
 
 ## Bugs
 
-### Issue
+<details>
 
-Unable to migrate models to the database
+<summary>Unable to migrate models to the database</summary>
+
 ![Issue with migration to database](docs/images/bugs/issue_with_migration_to_database.png)
 
-### Fix
+Fix
 
 The problem was in one of the 000X_xxxxxxxxxx.py files in the migrations folder.
 When I created my model I was forced to add a default value to each table i.e. float Field
 By mistake, I added a string value instead of a number value, and that caused all issues.
 To fix this I had to manually edit some parts of migration files (change from str to a number) and then I was able to migrate models to the database.
-<hr>
+</details>
 
-### Issue
+<details>
+<summary>Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached</summary>
 
 Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached.
 The folowing error was presented on the screen:
 FATAL:  password authentication failed for user "popyrrkqilvwjx"
 FATAL:  no pg_hba.conf entry for host "35.195.38.40", user "popyrrkqilvwjx", database "d6tpv8s8mh12kk", no encryption
 
-### Fix
+Fix
 
 The issue was fixed by adding a new security key in env.py from Heroku
-<hr>
+</details>
 
-### Issue
+<details>
+<summary>Unable to loop through choices</summary>
 
-Unable to loop through choices
 ![Issue to loop through choices](docs/images/bugs/issue_unable_to_loop_through_choices.png)
 
-### Fix
+Fix
 
-In error, I omitted to add the ‘items’ command - for key, value in make_choices.items
-<hr>
+I omitted in error to add the ‘items’ command - for key, value in make_choices.items
+</details>
 
-### Issue
-
-More Info link did not work on the card(unable to click)
+<details>
+<summary>More Info link did not work on the card(unable to click)s</summary>
 
 ![Issue with More Info Link](docs/images/bugs/issue_with_more_info_link.png)
 
-### Fix
+Fix
 
 To fix the issue I added the following class to style.css file - **div.card-img-overlay {pointer-events: none;}**
-<hr>
+</details>
 
-### Issue
+<details>
+<summary>Unable to deploy to Heroku as the following error message was displayed on the Heroku panel
+Error while running '$ python manage.py collectstatic --noinput'.</summary>
 
-Unable to deploy to Heroku as the following error message was displayed on the Heroku panel
-Error while running '$ python manage.py collectstatic --noinput'.
-
-### Fix
+Fix
 
 This issue was resolved by executing the following command **python3 manage.py collectstatic** in gitpod terminal.
 The solution was found on [Stack Overflow](https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku)
-<hr>
+</details>
 
-### Issue
-
-The folowing error related to the local variable referenced before assigment was showing on the screen
+<details>
+<summary>The error related to the local variable referenced before assigment was showing on the screen</summary>
 
 ![Issue with local variable 'date'](docs/images/bugs/issue_with_local_variable_date.png)
 
@@ -1009,18 +1008,17 @@ I checked the model and I discovered that **date** was missing apostrophes - ''
 
 ![Issue with local variable 'date' model view](docs/images/bugs/issue_with_local_variable_date_model_view.png)
 
-### Fix
+Fix
 
 ![Issue with local variable 'date' model fixed](docs/images/bugs/issue_with_local_variable_date_model_fixed.png)
-<hr>
+</details>
 
-### Issue
-
-Images displayed on cards had no equal height.
+<details>
+<summary>Images displayed on cards had no equal height.</summary>
 
 ![Issue with image height on a card](docs/images/bugs/issue_with_image_height_on_card.JPG)
 
-### Fix
+Fix
 
 The fix was implmented by adding the following car-img-top class in style.css file
 
@@ -1031,6 +1029,9 @@ object-fit: cover;
 }
 
 The solution was found on [Stack Overflow](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width)
+</details>
+
+## Unfixed bugs
 
 ## Content
 
@@ -1041,6 +1042,6 @@ The artwork used in this project was copied from the following websites:
 
 ## Acknowledgments
 
-- My Mentor Simen Eventyret_mentor for continuous helpful feedback.
+- My Mentor Simen [Eventyret_mentor](https://github.com/Eventyret) for continuous helpful feedback.
 - Code Institute's Slack community for their support.
 - All family members and friends who helped test this application.
