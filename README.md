@@ -654,9 +654,11 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 ## Features to be implemented
 
 - Email notification to the staff that the car was booked for a test drive.
+- Email notification to the user that they hvae booked the test drive succesfuly
 - Ability to add(by the user) a testimonial about Speedy Cars
 - Ability to View testimonials about Speedy Cars
 - Ability to approve testimonials by the business owner(after approval testimonials can be displayed on the page).
+- Add more car searching options(i.e. model, milage, min year, max year, etc.)
 
 
 ## UX testing
@@ -1104,7 +1106,7 @@ Throughout the process of building this website, various online sources have bee
 [YouTube](https://www.youtube.com/) - Django CRUD tutorial
 [W3Schools](https://www.w3schools.com/django/)
 [Udemy](https://www.udemy.com/) - Django tutorials
-[Donedeal](https://www.donedeal.ie/) - copy the description of the cars
+[Donedeal](https://www.donedeal.ie/) - to find some descriptions of the cars
 
 ## Content
 
