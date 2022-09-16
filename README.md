@@ -255,7 +255,7 @@ The color palette was intended to create a fairly neutral background so that the
 - #ffffff - cards background color
 - #00ffff - hover effect color
 
-![Website colors](docs/images/colours/website-colors.JPG)
+![Website colors](docs/images/colors/website-colors.JPG)
 
 ## Features
 
