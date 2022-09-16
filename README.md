@@ -883,7 +883,7 @@ The JavaScript and JQuery code within the application has been validated by [JSH
 
 ### Color Contrast Accessibility Validator
 
-The [Color Contrast Accessibility Validator] used to check if there is no contrast issue on the web page.
+The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used to check if there is no contrast issue on the web page.
 
 [Contrast validation results](docs/validation/contrast-validation/color-contrast-accessibility-validator-results.JPG)
 
