@@ -1071,6 +1071,35 @@ In the app
 - Add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
 - Git add and git commit the changes made
 
+Log into heroku
+
+- Log into [Heroku](https://www.heroku.com/) or create a new account and log in
+- In the top right-hand corner, click “New”; and choose the option to Create a new app.
+- Write the app name(it must be unique).
+- Choose Region
+- Click “Create App”
+- Click in resources and select Heroku Postgres database
+- Click Reveal Config Vars and add new config "SECRET_KEY"
+- Click Reveal Config Vars and add new config "CLOUDINARY_URL"
+- Click Reveal Config Vars and add new config "DISABLE_COLLECTSTATIC = 1"
+- The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+- Next, go to Buildpack section click Add Buildpack select python and Save Changes
+- Scroll to the top of the page and choose the Deploy tab
+- Select Github as the deployment method
+- Confirm you want to connect to GitHub
+- Search for the repository name and click the connect button
+- Scroll to the bottom of the deploy page and select the preferred deployment type
+- Click either Enable Automatic Deploys for automatic deployment when you push updates to Github
+
+### Final deployment
+
+- Create a Procfile web: gunicorn speedy_cars.wsgi
+- When development is complete change the debug setting to: DEBUG = False in settings.py
+- In Heroku settings, delete the config vars for DISABLE_COLLECTSTATIC = 1
+
+## Credits
+
+Throughout the process of building this website, various online sources have been used to help fix bugs & tackle problems, in addition to multiple modules to create the functionality of this website:
 
 
 ## Content
