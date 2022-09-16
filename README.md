@@ -881,6 +881,12 @@ The JavaScript and JQuery code within the application has been validated by [JSH
 
 [JS validation results](docs/validation/js/js-validation-results.JPG)
 
+### Color Contrast Accessibility Validator
+
+The [Color Contrast Accessibility Validator] used to check if there is no contrast issue on the web page.
+
+[Contrast validation results](docs/validation/contrast-validation/color-contrast-accessibility-validator-results.JPG)
+
 ## Technologies Used
 
 ### Languages
