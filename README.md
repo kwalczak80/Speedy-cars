@@ -1100,7 +1100,11 @@ Log into heroku
 ## Credits
 
 Throughout the process of building this website, various online sources have been used to help fix bugs & tackle problems, in addition to multiple modules to create the functionality of this website:
-
+[Stack Overflow](https://stackoverflow.com/) - To find solutions to the issues I encountered while creating this project.
+[YouTube](https://www.youtube.com/) - Django CRUD tutorial
+[W3Schools](https://www.w3schools.com/django/)
+[Udemy](https://www.udemy.com/) - Django tutorials
+[Donedeal](https://www.donedeal.ie/) - copy the description of the cars
 
 ## Content
 
