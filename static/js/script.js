@@ -17,6 +17,3 @@ $('#datepicker').datepicker("setDate", new Date());
 $(document).ready(function () {
     $('.opening-hours li').eq(new Date().getDay()).addClass('today');
 });
-
-// Display current year in the footer
-document.querySelector('#current-year').innerText = new Date().getFullYear();

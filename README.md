@@ -2,6 +2,7 @@
 
 ![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
+
 ## User Experience (UX)
 
 ### Primary Goal
@@ -134,7 +135,7 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 The information architecture was organized in such a way as to ensure that users can navigate through the site easily.
 
-![Site Map](docs/site_map/speedy_cars_site_map.jpg)
+![Site Map](docs/site_map/speedy-cars-site-map.JPG)
 
 ## Structure
 
