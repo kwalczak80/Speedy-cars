@@ -1048,6 +1048,14 @@ object-fit: cover;
 The solution was found on [Stack Overflow](https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width)
 </details>
 
+<details>
+<summary>issue with responsiveness when displaying the dashboard panel on small screens</summary>
+
+Fix
+
+To fix it I implemented the grid system instead of tables.
+</details>
+
 ## Unfixed bugs
 
 ## Deployment
