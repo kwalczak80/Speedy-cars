@@ -2,6 +2,7 @@
 
 ![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
+This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. This car sales website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. This website is my first approach to building a commercial website.
 
 ## User Experience (UX)
 
