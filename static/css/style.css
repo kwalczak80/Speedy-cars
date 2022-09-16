@@ -56,7 +56,7 @@ a.nav-link {
   color: #ffffff8c;
 }
 a.nav-link:hover {
-  color: aqua;
+  color: #00ffff;
 }
 
 div.card-img-overlay {
@@ -78,7 +78,7 @@ footer {
 }
 
 .fa-brands:hover {
-  color: aqua !important;;
+  color: #00ffff !important;;
 }
 
 .fa-brands

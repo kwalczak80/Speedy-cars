@@ -246,12 +246,16 @@ I visited the Google fonts website to explore available font options for my proj
 
 ### Colours
 
-- #ffac0c - dealer name
-- #d4d1d1 - background color
+I used [Coolors](https://coolors.co/) to come up with a color scheme.
+The color palette was intended to create a fairly neutral background so that the photos of the cars stand out as much as possible.
+
+- #ffac0c - the business name and the text displayed on the home page
+- #d4d1d1 - the background color displaed on all pages except the home page
 - #212529 - navbar and footer background color
 - #ffffff - cards background color
-- #ffffff8c - navbar, footer and cards text color
-- #008ed6 - hover effect color
+- #00ffff - hover effect color
+
+![Website colors](docs/images/colours/website-colors.JPG)
 
 ## Features
 
@@ -659,7 +663,6 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 - Ability to View testimonials about Speedy Cars
 - Ability to approve testimonials by the business owner(after approval testimonials can be displayed on the page).
 - Add more car searching options(i.e. model, milage, min year, max year, etc.)
-
 
 ## UX testing
 
