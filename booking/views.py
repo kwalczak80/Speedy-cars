@@ -36,7 +36,7 @@ def booking(request):
             booking_obj.save()
             messages.add_message(request, messages.SUCCESS,
                                  "Congratulations !! You have booked your "
-                                 "test drive succesfuly")
+                                 "test drive successfully.")
             return redirect('/cars/'+car_id)
         else:
             messages.add_message(request, messages.ERROR, "Selected date is "
