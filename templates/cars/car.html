@@ -21,53 +21,54 @@
         <div class="row justify-content-center">
             <div class="col-md-9">
                 <!-- Car Main Image -->
-                <img src="{{ selected_car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1" aria-label="Main picture of the car">
+                <img src="{{ selected_car.photo_main.url }}" alt="Main picture of the car"
+                    class="img-main img-fluid mb-1" aria-label="Main picture of the car">
                 <!-- Car Thumbnails -->
                 <div class="row mb-3 thumbs">
                     {% if selected_car.photo_1 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 1"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 1" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_1.url }}" alt="Car photo 1" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
                     {% if selected_car.photo_2 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 2"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 2" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_2.url }}" alt="Car photo 2" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
                     {% if selected_car.photo_3 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 3"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 3" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_3.url }}" alt="Car photo 3" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
                     {% if selected_car.photo_4 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 4"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 4" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_4.url }}" alt="Car photo 4" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
                     {% if selected_car.photo_5 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 5"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 5" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_5.url }}" alt="Car photo 5" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
                     {% if selected_car.photo_6 %}
                     <div class="col-md-2">
-                        <a href="{{ selected_car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 6"
-                            data-height="560" data-width="560">
+                        <a href="{{ selected_car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery"
+                            aria-label="Car photo 6" data-height="560" data-width="560">
                             <img src="{{ selected_car.photo_6.url }}" alt="Car photo 6" class="img-fluid mb-1">
                         </a>
                     </div>
@@ -129,7 +130,7 @@
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <div class="text-center">
-                        <h2>Car description:</h2>
+                            <h2>Car description:</h2>
                         </div>
                         {{ selected_car.description }}
                     </div>
@@ -137,21 +138,24 @@
             </div>
             <div class="col-md-3">
                 <div class="card mb-3">
-                    <img class="card-img-top photo" src="{{ selected_car.sales_person.photo.url}} " alt="Picture of the sales executive" aria-label="Picture of the sales executive">
+                    <img class="card-img-top photo" src="{{ selected_car.sales_person.photo.url}} "
+                        alt="Picture of the sales executive" aria-label="Picture of the sales executive">
                     <div class="card-body">
                         <h5 class="card-title">{{ selected_car.sales_person.description }}</h5>
                         <h5 class="lead">{{ selected_car.sales_person }}</h5>
-                        <h6 class="text-secondary"><i class="fa-solid fa-phone"></i> {{ selected_car.sales_person.phone }}</h6>
-                        <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i> {{ selected_car.sales_person.email }}</h6>
+                        <h6 class="text-secondary"><i class="fa-solid fa-phone"></i>
+                            {{ selected_car.sales_person.phone }}</h6>
+                        <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i>
+                            {{ selected_car.sales_person.email }}</h6>
                     </div>
                 </div>
                 <div class="d-grid text-center">
-                {% if user.is_authenticated %}
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inquiryModal">Book Test
-                    Drive</button>
-                {% else %}
-                <p class="lead">Please login to book a test drive.</p>
-                {% endif %}
+                    {% if user.is_authenticated %}
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inquiryModal">Book Test
+                        Drive</button>
+                    {% else %}
+                    <p class="lead">Please login to book a test drive.</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -174,15 +178,18 @@
                     <input type="hidden" name="car_id" value="{{ selected_car.id }}">
                     <div class="mb-3">
                         <label for="car" class="form-label">Car:</label>
-                        <input type="text" name="car" id="car" class="form-control" value="{{ selected_car.title }}" readonly>
+                        <input type="text" name="car" id="car" class="form-control" value="{{ selected_car.title }}"
+                            readonly>
                     </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
-                        <input type="text" name="name" id="name" class="form-control" value="{{ user.username }}" readonly>
+                        <input type="text" name="name" id="name" class="form-control" value="{{ user.username }}"
+                            readonly>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
-                        <input type="email" name="email" id="email" class="form-control" value="{{ user.email }}" required>
+                        <input type="email" name="email" id="email" class="form-control" value="{{ user.email }}"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label">Phone</label>
@@ -203,7 +210,12 @@
                         <label for="message" class="form-label">Message</label>
                         <textarea name="message" id="message" class="form-control"></textarea>
                     </div>
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <div class="modal-footer">
+                        <div class="container text-center">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                        </div>
+                    </div>
+                    <!-- <input class="btn btn-primary" type="submit" value="Submit"> -->
                 </form>
             </div>
         </div>
