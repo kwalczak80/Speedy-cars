@@ -899,6 +899,16 @@ The Lighthouse tool was used to assess the website's performance, accessibility,
 - [Search page](docs/validation/lighthouse-testing/lighthouse-testing-search-page.JPG)
 - [About page](docs/validation/lighthouse-testing/lighthouse-testing-about-page.JPG)
 
+### Accessibility
+
+I have tested the pages of the application using [WAVE](https://wave.webaim.org/)to ensure there are no errors. The results can be seen by following the links below.
+
+- [Home page](docs/validation/accessibility/accessibility-home-page.JPG)
+- [Cars page](docs/validation/accessibility/accessibility-cars-page.JPG)
+- [Car page](docs/validation/accessibility/accessibility-car-page.JPG)
+- [Search page](docs/validation/accessibility/accessibility-search-page.JPG)
+- [About page](docs/validation/accessibility/accessibility-about-page.JPG)
+
 ## Technologies Used
 
 ### Languages
