@@ -5,6 +5,9 @@ from employees.models import Employee
 
 
 class Car(models.Model):
+    """
+    The car model
+    """
     sales_person = models.ForeignKey(Employee, on_delete=models.DO_NOTHING,
                                      default=True)
     title = models.CharField(max_length=300, null=False, blank=False,
@@ -90,4 +93,7 @@ class Car(models.Model):
     date = models.DateField(auto_now=True)
 
     def __str__(self):
+        """
+        Return the car title
+        """
         return self.title

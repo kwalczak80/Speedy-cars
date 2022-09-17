@@ -1,3 +1,7 @@
+"""
+List of categories with relevant choices
+that are used on the search page
+"""
 make_choices = {
     'Audi': 'Audi',
     'Bmw': 'Bmw',

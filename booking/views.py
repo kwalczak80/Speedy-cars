@@ -1,11 +1,16 @@
+from datetime import datetime
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Booking
 from .forms import BookingForm
-from datetime import datetime
 
 
 def booking(request):
+    """
+    The booking function evaluates the user entries.
+    If all user entries are valid the test drive is
+    saved in the database otherwise, it is canceled.
+    """
     if request.method == 'POST':
         car = request.POST['car']
         name = request.POST['name']
@@ -34,12 +39,13 @@ def booking(request):
                                  "test drive succesfuly")
             return redirect('/cars/'+car_id)
         else:
-            messages.add_message(request, messages.ERROR, "Please select "
-                                                          "correct date!!")
+            messages.add_message(request, messages.ERROR, "The selected date "
+                                                          "is in the past !!")
             return redirect('/cars/'+car_id)
 
 
 def dashboard(request):
+    """ Display all booked test drives in the dashboard """
     user_booking = Booking.objects.all().filter(user_id=request.user.id)
 
     context = {
@@ -49,6 +55,7 @@ def dashboard(request):
 
 
 def cancellation(request, booking_id):
+    """ Deletes the booking from the database using it's primary key """
     booking_cancellation = get_object_or_404(Booking, pk=booking_id)
     if request.method == 'POST':
         booking_cancellation.delete()
@@ -59,6 +66,7 @@ def cancellation(request, booking_id):
 
 
 def edit(request, booking_id):
+    """ The view for user to be able to edit their existing bookings """
     booking_id = get_object_or_404(Booking, pk=booking_id)
     if request.method == "POST":
         form = BookingForm(request.POST, instance=booking_id)
@@ -71,7 +79,8 @@ def edit(request, booking_id):
                 return redirect('dashboard')
         else:
             messages.add_message(request, messages.ERROR,
-                                 "Please select correct date!!")
+                                 "The selected date "
+                                 "is in the past !!")
             return redirect('/cars')
     form = BookingForm(instance=booking_id)
     context = {

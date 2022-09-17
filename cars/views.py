@@ -7,6 +7,11 @@ from .models import Car
 
 
 def index(request):
+    """
+    Display cars on the page ordered by date
+    added to the database. Display only cars available for sale.
+    Up to six cars can be displayed on one page.
+    """
     cars = Car.objects.order_by('-date').filter(is_for_sale=True)
     paginator = Paginator(cars, 6)
     page = request.GET.get('page')
@@ -19,15 +24,23 @@ def index(request):
 
 
 def car(request, car_id):
-    car = get_object_or_404(Car, pk=car_id)
+    """
+    Display information about the specific car
+    selected by the user
+    """
+    car_info = get_object_or_404(Car, pk=car_id)
 
     context = {
-        'car': car
+        'car_info': car_info
     }
     return render(request, 'cars/car.html', context)
 
 
 def search_results(request):
+    """
+    Display search results based on user entries(keywords)
+    or selections(drop-down menus)
+    """
     queryset_list = Car.objects.order_by('-date')
 
     # Keywords query

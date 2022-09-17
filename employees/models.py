@@ -4,6 +4,9 @@ from cloudinary.models import CloudinaryField
 
 
 class Employee(models.Model):
+    """
+    The Employee model
+    """
     name = models.CharField(max_length=100, default='')
     photo = CloudinaryField('image')
     description = models.TextField(default='')
@@ -12,4 +15,7 @@ class Employee(models.Model):
     hire_date = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
+        """
+        Return the employee name
+        """
         return self.name

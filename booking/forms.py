@@ -3,11 +3,14 @@ from .models import Booking
 
 
 class DateInput(forms.DateInput):
+    """ Define input type for calendar picker """
     input_type = 'date'
 
 
 class BookingForm(forms.ModelForm):
+    """ The Booking Form Model """
     class Meta:
+        """ Fields list and widget """
         model = Booking
 
         fields = ['car', 'name', 'email', 'phone', 'date', 'message']
