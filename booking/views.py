@@ -39,8 +39,10 @@ def booking(request):
                                  "test drive succesfuly")
             return redirect('/cars/'+car_id)
         else:
-            messages.add_message(request, messages.ERROR, "The selected date "
-                                                          "is in the past !!")
+            messages.add_message(request, messages.ERROR, "Selected date is "
+                                                          "in the past, please"
+                                                          " choose a date in"
+                                                          " the future.")
             return redirect('/cars/'+car_id)
 
 
@@ -79,8 +81,10 @@ def edit(request, booking_id):
                 return redirect('dashboard')
         else:
             messages.add_message(request, messages.ERROR,
-                                 "The selected date "
-                                 "is in the past !!")
+                                 "Selected date is "
+                                 "in the past, please"
+                                 " choose a date in"
+                                 " the future.")
             return redirect('/cars')
     form = BookingForm(instance=booking_id)
     context = {
