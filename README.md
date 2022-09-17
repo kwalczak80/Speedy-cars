@@ -893,11 +893,11 @@ The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used t
 
 The Lighthouse tool was used to assess the website's performance, accessibility, and SEO. The results are shown below.
 
-[Home page](docs/validation/lighthouse-testing/lighthouse-testing-home-page.JPG)
-[Cars page](docs/validation/lighthouse-testing/lighthouse-testing-cars-page.JPG)
-[Car page](docs/validation/lighthouse-testing/lighthouse-testing-car-page.JPG)
-[Search page](docs/validation/lighthouse-testing/lighthouse-testing-search-page.JPG)
-[About page](docs/validation/lighthouse-testing/lighthouse-testing-about-page.JPG)
+- [Home page](docs/validation/lighthouse-testing/lighthouse-testing-home-page.JPG)
+- [Cars page](docs/validation/lighthouse-testing/lighthouse-testing-cars-page.JPG)
+- [Car page](docs/validation/lighthouse-testing/lighthouse-testing-car-page.JPG)
+- [Search page](docs/validation/lighthouse-testing/lighthouse-testing-search-page.JPG)
+- [About page](docs/validation/lighthouse-testing/lighthouse-testing-about-page.JPG)
 
 ## Technologies Used
 

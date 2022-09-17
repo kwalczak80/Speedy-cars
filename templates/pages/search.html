@@ -20,7 +20,7 @@
                 placeholder="Keyword (Make, Model, Fuel Type, etc)" value="{{ values.keywords }}" />
             </div>
             <div class="mb-1">
-              <select name="make" class="form-select">
+              <select name="make" class="form-select" aria-label="Select make">
                 <option selected="selected" disabled="disabled">Make (All)</option>
                 {% for key,value in make_choices.items %}
                 <option value="{{ key }}" {% if key == values.make %} selected {% endif %}>{{ value }}</option>
@@ -28,7 +28,7 @@
               </select>
             </div>
             <div class="mb-1">
-              <select name="fuel_type" class="form-select">
+              <select name="fuel_type" class="form-select" aria-label="Select fuel type">
                 <option selected="selected" disabled="disabled">Fuel Type (All)</option>
                 {% for key,value in fuel_type_choices.items %}
                 <option value="{{ key }}" {% if key == values.fuel_type %} selected {% endif %}>{{ value }}</option>
@@ -36,7 +36,7 @@
               </select>
             </div>
             <div class="mb-1">
-              <select name="body_type" class="form-select">
+              <select name="body_type" class="form-select" aria-label="Select body type">
                 <option selected="selected" disabled="disabled">Body Type (Any)</option>
                 {% for key,value in body_type_choices.items %}
                 <option value="{{ key }}">{{ value }}</option>
@@ -44,7 +44,7 @@
               </select>
             </div>
             <div class="mb-1">
-              <select name="engine_size" class="form-select">
+              <select name="engine_size" class="form-select" aria-label="Select engine size">
                 <option selected="selected" disabled="disabled">Engine Size (Any)</option>
                 {% for key,value in engine_size_choices.items %}
                 <option value="{{ key }}">{{ value }}</option>
@@ -52,7 +52,7 @@
               </select>
             </div>
             <div class="mb-3">
-              <select name="price" class="form-select">
+              <select name="price" class="form-select" aria-label="Select price">
                 <option selected="selected" disabled="disabled">Price (Any)</option>
                 {% for key,value in price_choices.items %}
                 <option value="{{ key }}">{{ value }}</option>
