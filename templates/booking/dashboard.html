@@ -21,9 +21,9 @@
               <div><strong>Test Drive Date: {{ item.date | date:"D d M Y" }}</strong></div>
             </div>
             <div class="col-md-4 d-flex justify-content-evenly">
-              <a class="btn btn-info" href="{% url 'car' item.car_id %}">View</a>
-              <a class="btn btn-success" href="{% url 'edit' item.id %}">Edit</a>
-              <a class="btn btn-danger" href="{% url 'cancellation' item.id %}">Cancel</a>
+              <a class="btn btn-info" aria-label="View the car" href="{% url 'car' item.car_id %}">View</a>
+              <a class="btn btn-success" aria-label="Edit test drive" href="{% url 'edit' item.id %}">Edit</a>
+              <a class="btn btn-danger" aria-label="Cancel test drive" href="{% url 'cancellation' item.id %}">Cancel</a>
             </div>
           </div>
           <hr>
