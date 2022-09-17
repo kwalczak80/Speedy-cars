@@ -2,13 +2,14 @@
 
 ![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
-This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. This car sales website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. This website is my first approach to building a commercial website.
+This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. The Speedy Cars website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. The business owner can also easily manage the cars stock from the administration panel.
+While this project is purely educational, it is my first attempt at building a commercial website.
 
 ## User Experience (UX)
 
 ### Primary Goal
 
-The primary goal of the website from the site owner’s perspective is as follows:
+The primary goal of the website, from the site owner’s perspective, is as follows:
 
 - To attract customers to the business by showing a variety of cars for sale
 - To allow a user to navigate the website easily
@@ -18,10 +19,10 @@ The primary goal of the website from the site owner’s perspective is as follow
 - Ability to add a new car for sale
 - To allow a user to read testimonials about the Speedy Cars
 
-The primary goal of the website from a site user’s perspective is as follows:
+The primary goal of the website, from a site user’s perspective, is as follows:
 
 - To view the car’s stock
-- To view details about car along with description and price
+- To view details about the car along with a description and price
 - To be able to easily find a car they are looking for
 - To book a test drive
 - To make an inquiry about the car
@@ -31,7 +32,7 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 ## User Requirements and Expectations
 
-- Easy to navigate by using the few buttons
+- Easy to navigate by using a few buttons
 - Appealing dashboard with a functional overview
 - No broken links
 - Appropirate error handling
@@ -49,12 +50,12 @@ The primary goal of the website from a site user’s perspective is as follows:
   - Diesel
   - Hybrid
   - Electric
-- As a user, I want to see descriptions of each car available for sale along with relevant pictures.
+- As a user, I want to see a description of each car available for sale along with relevant pictures.
 - As a user, I want to be able to navigate the website quickly and easily.
 - As a user, I want to be able to use the search option to find the car I’m looking for.
-- As a user, I want to be able to view the price of the cars.
-- As a user, I want to be able to read other user’s testimonials.
-- As a user, I want to be able to make an inquiry about the car.
+- As a user, I want to be able to view the price of the car.
+- As a user, I want to be able to read other users’ testimonials.
+- As a user, I want to be able to inquire about the car.
 - As a user, I want to be able to book a test drive.
 - As a user, I want to be able to edit or delete a test drive I have made.
 - As a user, I want to read more information about the business.
@@ -70,19 +71,19 @@ The primary goal of the website from a site user’s perspective is as follows:
 
 - As a user, I want to attract car buyers.
 - As a user, I want an appealing website with a range of cars.
-- As a user, I want users to be to view the full range of cars available for sale.
+- As a user, I want users to be able to view the full range of cars available for sale.
 - As a user, I want users to be able to view the relevant description of each car along with the price.
-- As a user, I want users to able to have an option to search for the car they are looking for.
+- As a user, I want users to be able to have an option to search for the car they are looking for.
 - As a user, I want users to be able to make an inquiry about the car.
-- As a user, I want users to be able to book the test drive with the selected car.
+- As a user, I want users to be able to book a test drive with the selected car.
 - As a user, I want users to be informed if a test drive cannot be booked.
 - As a user, I want users to be able to edit and cancel a test drive.
 - As a user, I want users to be able to read about the business.
 - As a user, I want users to be able to navigate the site easily and quickly.
 - As a user, I want users to be able to sign in to or create an account.
-- As a user, I want users to be able to log out of their account.
-- As a user, I want to be able to add new cars or remove if sold.
-- As a user, I want users to be able to view the business’ social media.
+- As a user, I want users to be able to log out of their accounts.
+- As a user, I want to be able to add new cars or remove them if they are sold.
+- As a user, I want users to be able to view the business's social media.
 - As a user, I want to be able to add testimonials.
 
 ### Error Handling
@@ -174,7 +175,7 @@ The following models were created to represent the database model structure for 
 
 Car model
 
-- The car model contains a collection of data for each car dislpayed on the website. This model is being used by the business owner (via admin panel) each time when a new car is added.
+- The car model contains a collection of data for each car displayed on the website. This model is being used by the business owner (via admin panel) each time a new car is added.
 
 | Name | Key | Type | Other Details |
 | -- | -- | -- | -- |
@@ -219,7 +220,7 @@ Booking model
 
 Employee model
 
-- The Employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
+- The employee model is being used by the business owner(via admin panel) to enter information about the employee. Some fields from this model are dynamically displayed on the website.
 
 | Name | Key | Type | Other Details |
 | -- | -- | -- | -- |
@@ -239,7 +240,7 @@ As I wanted a more attractive and dynamic home page, I decided to use a video as
 
 ### Fonts
 
-I visited the Google fonts website to explore available font options for my project. After consideration, three different font types were chosen to be used in different sections of the website.
+I visited the Google fonts website to explore the available font options for my project. After consideration, three different font types were chosen to be used in different sections of the website.
 
 - The [Bebas Neue font](https://fonts.google.com/?query=bebas "Bebas Neue font") font is used in navigation bar and to display the slogan on the home page.
 - The [Orbitron font](https://fonts.google.com/?query=orbitron "Orbitron font") font is used to display the business name in the navbar.
@@ -251,7 +252,7 @@ I used [Coolors](https://coolors.co/) to come up with a color scheme.
 The color palette was intended to create a fairly neutral background so that the photos of the cars stand out as much as possible.
 
 - #ffac0c - the business name and the text displayed on the home page
-- #d4d1d1 - the background color displaed on all pages except the home page
+- #d4d1d1 - the background color displayed on all pages except the home page
 - #212529 - navbar and footer background color
 - #ffffff - cards background color
 - #00ffff - hover effect color
@@ -266,7 +267,7 @@ The website has been designed using Bootstrap 5 therefore it's fully responsive 
 
 ### Homepage
 
-The home page is a simple set of navigation elements, background video and a short slogan displayed on the screen.
+The home page is a simple set of navigation elements, a background video, and a short slogan displayed on the screen.
 
 The video background fits perfectly into the context of the project and the purpose of the website.
 ![Home page](docs/images/existing-features/homepage/home-page.JPG)
@@ -310,15 +311,15 @@ When the user clicks on the **Cars** link in the navigation bar, they will be re
 
 ![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
 
-The form of presentation of each car is the same and consists in displaying a single photo of the car and basic information about the car. The information is presented using icons and text in a minimalist way. The basic information about the car that the user can read is as follows:
+The form of presentation of each car is the same and consists of displaying a single photo of the car and basic information about the car. The information is presented using icons and text in a minimalist way. The basic information about the car that the user can read is as follows:
 
 - Engine type
 - Engine size
-- Milage
+- Mileage
 - Year of manufacture
 - Gearbox type
 - Body type
-- Information since when the car is for sale
+- Information about when the car was posted on the website
 
 The **More info** button allows the user to be redirected to a page where additional information about the specific car will be presented.
 
@@ -330,7 +331,7 @@ Each **Cars** page may contain up to six cars for sale. If the number of cars in
 
 ![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
 
-However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). A user can then change pages by clicking on arrows or directly click on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page 1 is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
+However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). A user can then change pages by clicking on arrows or directly clicking on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page one is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
 
 ![Pagination](docs/images/existing-features/pagination/pagination.JPG)
 
@@ -348,18 +349,18 @@ This page is divided into sections:
   - Email address
   - If the user is logged in, a button to book a test drive will be also visible(please read about this feature below).
 
-The user has an option to return to view all cars by clicking on the **Back to cars** button which is located above the car main photo.
+The user has the option to return to viewing all cars by clicking on the **Back to cars** button, which is located above the car's main photo.
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
 
 ### Thumbinals
 
-When the user clicks on the **More info** button they will be redirected to the page to view more details about the car they interested about.
+When the user clicks on the **More info** button, they will be redirected to the page to view more details about the car they are interested in.
 
 ![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
 
-On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail it will enlarge and the user will be able to scroll through all available images.
-The user can use the keyboard left or right keys or arrows keys presented on the screen to scroll through all available images.
+On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail, it will enlarge and the user will be able to scroll through all available images.
+The user can use the keyboard left or right keys or arrow keys presented on the screen to scroll through all available images.
 
 ![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
 
@@ -371,18 +372,18 @@ In order to book a test drive, the user must be logged in. If the user is not lo
 
 ![Book test drive user not logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-not-logged-in.JPG)
 
-If the user is logged in, the **Book test drive** button will be visible below the sales executive person card.
+If the user is logged in, the **Book test drive** button will be visible below the sales executive's name card.
 
 ![Book test drive user logged in](docs/images/existing-features/book-test-drive/book-test-drive-user-logged-in.JPG)
 
-When the user clicks on the **Book test drive** button a modal window will be opened. The user must provide additional information in order to complete the test drive booking process.
+When the user clicks on the **Book test drive** button, a modal window will be opened. The user must provide additional information in order to complete the test drive booking process.
 The following fields can be seen in the modal window:
 
 - Car - this field is automatically populated and cannot be modified(read-only)
 - Name - this field is automatically populated. The user name is pulled from the database and cannot be modified(read-only)
 - Email - this field is automatically populated if the user provided an email address during registration. If not, the user can enter their email address at this stage. This is a required field to complete the booking process.
 - Phone - the user must enter their phone number in order to complete the booking process. This is also a required field.
-- Date - the user must select the date when they want to book a test drive. By default, this field always shows the current date. Important - if the user selects a date that is in the past, the booking process will be cancelled and an appropriate error message will be displayed on the screen(please read about the messages system below).
+- Date - the user must select the date when they want to book a test drive. By default, this field always shows the current date. Important - if the user selects a date that is in the past, the booking process will be cancelled and an appropriate error message will be displayed on the screen(please read about the message system below).
 
 ![Book test drive modal](docs/images/existing-features/book-test-drive/book-test-drive-modal.JPG)
 
@@ -417,7 +418,7 @@ If the search result does not exist an appropriate message will be displayed on 
 
 ### Preserving search inputs selected by the user
 
-The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful. I.e., the user can search for a specific car model (which they selected earlier) by changing only the price range—no need to make all selections again.
+The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful. I.e., the user can search for a specific car model (which they selected earlier) by changing only the price range — no need to make all selections again.
 To reset the form to its default values, the user has to click on the **Search** link located in the navigation bar.
 
 ### About page
@@ -465,7 +466,7 @@ Important - Car and Name fields are not editable as the user name and the car ar
 
 ![Dashboard edit page](docs/images/existing-features/dashboard/dashboard-edit-booked-test-drive-details.JPG)
 
-- by using the **Cancel** button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they really wants to cancel the test drive.
+- by using the **Cancel** button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they want to cancel the test drive.
 
 ![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
 
@@ -589,7 +590,7 @@ If the user decides to log out, they will be redirected to the page to confirm t
 404 page
 
 If the page the user is trying to reach is not accessible, the following error message will be displayed on the screen.
-The user can return to the home page by pressing the home button. There is no need to hit the back button on their browser.
+The user can return to the home page by pressing the home button. There is no need to hit the back button on the browser.
 
 ![404 error page](docs/images/existing-features/404-page/404-error-message.JPG)
 
@@ -618,8 +619,8 @@ The business owner can add a new car to the website via the admin panel.
 ### Admin panel - ability to add a new employee
 
 The business owner can add a new employee via the admin panel.
-All the information about the staff(photo, name, email, etc.) that is displayed on the website comes from the database and it's not hard coded in HTML.
-Therefore in case of any changes(i.e. new employee), the updated information will be automatically displayed on the website.
+All the information about the staff(photo, name, email, etc.) that is displayed on the website comes from the database, and it's not hard coded in HTML.
+Therefore, in the event of any changes(i.e. new employee), the updated information will be automatically displayed on the website.
 
 ![Add employee](docs/images/existing-features/admin-area/add-employee.JPG)
 
@@ -629,28 +630,28 @@ The business owner can review booked test drives via the booking panel.
 The panel contains the following information regarding booked test drives:
 
 - Booking ID
-- User ID (a user who booked test drive)
+- User ID (a user who booked a test drive)
 - Name (the user name)
 - Car
 - Car ID
-- Email (email address that user provided during test drive booking process)
-- Phone (phone number that user provided during test drive booking process)
+- Email (the email address that the user provided during the test drive booking process)
+- Phone (phone number that the user provided during the test drive booking process)
 
 ![Test drive booking panel](docs/images/existing-features/admin-area/test-drive-booking-view-panel.JPG)
 
 ### Admin panel – ability to select cars that will be displayed on the page
 
-This feature allows the business owner to enable or disable the car to be visible on the website. There is no need to delete the car from the database if for some reason the business owner does not want it to be displayed on the website(i.e. the car is reserved or not ready for sale).
+This feature allows the business owner to enable or disable the car to be visible on the website. There is no need to delete the car from the database if, for some reason, the business owner does not want it to be displayed on the website(i.e., the car is reserved or not ready for sale).
 
 ![Is for sale feature](docs/images/existing-features/admin-area/is-for-sale-feature.JPG)
 
-If the **Is for sale** check box is selected the car will be shown on the website.
+If the **Is for sale** check box is selected, the car will be shown on the website.
 
 ![Two cars selected for sale admin panel](docs/images/existing-features/admin-area/two-cars-selected-for-sale.JPG)
 ![Two cars selected for sale cars page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-cars-page.JPG)
 ![Two cars selected for sale search page](docs/images/existing-features/admin-area/two-cars-selected-for-sale-search-page.JPG)
 
-If all **Is for sale** check boxes are deselected an appropriate message will be displayed on the screen.
+If all **Is for sale** check boxes are deselected, an appropriate message will be displayed on the screen.
 
 ![All cars deselected for sale admin panel](docs/images/existing-features/admin-area/all_cars_deselected-admin-panel.JPG)
 ![All cars deselected for sale cars page](docs/images/existing-features/admin-area/all_cars_deselected.JPG)
@@ -659,11 +660,11 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 ## Features to be implemented
 
 - Email notification to the staff that the car was booked for a test drive.
-- Email notification to the user that they hvae booked the test drive succesfuly
+- Email notification to the user that they have booked the test drive successfully
 - Ability to add(by the user) a testimonial about Speedy Cars
-- Ability to View testimonials about Speedy Cars
-- Ability to approve testimonials by the business owner(after approval testimonials can be displayed on the page).
-- Add more car searching options(i.e. model, milage, min year, max year, etc.)
+- Ability to view testimonials about Speedy Cars
+- Ability to approve testimonials by the business owner(after approval, testimonials can be displayed on the page).
+- Add more car searching options(i.e. model, mileage, min year, max year, etc.).
 
 ## UX testing
 
@@ -764,7 +765,7 @@ details
 executive card (only if the user is logged in)
   - The ‘Book test drive’ button is not presented for non-logged-in users
 (relevant message is displayed instead).
-  - The **Book test drive** button opens modal to book a test drive
+  - The **Book test drive** button opens a modal to book a test drive
 - Book test drive modal
   - Responsiveness
   - The form is clear and intuitive.
@@ -782,7 +783,7 @@ outside of the modal form.
   - Responsiveness
   - The form is clear and intuitive.
   - The drop-down menus are working correctly.
-  - The form preserves the user selections.
+  - The form preserves the user's selections.
   - The form returns correct search results.
   - The search results are displayed correctly on the screen.
   - Recently added cars are displayed correctly.
@@ -810,7 +811,7 @@ outside of the modal form.
   - A confirmation message is displayed on the screen if the test drive booking was successful.
   - The **Change** button works correctly and the correct page is loaded after the form submission
 - Delete test drive
-  - A proper message is displayed each time when the user wants to cancel the test drive
+  - A proper message is displayed each time the user wants to cancel the test drive
   - **Cancel** button returns to the dashboard
   - The "Yes" button deletes the test drive and returns to the dashboard page.
 
@@ -818,7 +819,7 @@ outside of the modal form.
 
 ### HTML
 
-The HTML code within the application has been validated by [W3C Markup Validation Service](https://validator.w3.org/). Pages were put through the validator seperatly and the results can be seen below.
+The HTML code within the application was validated by [W3C Markup Validation Service](https://validator.w3.org/). Pages were put through the validator seperatly, and the results can be seen below.
 
 - [Home page](docs/validation/html/home-page.JPG)
 - [Cars page](docs/validation/html/cars-page.JPG)
@@ -832,7 +833,7 @@ The HTML code within the application has been validated by [W3C Markup Validatio
 
 ### Python
 
-The Python code within the application has been validated by [PEP8 online validation service](http://pep8online.com/). Files were put through the validator separately and the results can be seen below.
+The Python code within the application was validated by [PEP8 online validation service](http://pep8online.com/). Files were put through the validator separately, and the results can be seen below.
 
 #### speedy_cars project
 
@@ -871,14 +872,14 @@ The Python code within the application has been validated by [PEP8 online valida
 
 ### CSS
 
-The CSS code within the application has been validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
+The CSS code within the application was validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
 
 [CSS Admin validation results](docs/validation/css/css-validation-admin-area.JPG)
 [CSS validation results](docs/validation/css/css-validation.jpg)
 
 ### JS
 
-The JavaScript and JQuery code within the application has been validated by [JSHint](https://jshint.com/), and the results can be seen below.
+The JavaScript and JQuery code within the application was validated by [JSHint](https://jshint.com/), and the results can be seen below.
 
 [JS validation results](docs/validation/js/js-validation-results.JPG)
 
@@ -961,7 +962,6 @@ The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used t
 ## Bugs
 
 <details>
-
 <summary>Unable to migrate models to the database</summary>
 
 ![Issue with migration to database](docs/images/bugs/issue_with_migration_to_database.png)
@@ -969,15 +969,14 @@ The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used t
 Fix
 
 The problem was in one of the 000X_xxxxxxxxxx.py files in the migrations folder.
-When I created my model I was forced to add a default value to each table i.e. float Field
-By mistake, I added a string value instead of a number value, and that caused all issues.
-To fix this I had to manually edit some parts of migration files (change from str to a number) and then I was able to migrate models to the database.
+When I created my model, I was forced to add a default value to each table, i.e., float field.
+By mistake, I added a string value instead of a number value, and that caused all the issues.
+To fix this, I had to manually edit some parts of the migration files (change from str to a number) and then I was able to migrate models to the database.
 </details>
 
 <details>
-<summary>Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached</summary>
+<summary>Unable to access the database after adding db.sqlite3 to .gitignore and running git rm -r --cached.</summary>
 
-Unable to access database  after adding db.sqlite3 to .gitignore and running git rm -r --cached.
 The folowing error was presented on the screen:
 FATAL:  password authentication failed for user "popyrrkqilvwjx"
 FATAL:  no pg_hba.conf entry for host "35.195.38.40", user "popyrrkqilvwjx", database "d6tpv8s8mh12kk", no encryption
@@ -1008,7 +1007,7 @@ To fix the issue I added the following class to style.css file - **div.card-img-
 </details>
 
 <details>
-<summary>Unable to deploy to Heroku as the following error message was displayed on the Heroku panel
+<summary>Unable to deploy to Heroku as the following error message was displayed on the Heroku panel:
 Error while running '$ python manage.py collectstatic --noinput'.</summary>
 
 Fix
@@ -1018,7 +1017,7 @@ The solution was found on [Stack Overflow](https://stackoverflow.com/questions/3
 </details>
 
 <details>
-<summary>The error related to the local variable referenced before assigment was showing on the screen</summary>
+<summary>The error related to the local variable referenced before the assignment was showing on the screen.</summary>
 
 ![Issue with local variable 'date'](docs/images/bugs/issue_with_local_variable_date.png)
 
@@ -1066,15 +1065,15 @@ The master branch of this repository has been used for the deployed version of t
 ### Using Github & Gitpod
 
 To deploy this Django application, [The Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used to deploy this Django application.
-To create repository from template above the following steps were taken:
+To create a repository from the template above the following steps were taken:
 
 - Click the **Use This** Template button.
 - Add a repository name and brief description.
-- Click the **Create Repository** from Template to create repository.
+- Click the **Create Repository** from Template to create a repository.
 - To create a Gitpod workspace click **Gitpod**, this can take a
 few minutes.
 - When on the project it is best to open the workspace from
-Gitpod (rather than Github) as this will open revious workspace rather
+Gitpod (rather than Github) as this will open the previous workspace rather
 than creating a new one.
 - Committing work should be done often and should have
 clear/explanatory messages, use the following commands to make
