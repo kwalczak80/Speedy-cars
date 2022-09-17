@@ -49,7 +49,7 @@ The primary goal of the website from a site user’s perspective is as follows:
   - Diesel
   - Hybrid
   - Electric
-- As a user, I want to see professional descriptions of each car available for sale along with relevant pictures.
+- As a user, I want to see descriptions of each car available for sale along with relevant pictures.
 - As a user, I want to be able to navigate the website quickly and easily.
 - As a user, I want to be able to use the search option to find the car I’m looking for.
 - As a user, I want to be able to view the price of the cars.
@@ -670,7 +670,7 @@ If all **Is for sale** check boxes are deselected an appropriate message will be
 | User requirements | Implemented | Tested | Comments
 | ------------ | ----------- | ------ | --------
 |I want to be able to view all available cars in one of the categories:Petrol, Diesel, Hybrid, Electric|Yes|Yes|On the search page, the user can select the cars in each of the four available categories.
-|I want to see professional descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the 'More info' button on the car card, additional photos of the car and a description will be shown.
+|I want to see descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the 'More info' button on the car card, additional photos of the car and a description will be shown.
 |I want to be able to navigate the website quickly and easily|Yes|Yes| The website is uncomplicated in layout and has clear and intuitive navigation.
 |I want to be able to use the search option to find the car I’m looking for|Yes|Yes| The search page has an option to search for a car according to specific user requirements.
 |I want to be able to view the price of the cars|Yes|Yes| Each car presented on the website has a label with the price.

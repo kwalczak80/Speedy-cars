@@ -3,7 +3,9 @@ from django.db import models
 
 
 class Booking(models.Model):
-    """ The booking model """
+    """
+    The booking model
+    """
     car = models.CharField(max_length=100)
     car_id = models.IntegerField(default=0)
     name = models.CharField(max_length=200)

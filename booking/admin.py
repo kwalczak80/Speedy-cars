@@ -14,3 +14,4 @@ class BookingAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Booking, BookingAdmin)
+

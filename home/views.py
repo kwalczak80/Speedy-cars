@@ -44,8 +44,8 @@ def search(request):
 
 
 def error_404(request, exception):
-    """ 
-    Customized 404 error page 
+    """
+    Customized 404 error page
     to display relevant message
     to the user
     """
@@ -53,8 +53,8 @@ def error_404(request, exception):
 
 
 def error_500(request):
-    """ 
-    Customized 500 error page 
+    """
+    Customized 500 error page
     to display relevant message
     to the user
     """
