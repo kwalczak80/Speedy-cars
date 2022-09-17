@@ -28,10 +28,10 @@ def car(request, car_id):
     Display information about the specific car
     selected by the user
     """
-    car_info = get_object_or_404(Car, pk=car_id)
+    selected_car = get_object_or_404(Car, pk=car_id)
 
     context = {
-        'car_info': car_info
+        'selected_car': selected_car
     }
     return render(request, 'cars/car.html', context)
 

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} | {{ car.title }} {% endblock %}
+{% block title %} | {{ selected_car.title }} {% endblock %}
 {% load humanize %}
 {% load static %}
 {% block content %}
@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row text-center mt-3">
             <div class="col-md-12">
-                <h1 class="display-4">{{ car.title }}</h1>
+                <h1 class="display-4">{{ selected_car.title }}</h1>
             </div>
         </div>
     </div>
@@ -21,54 +21,54 @@
         <div class="row justify-content-center">
             <div class="col-md-9">
                 <!-- Car Main Image -->
-                <img src="{{ car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1" aria-label="Main picture of the car">
+                <img src="{{ selected_car.photo_main.url }}" alt="Main picture of the car" class="img-main img-fluid mb-1" aria-label="Main picture of the car">
                 <!-- Car Thumbnails -->
                 <div class="row mb-3 thumbs">
-                    {% if car.photo_1 %}
+                    {% if selected_car.photo_1 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 1"
+                        <a href="{{ selected_car.photo_1.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 1"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_1.url }}" alt="Car photo 1" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_1.url }}" alt="Car photo 1" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
-                    {% if car.photo_2 %}
+                    {% if selected_car.photo_2 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 2"
+                        <a href="{{ selected_car.photo_2.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 2"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_2.url }}" alt="Car photo 2" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_2.url }}" alt="Car photo 2" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
-                    {% if car.photo_3 %}
+                    {% if selected_car.photo_3 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 3"
+                        <a href="{{ selected_car.photo_3.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 3"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_3.url }}" alt="Car photo 3" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_3.url }}" alt="Car photo 3" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
-                    {% if car.photo_4 %}
+                    {% if selected_car.photo_4 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 4"
+                        <a href="{{ selected_car.photo_4.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 4"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_4.url }}" alt="Car photo 4" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_4.url }}" alt="Car photo 4" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
-                    {% if car.photo_5 %}
+                    {% if selected_car.photo_5 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 5"
+                        <a href="{{ selected_car.photo_5.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 5"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_5.url }}" alt="Car photo 5" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_5.url }}" alt="Car photo 5" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
-                    {% if car.photo_6 %}
+                    {% if selected_car.photo_6 %}
                     <div class="col-md-2">
-                        <a href="{{ car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 6"
+                        <a href="{{ selected_car.photo_6.url }}" data-toggle="lightbox" data-gallery="img-gallery" aria-label="Car photo 6"
                             data-height="560" data-width="560">
-                            <img src="{{ car.photo_6.url }}" alt="Car photo 6" class="img-fluid mb-1">
+                            <img src="{{ selected_car.photo_6.url }}" alt="Car photo 6" class="img-fluid mb-1">
                         </a>
                     </div>
                     {% endif %}
@@ -79,23 +79,23 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-euro-sign"></i> Price:
-                                <span>{{ car.price | intcomma}} Euro</span>
+                                <span>{{ selected_car.price | intcomma}} Euro</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-gas-pump"></i> Fuel Type:
-                                <span>{{ car.fuel_type }}</span>
+                                <span>{{ selected_car.fuel_type }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fas fa-car"></i> Engine size:
-                                <span>{{ car.engine_size }}</span>
+                                <span>{{ selected_car.engine_size }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-gauge"></i> Milage:
-                                <span>{{ car.milage }} km</span>
+                                <span>{{ selected_car.milage }} km</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-calendar-days"></i> Year:
-                                <span>{{ car.year }}</span>
+                                <span>{{ selected_car.year }}</span>
                             </li>
                         </ul>
                     </div>
@@ -103,23 +103,23 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-gears"></i> Transmission:
-                                <span>{{ car.transmission }}</span>
+                                <span>{{ selected_car.transmission }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-car-side"></i> Body type:
-                                <span>{{ car.body_type }}</span>
+                                <span>{{ selected_car.body_type }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-road"></i> Road tax:
-                                <span>{{ car.road_tax }} €</span>
+                                <span>{{ selected_car.road_tax }} €</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-user"></i> Previous Owners:
-                                <span>{{ car.previous_owners }}</span>
+                                <span>{{ selected_car.previous_owners }}</span>
                             </li>
                             <li class="list-group-item text-secondary">
                                 <i class="fa-solid fa-screwdriver-wrench"></i> NCT:
-                                <span>{{ car.nct | date:"d M Y" }}</span>
+                                <span>{{ selected_car.nct | date:"d M Y" }}</span>
                             </li>
                         </ul>
                     </div>
@@ -131,18 +131,18 @@
                         <div class="text-center">
                         <h2>Car description:</h2>
                         </div>
-                        {{ car.description }}
+                        {{ selected_car.description }}
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card mb-3">
-                    <img class="card-img-top photo" src="{{ car.sales_person.photo.url}} " alt="Picture of the sales executive" aria-label="Picture of the sales executive">
+                    <img class="card-img-top photo" src="{{ selected_car.sales_person.photo.url}} " alt="Picture of the sales executive" aria-label="Picture of the sales executive">
                     <div class="card-body">
-                        <h5 class="card-title">{{ car.sales_person.description }}</h5>
-                        <h5 class="lead">{{ car.sales_person }}</h5>
-                        <h6 class="text-secondary"><i class="fa-solid fa-phone"></i> {{ car.sales_person.phone }}</h6>
-                        <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i> {{ car.sales_person.email }}</h6>
+                        <h5 class="card-title">{{ selected_car.sales_person.description }}</h5>
+                        <h5 class="lead">{{ selected_car.sales_person }}</h5>
+                        <h6 class="text-secondary"><i class="fa-solid fa-phone"></i> {{ selected_car.sales_person.phone }}</h6>
+                        <h6 class="text-secondary"><i class="fa-solid fa-envelope-open"></i> {{ selected_car.sales_person.email }}</h6>
                     </div>
                 </div>
                 <div class="d-grid text-center">
@@ -171,10 +171,10 @@
                 <form action="{% url 'booking' %}" method="POST">
                     {% csrf_token %}
                     <input type="hidden" name="user_id" value="{{ user.id }}">
-                    <input type="hidden" name="car_id" value="{{ car.id }}">
+                    <input type="hidden" name="car_id" value="{{ selected_car.id }}">
                     <div class="mb-3">
                         <label for="car" class="form-label">Car:</label>
-                        <input type="text" name="car" id="car" class="form-control" value="{{ car.title }}" readonly>
+                        <input type="text" name="car" id="car" class="form-control" value="{{ selected_car.title }}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
@@ -206,10 +206,6 @@
                     <input class="btn btn-primary" type="submit" value="Submit">
                 </form>
             </div>
-            <!-- <div class="modal-footer">
-          
-                <input class="btn btn-primary" type="submit" value="Submit">          
-            </div> -->
         </div>
     </div>
 </div>
