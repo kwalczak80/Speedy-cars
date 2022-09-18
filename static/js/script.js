@@ -17,3 +17,6 @@ $('#datepicker').datepicker("setDate", new Date());
 $(document).ready(function () {
     $('.opening-hours li').eq(new Date().getDay()).addClass('today');
 });
+
+// Get current year
+$('#current-year').html(new Date().getFullYear());
