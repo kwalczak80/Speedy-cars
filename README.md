@@ -122,16 +122,16 @@ The primary goal of the website, from a site user’s perspective, is as follows
 
 ## Wireframes - Mobile
 
-- [Home page](docs/wireframes/mobile/home_page_mobile.png)
-- [Cars page](docs/wireframes/mobile/cars_page_mobile.png)
-- [Car page](docs/wireframes/mobile/car_page_mobile.png)
-- [About page](docs/wireframes/mobile/about_page_mobile.png)
-- [Search page](docs/wireframes/mobile/search_page_mobile.png)
-- [Login page](docs/wireframes/mobile/login_page_mobile.png)
-- [Logout page](docs/wireframes/mobile/logout_page_mobile.png)
-- [Registration page](docs/wireframes/mobile/registration_page_mobile.png)
-- [Dashboard page](docs/wireframes/mobile/dashboard_page_mobile.png)
-- [Edit test drive page](docs/wireframes/mobile/edit_test_drive_page_mobile.png)
+- [Home page](docs/wireframes/mobile/home-page-mobile.png)
+- [Cars page](docs/wireframes/mobile/cars-page-mobile.png)
+- [Car page](docs/wireframes/mobile/car-page-mobile.png)
+- [About page](docs/wireframes/mobile/about-page-mobile.png)
+- [Search page](docs/wireframes/mobile/search-page-mobile.png)
+- [Login page](docs/wireframes/mobile/login-page-mobile.png)
+- [Logout page](docs/wireframes/mobile/logout-page-mobile.png)
+- [Registration page](docs/wireframes/mobile/registration-page-mobile.png)
+- [Dashboard page](docs/wireframes/mobile/dashboard-page-mobile.png)
+- [Edit test drive page](docs/wireframes/mobile/edit_test-drive-page-mobile.png)
 
 ## Site Map
 
