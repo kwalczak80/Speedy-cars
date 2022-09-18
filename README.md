@@ -152,7 +152,7 @@ App details are as follows:
 
 - Home - this app contains information about the Speedy Cars home page with quick links to the about and search pages via the nav bar.
 - Booking - this app contains information related to the test drive booking system (for users to view, edit or cancel booked test drives).
-- Cars - this app is for the users to view the cars or to view the search results.
+- Cars - this app is for the users to view the cars or to view the car search results.
 - Employees - this app is for the business owner to manage Speedy Cars staff via admin panel.
 
 To complement the apps there are
@@ -161,11 +161,11 @@ To complement the apps there are
 - templates: Containing the base.html, allauth(django authentication). The partial folder contains the navbar and footer HTML.
 - templates (app level): some of the apps have their own templates directory for HTML to consider portability and reuse.
 - urls (app level): each app has its own url.py file to consider portability and reuse.
-- static: Base css and Javascript files.
+- static: CSS files for the website and admin panel. Javascript file is also included in this folder.
 - manage.py: This file is used to start the site and perform functions during development.
-- README.md: Readme documentation.
+- README.md: Documentation about the project.
 - Procfile: To run the application on Heroku.
-- Requirements.txt: Containing the project dependencies Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in( listed in .gitignore).
+- Requirements.txt: Containing the project dependencies. Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in(listed in .gitignore).
 
 ### Database design
 
@@ -238,7 +238,7 @@ Employee model
 
 ### Home page background
 
-As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that, in my opinion, was perfect for this project. The clip used in the project reflects the theme of the site very well and, at the same time, does not distract the user's attention from other parts of the site, so I decided to use it as a looped video background for the site.
+As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that, in my opinion, was perfect for this project. The video clip used in the project reflects the theme of the site very well and, at the same time, does not distract the user's attention from other parts of the site, therfore I decided to use it as a looped video background for the site.
 
 ![Home page background](docs/images/existing-features/homepage/home-page-video-background.gif)
 
@@ -277,12 +277,12 @@ The video background fits perfectly into the context of the project and the purp
 ![Home page](docs/images/existing-features/homepage/home-page.JPG)
 ![Home page](docs/images/existing-features/homepage/home-page-mobile.JPG)
 
-
 ### Navigation Menu
 
 Depending on whether the user is logged in or not, different links are made available in the completely responsive navbar.
 
 - For a user that is not signed in, the following options are available:
+  - Speedy Cars(the business name displayed on the navigation bar)
   - Home - *link to the home page*
   - Cars - *link to the page with cars for sale*
   - Search - *link to the search page*
@@ -294,17 +294,18 @@ Depending on whether the user is logged in or not, different links are made avai
 ![Navbar for not signed in user mobile](docs/images/existing-features/navbar/navigation-bar-user-not-signed-in-mobile.JPG)
 
 - For a user that is signed in, the following options are available:
+  - Speedy Cars(the business name displayed on the navigation bar)
   - Home *link to the home page*
   - Cars - *link to the page with cars for sale*
   - Search - *link to the search page*
   - About - *link to the about page*
-  - Welcome User Name (dashboard) - *link to the dashboard page*
+  - Welcome (User Name) (dashboard) - *link to the dashboard page*
   - Logout - *link to the logout page*
 
 ![Navbar for signed in user](docs/images/existing-features/navbar/navigation-bar-user-signed-in.JPG)
 ![Navbar for signed in user mobile](docs/images/existing-features/navbar/navigation-bar-user-signed-in-mobile.JPG)
 
-- A hover effect is implemented to visually highlight menu links(except dash board link) when the user hovers over them.
+- A hover effect is implemented to visually highlight menu links(except the dashboard link) when the user hovers over them. The dashboard link(visible when the user is logged in) is always displayed in white.
 
 ![Navbar for hover effect](docs/images/existing-features/navbar/navigation-bar-hover-effect.JPG)
 ![Navbar for hover efect mobile](docs/images/existing-features/navbar/navigation-bar-hover-effect-mobile.JPG)
@@ -315,7 +316,7 @@ When the user clicks on the **Cars** link in the navigation bar, they will be re
 
 ![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
 
-The form of presentation of each car is the same and consists of displaying a single photo of the car and basic information about the car. The information is presented using icons and text in a minimalist way. The basic information about the car that the user can read is as follows:
+The form of presentation of each car is the same and consists of displaying a single photo of the car, the price and basic information about the car. The information is presented using Font Awsome icons and text in a minimalist way. The basic information about the car that the user can read is as follows:
 
 - Engine type
 - Engine size
@@ -331,29 +332,34 @@ The **More info** button allows the user to be redirected to a page where additi
 
 ### Pagination
 
-Each **Cars** page may contain up to six cars for sale. If the number of cars in the database does not exceed six, then pagination is not visible.
+Each **Cars** page may contain up to six cars displayed on the page. If the number of cars in the database does not exceed six, then pagination is not visible.
 
 ![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
 
-However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). A user can then change pages by clicking on arrows or directly clicking on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page one is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
+However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). The user can then change pages by clicking on arrows or directly clicking on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page one is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
 
 ![Pagination](docs/images/existing-features/pagination/pagination.JPG)
 
 ### Car details page
 
-When a user is interested in a specific car and clicks on the **More info** button, they will be redirected to a page where they can find additional photos and information about the car.
+When the user is interested in a specific car and clicks on the **More info** button, they will be redirected to a page where they can find additional photos and information about the car.
 This page is divided into sections:
 
-- Photos - additional photos are presented as thumbnails(once clicked, the photo will enlarge and the lightbox function allows the user to view all the photos-please read about thumbnails below).
-- Description section that contains more info about the car.
+- Photos - additional photos are presented as thumbnails. Clicking on any of the thumbnail images will launch the lightbox gallery, so the user will be able to view all the photos in detail (please read about thumbnails below).
+- Additional information is presented using Font Awsome icons and text:
+  - Price(no longer presented as a badge on the main picture)
+  - Road tax
+  - Previous owners
+  - NCT(National Car Testing) due date
+- Car description section that contains more info about the car
 - Information about the sales executive who is responsible for selling the car. The information presented on the sales executive card contains:
   - The picture of the sales executive
   - Sales executive name
   - Phone number
   - Email address
-  - If the user is logged in, a button to book a test drive will be also visible(please read about this feature below).
+  - If the user is logged in, the button to book a test drive will also be visible. If the user is not logged in, an appropriate message will be displayed below the sales executive card(please read about this feature below).
 
-The user has the option to return to viewing all cars by clicking on the **Back to cars** button, which is located above the car's main photo.
+The user also has an option to return to viewing all cars by clicking on the **Back to cars** button, which is located above the car's main photo.
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
 
