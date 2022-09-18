@@ -1,10 +1,8 @@
 /*jshint esversion: 6 */
 
-// Timer showing the allert messages
+// Timer showing the alert messages
 setTimeout(function () {
-    let messages = document.getElementById('msg');
-    let alert = new bootstrap.Alert(messages);
-    alert.close();
+    $("#msg").alert('close');
 }, 5000);
 
 // Apply datepicker styling for test drive booking form
