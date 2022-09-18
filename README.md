@@ -1077,6 +1077,16 @@ Fix
 To fix it I implemented the grid system instead of tables.
 </details>
 
+<details>
+<summary>Cannot read properties of null (reading 'defaultPrevented') showing in the console</summary>
+
+![An error showing inthe console](docs/images/bugs/console-error.JPG)
+
+Fix
+
+Rewrite the java script function showing alerts
+</details>
+
 ## Unfixed bugs
 
 ## Deployment
