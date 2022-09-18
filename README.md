@@ -563,6 +563,7 @@ The authentication process for the application is handled by Django allauth and 
 If the user entries are wrong, the relevant error message will be displayed on the screen, informing what needs to be corrected to complete the registration process.
 
 ![Sign Up user already exist](docs/images/existing-features/authentication/registration-process-user-already-exist.JPG)
+![Sing Up invalid user name](docs/images/existing-features/authentication/registration-process-issue-with-username.jpg)
 ![Sign Up process passwords do not match](docs/images/existing-features/authentication/registration-process-passwords-dont-match.JPG)
 ![Sign Up process issue with password](docs/images/existing-features/authentication/registration-process-issue-with-password.JPG)
 
