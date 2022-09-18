@@ -16,5 +16,5 @@ $(document).ready(function () {
     $('.opening-hours li').eq(new Date().getDay()).addClass('today');
 });
 
-// Get current year
+// Get current year in the footer
 $('#current-year').html(new Date().getFullYear());
