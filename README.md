@@ -59,7 +59,7 @@ The primary goal of the website, from a site user’s perspective, is as follows
 - As a user, I want to be able to book a test drive.
 - As a user, I want to be able to edit or delete a test drive I have made.
 - As a user, I want to read more information about the business.
-- As a user, I want to be able to see featured cars.
+- As a user, I want to be able to see featured(recently added) cars.
 - As a user, I want to be able to sign in to or create an account.
 - As a user, I want to be able to log out of an account.
 - As a user, I want to be able to view the business’s social media channels.
@@ -90,9 +90,13 @@ The primary goal of the website, from a site user’s perspective, is as follows
 
 - If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser.
 
-## Kanban dashboard
+## Agile Methodology
+
+### Kanban dashboard
 
 ![Site Map](docs/images/kanban_agile.JPG)
+
+Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [HERE](https://github.com/users/kwalczak80/projects/7). The issues are currently in two categories - **done** or  **not for this deadline**.
 
 ## Wireframes - Desktop
 
