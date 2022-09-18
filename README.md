@@ -729,14 +729,14 @@ color (user logged in).
   - All hover and focus effects are correct.
   - External links open in a new tab
   - Accessibility is correct.
-  -Responsiveness
+  - Responsiveness
 - Login and Signup
   - Form is clear
   - Form completes its task correctly
-  - Message displayed to the user on the homepage when logged in
+  - Message is displayed to the user on the homepage when signed in
 - Logout
   - Options are clear
-  - Message displayed to the user on the homepage when logged out
+  - Message is displayed to the user on the homepage when signed out
 - Home Page
   - Text is clear and easily read.
   - The video background is correctly displayed.
@@ -744,8 +744,8 @@ color (user logged in).
 - Cars page
   - Responsiveness
   - Pagination occurs when there are more than 6 cars.
-  - The user is able to navigate to the selected page.
-  - The More Info button navigates to the correct page where the user can
+  - The user is able to navigate to the selected page when using pagination
+  - The **More Info** button navigates to the correct page where the user can
 find more details about the car
   - Images of the cars are displayed correctly
   - All the font awesome icons and the car details are correctly displayed
@@ -764,7 +764,7 @@ the card(s)
 details
   - The **Book test drive** button is presented underneath the sales
 executive card (only if the user is logged in)
-  - The ‘Book test drive’ button is not presented for non-logged-in users
+  - The **Book test drive** button is not presented for non-logged-in users
 (relevant message is displayed instead).
   - The **Book test drive** button opens a modal to book a test drive
 - Book test drive modal
@@ -772,7 +772,7 @@ executive card (only if the user is logged in)
   - The form is clear and intuitive.
   - Relevant fields are prepopulated and not editable by the user.
   - The date picker works correctly.
-  - Required fields must be entered before form submission.
+  - Required fields must be entered before the form submission.
   - Error message is displayed on the screen if the date selected by the
 user is incorrect (booked in the past)
   - Confirmation message is displayed on the screen if the test drive
@@ -1018,7 +1018,7 @@ I omitted in error to add the ‘items’ command - for key, value in make_choic
 </details>
 
 <details>
-<summary>More Info link did not work on the card(unable to click)s</summary>
+<summary>More Info link did not work on the card(unable to click)</summary>
 
 ![Issue with More Info Link](docs/images/bugs/issue_with_more_info_link.png)
 
@@ -1146,6 +1146,14 @@ Log into heroku
 - Create a Procfile web: gunicorn speedy_cars.wsgi
 - When development is complete change the debug setting to: DEBUG = False in settings.py
 - In Heroku settings, delete the config vars for DISABLE_COLLECTSTATIC = 1
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository
+- At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
+- You should now have a copy of the original repository in your GitHub account.
 
 ## Credits
 
