@@ -1,9 +1,10 @@
 # Speedy Cars
 
-![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
+[View the live project here.](https://speedy-cars.herokuapp.com/)
 
 This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. The Speedy Cars website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. The business owner can also easily manage the cars stock from the administration panel.
-While this project is purely educational, it is my first attempt at building a commercial website.
+
+![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
 ## User Experience (UX)
 
@@ -1121,6 +1122,8 @@ Rewrite the java script function showing alerts
 </details>
 
 ## Unfixed bugs
+
+No known unfixed bugs present at the time of submission
 
 ## Deployment
 
