@@ -1214,5 +1214,5 @@ The artwork used in this project was copied from the following websites:
 ## Acknowledgments
 
 - My Mentor Simen [Eventyret_mentor](https://github.com/Eventyret) for continuous helpful feedback.
-- [Code Institute's](https://codeinstitute.net/ie/) Slack community for their support.
+- [Code Institute's](https://codeinstitute.net/ie/) Slack community for their support. Special thanks to Kasia Bogucka from Code Institute.
 - All family members and friends who helped test this application.
