@@ -371,6 +371,7 @@ When the user clicks on the **More info** button, they will be redirected to the
 
 On this page, additional images of the car will be available to view below the main picture as thumbnails. Once clicked on the thumbnail, it will enlarge and the user will be able to scroll through all available images.
 The user can use the keyboard left or right keys or arrow keys presented on the screen to scroll through all available images.
+The images presentation can be closed by clicking on the **X** button(upper right-hand corner) or outside the presentation area.
 
 ![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
 
@@ -391,20 +392,24 @@ The following fields can be seen in the modal window:
 
 - Car - this field is automatically populated and cannot be modified(read-only)
 - Name - this field is automatically populated. The user name is pulled from the database and cannot be modified(read-only)
-- Email - this field is automatically populated if the user provided an email address during registration. If not, the user can enter their email address at this stage. This is a required field to complete the booking process.
+- Email - this field is automatically populated if the user provided an email address during registration. If not, the user can enter their email address at this stage. This is a required field to complete the test drive booking process.
 - Phone - the user must enter their phone number in order to complete the booking process. This is also a required field.
 - Date - the user must select the date when they want to book a test drive. By default, this field always shows the current date. Important - if the user selects a date that is in the past, the booking process will be cancelled and an appropriate error message will be displayed on the screen(please read about the message system below).
+- Message - the user can provide additional information if they want. This field is optional and does not affect the test drive booking process if left blank.
+
+Once all required fields are populated the user can click on the **Submit** button to book a test drive.
+An appropriate message will be displayed on the screen to confirm that the test drive was booked successfully.
 
 ![Book test drive modal](docs/images/existing-features/book-test-drive/book-test-drive-modal.JPG)
 
-Important - the user cannot book a test drive twice in the same car, as the booking process will be canceled and an appropriate message will be displayed on the screen(please read about the messages system below).
+Important - the user cannot book a test drive twice in the same car, as the booking process will be canceled and an appropriate message will be displayed on the screen(please read about the message system below).
 
 ### Search page
 
 The search page consists of two sections:
 
 - The search form where the user can enter or select their search criteria
-- Pictures of cars recently added for sale(three recently added cars will be displayed). This section will not be visible once the user clicks on the **Search** button.
+- Pictures of cars recently added for sale(only the three recently added cars will be displayed). This section will no longer be visible once the user clicks on the **Search** button.
 
 The search form allows the user to find a car according to the criteria entered or selected by the user.
 The user can use the following search options:
@@ -428,7 +433,7 @@ If the search result does not exist an appropriate message will be displayed on 
 
 ### Preserving search inputs selected by the user
 
-The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful. I.e., the user can search for a specific car model (which they selected earlier) by changing only the price range — no need to make all selections again.
+The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful i.e., the user can search for a specific car model (which they selected earlier) by changing only the price range — no need to make all selections again.
 To reset the form to its default values, the user has to click on the **Search** link located in the navigation bar.
 
 ### About page
@@ -472,11 +477,16 @@ The logged-in user has the following options in the dashboard panel if they have
 
 - by using the **View** button to view the car booked for a test drive
 - by using the **Edit** button to edit the information provided when booking a test drive (i.e. phone number, email address, test drive date).
-Important - Car and Name fields are not editable as the user name and the car are linked together.
+Important - Car and Name fields are not editable as this information is pulled from the database.
+
+Once the user has updated the information they wanted to change, they can click the **Change** button to update the information in the database.
+A confirmation message will be displayed on the screen (please read about the message system below).
 
 ![Dashboard edit page](docs/images/existing-features/dashboard/dashboard-edit-booked-test-drive-details.JPG)
 
 - by using the **Cancel** button to cancel the test drive. In this case, a separate page will be displayed where the user will have to confirm whether or not they want to cancel the test drive.
+If the user clicks on the **Yes** button, the test drive will be canceled (deleted from the database) and will no longer be presented on the dashboard panel.
+If the user clicks on the **Cancel** button, they will be redirected to the dashboard panel.
 
 ![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
 
@@ -515,6 +525,10 @@ Messages are displayed for continual feedback to the user on their interactions 
 ### Footer
 
 Footer is kept very simple as set of links and the businnes name. Footer layout remians the same on all screen sizes.
+The javascript function automatically update the year which is displayed on the footer.
+A special javascript function automatically updates the year which is displayed on the footer.
+
+Please also note that the footer is displayed only on selected pages.
 
 ![Footer](docs/images/existing-features/footer/footer.JPG)
 
@@ -614,8 +628,8 @@ A 500 server error page was also created to handle internal server errors.
 The admin panel was adjusted with the following changes:
 
 - the name of the business is now displayed on the top bar
-- the color scheme has been changed
-- the color of some buttons has also been changed
+- the color scheme was slightly changed
+- the color of some buttons was changed
 
 The changes above were only cosmetic, but thanks to that, the panel looks a little bit different than the standard Django panel.
 
@@ -624,13 +638,14 @@ The changes above were only cosmetic, but thanks to that, the panel looks a litt
 ### Admin panel - ability to add a new car
 
 The business owner can add a new car to the website via the admin panel.
+In this panel, there is also an option to delete the car from the database.
 
 ![Add car](docs/images/existing-features/admin-area/add-car.JPG)
 
 ### Admin panel - ability to add a new employee
 
 The business owner can add a new employee via the admin panel.
-All the information about the staff(photo, name, email, etc.) that is displayed on the website comes from the database, and it's not hard coded in HTML.
+All the information about the staff(photo, name, email, etc.) that is displayed on the website(About page) comes from the database, and it's not hard coded in HTML.
 Therefore, in the event of any changes(i.e. new employee), the updated information will be automatically displayed on the website.
 
 ![Add employee](docs/images/existing-features/admin-area/add-employee.JPG)
@@ -641,9 +656,9 @@ The business owner can review booked test drives via the booking panel.
 The panel contains the following information regarding booked test drives:
 
 - Booking ID
-- User ID (a user who booked a test drive)
+- User ID (the user who booked a test drive)
 - Name (the user name)
-- Car
+- Car (the car that is booked for a test drive)
 - Car ID
 - Email (the email address that the user provided during the test drive booking process)
 - Phone (phone number that the user provided during the test drive booking process)
@@ -671,11 +686,15 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 ## Features to be implemented
 
 - Email notification to the staff that the car was booked for a test drive.
-- Email notification to the user that they have booked the test drive successfully
+- Email notification to the user with the booked test drive date.
+- Ability to make an inquiry about the car.
 - Ability to add(by the user) a testimonial about Speedy Cars
 - Ability to view testimonials about Speedy Cars
 - Ability to approve testimonials by the business owner(after approval, testimonials can be displayed on the page).
 - Add more car searching options(i.e. model, mileage, min year, max year, etc.).
+- Add the business location on Google Maps.
+
+All the features mentioned above would be a great improvement for this website. However, due to the upcoming deadline to submit this project, it is not possible to implement them all at this stage.
 
 ## UX testing
 
@@ -684,7 +703,7 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 |I want to be able to view all available cars in one of the categories:Petrol, Diesel, Hybrid, Electric|Yes|Yes|On the search page, the user can select the cars in each of the four available categories.
 |I want to see descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the 'More info' button on the car card, additional photos of the car and a description will be shown.
 |I want to be able to navigate the website quickly and easily|Yes|Yes| The website is uncomplicated in layout and has clear and intuitive navigation.
-|I want to be able to use the search option to find the car I’m looking for|Yes|Yes| The search page has an option to search for a car according to specific user requirements.
+|I want to be able to use the search option to find the car I’m looking for|Yes|Yes| On the search page, the user has the option to search for a car according to specific user requirements.
 |I want to be able to view the price of the cars|Yes|Yes| Each car presented on the website has a label with the price.
 |I want to be able to read other user’s testimonials|No|No| Future feature - see the section above
 |I want to be able to make an inquiry about the car|No|No| Future feature - see the section above
@@ -720,28 +739,28 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 
 | Error handling| Implemented | Tested | Comments
 | ------------ | ----------- | ------ | --------
-|If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available.
+|If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available. The customized 500 page will be displayed to flag the issue with the server.
 
 ## Manual Testing
 
-Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs and fixes were fixed on an ongoing basis during the project. After each fix, manual tests were performed to make sure that everything worked as intended and that the fixes did not cause other errors. Manual tests and checks include:
+Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs and fixes were fixed on an ongoing basis during the project creation. After each fix, manual tests were performed to make sure that everything is working as intended and that the fixes did not cause other errors. Manual tests and checks include:
 
 - Navbar
   - All links navigate to the correct endpoint.
-  - All hover and focus effects are correct.
+  - The hover effect is working correctly.
   - The dashboard link displays the username, and it is highlighted in white
-color (user logged in).
-  - Different navigation links depending on the user authentication
+color (if the user is logged in).
+  - Different navigation links are presented on the navigation bar depending on the user authentication.
   - Responsiveness
   - Accessibility is correct.
 - Footer
   - All links navigate to the correct endpoint.
-  - All hover and focus effects are correct.
-  - External links open in a new tab
+  - The hover effect is working correctly.
+  - External links open in a new tab.
   - Accessibility is correct.
-  - Responsiveness
+  - Responsiveness.
 - Login and Signup
-  - Form is clear
+  - The form is clear and intuitive.
   - Form completes its task correctly
   - Message is displayed to the user on the homepage when signed in
 - Logout
@@ -750,14 +769,14 @@ color (user logged in).
 - Home Page
   - Text is clear and easily read.
   - The video background is correctly displayed.
-  - Responsiveness
+  - Responsiveness.
 - Cars page
   - Responsiveness
   - Pagination occurs when there are more than 6 cars.
-  - The user is able to navigate to the selected page when using pagination
+  - The user can navigate to the selected page when using the pagination buttons.
   - The **More Info** button navigates to the correct page where the user can
-find more details about the car
-  - Images of the cars are displayed correctly
+find more details about the car.
+  - Images of the cars are displayed correctly.
   - All the font awesome icons and the car details are correctly displayed
 on the cards
 - Car Page
@@ -765,7 +784,7 @@ on the cards
 -The main picture of the car is displayed correctly.
   - All thumbnails are displayed correctly underneath the car's main picture.
   - Thumbnails enlarge once clicked. The lightbox is launched to
-start the car's image presentation.
+start the car's image gallery presentation.
   - All the font awesome icons and car details are correctly displayed on
 the card(s)
   - The car description is presented and readable.
@@ -817,14 +836,14 @@ outside of the modal form.
 - Edit test drive
   - Responsiveness
   - Relevant fields are prepopulated and not editable by the user.
-  - Required fields must be entered before form submission.
+  - Required fields must be entered before the form submission.
   - An error message is displayed on the screen if the date selected by the user is incorrect (booked in the past)
   - A confirmation message is displayed on the screen if the test drive booking was successful.
   - The **Change** button works correctly and the correct page is loaded after the form submission
 - Delete test drive
   - A proper message is displayed each time the user wants to cancel the test drive
   - **Cancel** button returns to the dashboard
-  - The "Yes" button deletes the test drive and returns to the dashboard page.
+  - The **Yes** button deletes the booked test drive from the database and redirects the user to the dashboard page.
 
 ## Code Validation
 
@@ -910,7 +929,7 @@ The Lighthouse tool was used to assess the website's performance, accessibility,
 - [Search page](docs/validation/lighthouse-testing/lighthouse-testing-search-page.JPG)
 - [About page](docs/validation/lighthouse-testing/lighthouse-testing-about-page.JPG)
 
-### Accessibility
+### Accessibility testing
 
 I have tested the pages of the application using [WAVE](https://wave.webaim.org/)to ensure there are no errors. The results can be seen by following the links below.
 
@@ -1171,9 +1190,11 @@ Throughout the process of building this website, various online sources have bee
 
 - [Stack Overflow](https://stackoverflow.com/) - To find solutions to the issues I encountered while creating this project.
 - [YouTube](https://www.youtube.com/) - Django CRUD tutorial
-- [W3Schools](https://www.w3schools.com/django/)
-- [Udemy](https://www.udemy.com/) - Django tutorials
+- [W3Schools](https://www.w3schools.com/django/) - additional source of knowledge
+- [Udemy](https://www.udemy.com/) - Brad Traversy Django tutorials
 - [Donedeal](https://www.donedeal.ie/) - to find some descriptions of the cars
+- [CSS Text Stroke](https://www.html-code-generator.com/css/text-stroke-generator) - to help generate text with relevant CSS style
+- [Business Opening hours card](https://bootsnipp.com/snippets/5K3o7) - to create the business opening hours card with current day highlight
 
 ## Content
 
@@ -1185,5 +1206,5 @@ The artwork used in this project was copied from the following websites:
 ## Acknowledgments
 
 - My Mentor Simen [Eventyret_mentor](https://github.com/Eventyret) for continuous helpful feedback.
-- Code Institute's Slack community for their support.
+- [Code Institute's](https://codeinstitute.net/ie/) Slack community for their support.
 - All family members and friends who helped test this application.
