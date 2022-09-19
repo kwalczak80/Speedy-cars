@@ -6,6 +6,87 @@ This full-stack framework project was built using Django, PostgreSQL, Python, HT
 
 ![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
+## Table of contents
+
+- [Speedy Cars](#speedy-cars)
+  - [User Experience (UX)](#user-experience-ux)
+    - [Primary Goal](#primary-goal)
+  - [User Requirements and Expectations](#user-requirements-and-expectations)
+  - [User Stories](#user-stories)
+    - [Users](#users)
+    - [Site owner](#site-owner)
+    - [Error Handling](#error-handling)
+  - [Agile Methodology](#agile-methodology)
+    - [Kanban dashboard](#kanban-dashboard)
+  - [Wireframes - Desktop](#wireframes-desktop)
+  - [Wireframes - Tablet](#wireframes-tablet)
+  - [Wireframes - Mobile](#wireframes-mobile)
+  - [Site Map](#site-map)
+  - [Structure](#structure)
+    - [Code Structure](#code-structure)
+    - [Database design](#database-design)
+     [Models](#models)
+  - [Design Choices](#design-choices)
+    - [Home page background](#home-page-background)
+    - [Fonts](#fonts)
+    - [Colours](#colours)
+  - [Features](#features)
+    - [Responsive design](#responsive-design)
+    - [Homepage](#homepage)
+    - [Navigation Menu](#navigation-menu)
+    - [Cars page](#cars-page)
+    - [Pagination](#pagination)
+    - [Car details page](#car-details-page)
+    - [Thumbinals](#thumbinals)
+    - [Ability to book a test drive with a specific car](#ability-to-book-a-test-drive-with-a-specific-car)
+    - [Search page](#search-page)
+    - [Preserving search inputs selected by the user](#preserving-search-inputs-selected-by-the-user)
+    - [About page](#about-page)
+    - [Dashboard](#dashboard)
+    - [Messages system to provide feedback to the user](#messages-system-to-provide-feedback-to-the-user)
+    - [Footer](#footer)
+    - [Dynamic page titles](#dynamic-page-titles)
+    - [Authentication](#authentication)
+    - [Error handling](#error-handling)
+    - [Customized Admin (the business owner) panel](#customized-admin-the-business-owner-panel)
+    - [Admin panel - ability to add a new car](#admin-panel---ability-to-add-a-new-car)
+    - [Admin panel - ability to add a new employee](#admin-panel---ability-to-add-a-new-employee)
+    - [Admin panel - ability to review booked driving tests](#admin-panel---ability-to-review-booked-driving-tests)
+    - [Admin panel – ability to select cars that will be displayed on the page](#admin-panel---ability-to-select-cars-that-will-be-displayed-on-the-page)
+  - [Features to be implemented](#features-to-be-implemented)
+  - [UX testing](#ux-testing)
+  - [Manual Testing](#manual-testing)
+  - [Automated tests](#automated-tests)
+  - [Code Validation](#code-validation)
+    - [HTML](#html)
+    - [Python](#python)
+      - [speedy_cars project](#speedy_cars-project)
+      - [booking app](#booking-app)
+      - [cars app](#cars-app)
+      - [employees app](#employees-app)
+      - [home](#home)
+    - [CSS](#css)
+    - [JS](#js)
+    - [Color Contrast Accessibility Validator](#color-contrast-accessibility-validator)
+    - [Lighthouse testing](#lighthouse-testing)
+    - [Accessibility testing](#accessibility-testing)
+  - [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+      - [Python Libraries](#python-libraries)
+    - [Database](#database)
+    - [Frameworks](#frameworks)
+    - [Programs & Tools](#programs-and-tools)
+  - [Bugs](#bugs)
+  - [Unfixed bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [Using Github & Gitpod](#using-github-and-gitpod)
+    - [Deployment to heroku](#deployment-to-heroku)
+    - [Final deployment](#final-deployment)
+    - [Forking the GitHub Repository](#forking-the-github-repository)
+  - [Credits](#credits)
+  - [Content](#content)
+  - [Acknowledgments](#acknowledgments)
+
 ## User Experience (UX)
 
 ### Primary Goal
@@ -31,6 +112,8 @@ The primary goal of the website, from a site user’s perspective, is as follows
 - To read more about the business
 - To view other customer’s testimonials about Speedy Cars
 
+[Back to Top](#table-of-contents)
+
 ## User Requirements and Expectations
 
 - Easy to navigate by using a few buttons
@@ -41,6 +124,8 @@ The primary goal of the website, from a site user’s perspective, is as follows
 - Ability to make an inquiry about the car
 - Ability to book a test drive
 - Ability to edit or cancel a test drive
+
+[Back to Top](#table-of-contents)
 
 ## User Stories
 
@@ -91,6 +176,8 @@ The primary goal of the website, from a site user’s perspective, is as follows
 
 - If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser.
 
+[Back to Top](#table-of-contents)
+
 ## Agile Methodology
 
 ### Kanban dashboard
@@ -99,7 +186,9 @@ The primary goal of the website, from a site user’s perspective, is as follows
 
 Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [HERE](https://github.com/users/kwalczak80/projects/7). The issues are currently in two categories - **done** or  **not for this deadline**.
 
-## Wireframes - Desktop
+[Back to Top](#table-of-contents)
+
+## Wireframes-Desktop
 
 - [Home page](docs/wireframes/desktop/home_page_desktop.png)
 - [Cars page](docs/wireframes//desktop/cars_page_desktop.png)
@@ -112,7 +201,9 @@ Github issues were used to create the User stories and group them according to M
 - [Dashboard page](docs/wireframes/desktop/dash_board_desktop.png)
 - [Edit test drive page](docs/wireframes/desktop/edit_test_drive_page_desktop.png)
 
-## Wireframes - Tablet
+[Back to Top](#table-of-contents)
+
+## Wireframes-Tablet
 
 - [Home page](docs/wireframes/tablet/home_page_tablet.png)
 - [Cars page](docs/wireframes/tablet/cars_page_tablet.png)
@@ -125,7 +216,9 @@ Github issues were used to create the User stories and group them according to M
 - [Dashboard page](docs/wireframes/tablet/dashboard_page_tablet.png)
 - [Edit test drive page](docs/wireframes/tablet/edit_test_drive_page_tablet.png)
 
-## Wireframes - Mobile
+[Back to Top](#table-of-contents)
+
+## Wireframes-Mobile
 
 - [Home page](docs/wireframes/mobile/home-page-mobile.png)
 - [Cars page](docs/wireframes/mobile/cars-page-mobile.png)
@@ -138,11 +231,15 @@ Github issues were used to create the User stories and group them according to M
 - [Dashboard page](docs/wireframes/mobile/dashboard-page-mobile.png)
 - [Edit test drive page](docs/wireframes/mobile/edit_test-drive-page-mobile.png)
 
+[Back to Top](#table-of-contents)
+
 ## Site Map
 
 The information architecture was organized in such a way as to ensure that users can navigate through the site easily.
 
 ![Site Map](docs/site_map/speedy-cars-site-map.JPG)
+
+[Back to Top](#table-of-contents)
 
 ## Structure
 
@@ -235,6 +332,8 @@ Employee model
 | email || CharField | Max length 50 |
 | hire_date || DateTimeField | Set default date as now |
 
+[Back to Top](#table-of-contents)
+
 ## Design Choices
 
 ### Home page background
@@ -263,6 +362,8 @@ The color palette was intended to create a fairly neutral background so that the
 - #00ffff - hover effect color
 
 ![Website colors](docs/images/colors/website-colors.JPG)
+
+[Back to Top](#table-of-contents)
 
 ## Features
 
@@ -684,6 +785,8 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 ![All cars deselected for sale cars page](docs/images/existing-features/admin-area/all_cars_deselected.JPG)
 ![All cars deselected for sale search page](docs/images/existing-features/admin-area/all_cars_deselected-search-page.JPG)
 
+[Back to Top](#table-of-contents)
+
 ## Features to be implemented
 
 - Email notification to the staff that the car was booked for a test drive.
@@ -696,6 +799,8 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 - Add the business location on Google Maps.
 
 All the features mentioned above would be a great improvement for this website. However, due to the upcoming deadline to submit this project, it is not possible to implement them all at this stage.
+
+[Back to Top](#table-of-contents)
 
 ## UX testing
 
@@ -741,6 +846,8 @@ All the features mentioned above would be a great improvement for this website. 
 | Error handling| Implemented | Tested | Comments
 | ------------ | ----------- | ------ | --------
 |If the page cannot be loaded, the user should be able to return through the website's navigational structure without hitting the back button on their browser|Yes|Yes|The customized 404 page will be displayed if the page that the user requested is not available. The customized 500 page will be displayed to flag the issue with the server.
+
+[Back to Top](#table-of-contents)
 
 ## Manual Testing
 
@@ -846,9 +953,13 @@ outside of the modal form.
   - **Cancel** button returns to the dashboard
   - The **Yes** button deletes the booked test drive from the database and redirects the user to the dashboard page.
 
+[Back to Top](#table-of-contents)
+
 ## Automated tests
 
 Automated tests have not been created due to time constrains of the project.
+
+[Back to Top](#table-of-contents)
 
 ## Code Validation
 
@@ -944,6 +1055,8 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
 - [Search page](docs/validation/accessibility/accessibility-search-page.JPG)
 - [About page](docs/validation/accessibility/accessibility-about-page.JPG)
 
+[Back to Top](#table-of-contents)
+
 ## Technologies Used
 
 ### Languages
@@ -991,7 +1104,7 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
 - [Lightbox](https://trvswgnr.github.io/bs5-lightbox/)
   - Used to implement a lightbox gallery.
 
-### Programs & Tools
+### Programs and Tools
 
 - [Heroku](https://www.heroku.com/)
   - The project is deployed and hosted by Heroku.
@@ -1013,6 +1126,8 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
   - Font Awesome was used to add icons that represent links to social media.
 - [PEP8 validator](http://pep8online.com/)
   - For checking python convention.
+
+[Back to Top](#table-of-contents)
 
 ## Bugs
 
@@ -1121,15 +1236,19 @@ Fix
 Rewrite the java script function showing alerts
 </details>
 
+[Back to Top](#table-of-contents)
+
 ## Unfixed bugs
 
 No known unfixed bugs present at the time of submission
+
+[Back to Top](#table-of-contents)
 
 ## Deployment
 
 The master branch of this repository has been used for the deployed version of this application.
 
-### Using Github & Gitpod
+### Using Github and Gitpod
 
 To deploy this Django application, [The Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used to deploy this Django application.
 To create a repository from the template above the following steps were taken:
@@ -1191,6 +1310,8 @@ By forking the GitHub Repository you will be able to make a copy of the original
 - At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 - You should now have a copy of the original repository in your GitHub account.
 
+[Back to Top](#table-of-contents)
+
 ## Credits
 
 Throughout the process of building this website, various online sources have been used to help fix bugs & tackle problems, in addition to multiple modules to create the functionality of this website:
@@ -1204,6 +1325,8 @@ Throughout the process of building this website, various online sources have bee
 - [Business Opening hours card](https://bootsnipp.com/snippets/5K3o7) - to create the business opening hours card with current day highlight
 - [Lightbox for Bootstrap 5](https://trvswgnr.github.io/bs5-lightbox/) - to create lighbox gallery
 
+[Back to Top](#table-of-contents)
+
 ## Content
 
 The artwork used in this project was copied from the following websites:
@@ -1211,8 +1334,12 @@ The artwork used in this project was copied from the following websites:
 - [Pexels](https://www.pexels.com/)(images)
 - [Defcon27](https://github.com/Defcon27)(home page video background)
 
+[Back to Top](#table-of-contents)
+
 ## Acknowledgments
 
 - My Mentor Simen [Eventyret_mentor](https://github.com/Eventyret) for continuous helpful feedback.
 - [Code Institute's](https://codeinstitute.net/ie/) Slack community for their support. Special thanks to Kasia Bogucka from Code Institute.
 - All family members and friends who helped test this application.
+
+[Back to Top](#table-of-contents)
