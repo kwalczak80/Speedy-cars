@@ -845,6 +845,10 @@ outside of the modal form.
   - **Cancel** button returns to the dashboard
   - The **Yes** button deletes the booked test drive from the database and redirects the user to the dashboard page.
 
+## Automated tests
+
+Automated tests have not been created due to time constrains of the project.
+
 ## Code Validation
 
 ### HTML
@@ -1189,12 +1193,13 @@ By forking the GitHub Repository you will be able to make a copy of the original
 Throughout the process of building this website, various online sources have been used to help fix bugs & tackle problems, in addition to multiple modules to create the functionality of this website:
 
 - [Stack Overflow](https://stackoverflow.com/) - To find solutions to the issues I encountered while creating this project.
-- [YouTube](https://www.youtube.com/) - Django CRUD tutorial
+- [Django CRUD tutorial](https://www.youtube.com/watch?v=vNegKfkopoQ) - Django CRUD tutorial
 - [W3Schools](https://www.w3schools.com/django/) - additional source of knowledge
 - [Udemy](https://www.udemy.com/) - Brad Traversy Django tutorials
 - [Donedeal](https://www.donedeal.ie/) - to find some descriptions of the cars
 - [CSS Text Stroke](https://www.html-code-generator.com/css/text-stroke-generator) - to help generate text with relevant CSS style
 - [Business Opening hours card](https://bootsnipp.com/snippets/5K3o7) - to create the business opening hours card with current day highlight
+- [Lightbox for Bootstrap 5](https://trvswgnr.github.io/bs5-lightbox/) - to create lighbox gallery
 
 ## Content
 
