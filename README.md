@@ -789,6 +789,7 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 
 ## Features to be implemented
 
+- Ability to book a test drive by the user at a specific time(not only a date)
 - Email notification to the staff that the car was booked for a test drive.
 - Email notification to the user with the booked test drive date.
 - Ability to make an inquiry about the car.
