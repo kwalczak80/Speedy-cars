@@ -767,7 +767,7 @@ The panel contains the following information regarding booked test drives:
 
 ![Test drive booking panel](docs/images/existing-features/admin-area/test-drive-booking-view-panel.JPG)
 
-### Admin panel – ability to select cars that will be displayed on the page
+### Admin panel - ability to select cars that will be displayed on the page
 
 This feature allows the business owner to enable or disable the car to be visible on the website. There is no need to delete the car from the database if, for some reason, the business owner does not want it to be displayed on the website(i.e., the car is reserved or not ready for sale).
 
