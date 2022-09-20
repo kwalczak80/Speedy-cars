@@ -270,7 +270,9 @@ To complement the apps there are
 
 The data schema was created using [drawsql](https://drawsql.app/ "drawsql")
 
-![Database diagram](docs/images/data_base_diagram.JPG)
+![Database diagram](docs/images/database-diagram/data-base-diagram.JPG)
+
+Please note that when creating the car model, the only option to select the data type for images was 'geometry' as the closest meaning for the image object. After consultation with my mentor, it was confirmed that this selection was OK to use.
 
 ### Models
 
