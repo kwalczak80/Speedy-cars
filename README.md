@@ -83,6 +83,7 @@ This full-stack framework project was built using Django, PostgreSQL, Python, HT
     - [Deployment to heroku](#deployment-to-heroku)
     - [Final deployment](#final-deployment)
     - [Forking the GitHub Repository](#forking-the-github-repository)
+    - [Cloning This Project](#cloning-this-project)
   - [Credits](#credits)
   - [Content](#content)
   - [Acknowledgments](#acknowledgments)
@@ -1310,6 +1311,18 @@ By forking the GitHub Repository you will be able to make a copy of the original
 - Log in to GitHub and locate the GitHub Repository
 - At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 - You should now have a copy of the original repository in your GitHub account.
+
+### Cloning This Project
+
+Clone this project by following the steps:
+
+- Open [GitHub](https://github.com/kwalczak80/Speedy-cars)
+- You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order to copy the URL
+- Once you click the button the fork will be in your repository
+- Open a new terminal
+- Change the current working directory to the location that you want the cloned directory
+- Type 'git clone' and paste the URL copied in step 3
+- Press 'Enter' and the project is cloned
 
 [Back to Top](#table-of-contents)
 
