@@ -2,7 +2,7 @@
 
 [View the live project here.](https://speedy-cars.herokuapp.com/)
 
-This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. The Speedy Cars website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. The business owner can also easily manage the cars stock from the administration panel.
+This full-stack framework project was built using Django, PostgreSQL, Python, HTML, CSS, and JavaScript. The Speedy Cars website is designed to display cars for sale to customers and allow them to book, edit or cancel test drives. The website also provides an option to find a car with specific search criteria. The business owner can also easily manage the car stock from the administration panel.
 
 ![Responsiveness](docs/images/responsiveness/responsiveness.JPG)
 
@@ -25,7 +25,7 @@ This full-stack framework project was built using Django, PostgreSQL, Python, HT
   - [Structure](#structure)
     - [Code Structure](#code-structure)
     - [Database design](#database-design)
-     [Models](#models)
+    - [Models](#models)
   - [Design Choices](#design-choices)
     - [Home page background](#home-page-background)
     - [Fonts](#fonts)
@@ -72,7 +72,7 @@ This full-stack framework project was built using Django, PostgreSQL, Python, HT
     - [Accessibility testing](#accessibility-testing)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
-      - [Python Libraries](#python-libraries)
+    - [Python Libraries](#python-libraries)
     - [Database](#database)
     - [Frameworks](#frameworks)
     - [Programs & Tools](#programs-and-tools)
@@ -100,18 +100,18 @@ The primary goal of the website, from the site owner’s perspective, is as foll
 - To allow a user to book a test drive
 - To allow a user to easily search a car they are looking for
 - Ability to add a new car for sale
-- To allow a user to read testimonials about the Speedy Cars
+- To allow a user to read testimonials about Speedy Cars
 
 The primary goal of the website, from a site user’s perspective, is as follows:
 
-- To view the car’s stock
+- To view the cars available for sale
 - To view details about the car along with a description and price
 - To be able to easily find a car they are looking for
 - To book a test drive
 - To make an inquiry about the car
-- To view opening hours and address
+- To view the business opening hours and address
 - To read more about the business
-- To view other customer’s testimonials about Speedy Cars
+- To view other customers' testimonials about Speedy Cars
 
 [Back to Top](#table-of-contents)
 
@@ -154,6 +154,8 @@ The primary goal of the website, from a site user’s perspective, is as follows
 - As a user, I want to be informed if a test drive cannot be booked for any reason.
 - As a user, I want to be informed if a test drive was booked successfully.
 
+[Back to Top](#table-of-contents)
+
 ### Site owner
 
 - As a user, I want to attract car buyers.
@@ -172,6 +174,8 @@ The primary goal of the website, from a site user’s perspective, is as follows
 - As a user, I want to be able to add new cars or remove them if they are sold.
 - As a user, I want users to be able to view the business's social media.
 - As a user, I want to be able to add testimonials.
+
+[Back to Top](#table-of-contents)
 
 ### Error Handling
 
@@ -252,9 +256,9 @@ App details are as follows:
 - Home - this app contains information about the Speedy Cars home page with quick links to the about and search pages via the nav bar.
 - Booking - this app contains information related to the test drive booking system (for users to view, edit or cancel booked test drives).
 - Cars - this app is for the users to view the cars or to view the car search results.
-- Employees - this app is for the business owner to manage Speedy Cars staff via admin panel.
+- Employees - this app is for the business owner to manage Speedy Cars staff in the admin panel.
 
-To complement the apps there are
+To complement the apps there are:
 
 - Speedy Cars: Speedy Cars level files - settings.py for project level settings and urls.py to route the website urls.
 - templates: Containing the base.html, allauth(django authentication). The partial folder contains the navbar and footer HTML.
@@ -266,13 +270,17 @@ To complement the apps there are
 - Procfile: To run the application on Heroku.
 - Requirements.txt: Containing the project dependencies. Note: Environment variable values are not exposed in the source code as they are stored locally in env.py that is not checked in(listed in .gitignore).
 
+[Back to Top](#table-of-contents)
+
 ### Database design
 
 The data schema was created using [drawsql](https://drawsql.app/ "drawsql")
 
 ![Database diagram](docs/images/database-diagram/data-base-diagram.JPG)
 
-Please note that when creating the car model, the only option to select the data type for images was 'geometry' as the closest meaning for the image object. After consultation with my mentor, it was confirmed that this selection was OK to use.
+Please note that when I was creating the car model, the only option to select the data type for images was 'geometry' as the closest meaning for the image object. After consultation with my mentor, it was confirmed that this selection was OK to use.
+
+[Back to Top](#table-of-contents)
 
 ### Models
 
@@ -297,7 +305,7 @@ Car model
 | milage ||IntegerField| Set default as 1 |
 | description ||TextField| Set default as '' |
 | previous_owners ||IntegerField| Set default as 1 |
-| road_text ||IntegerField| Set default as 1 |
+| road_tax ||IntegerField| Set default as 1 |
 | is_for_sale ||BooleanField| Set default as True |
 | photo_main ||CloudinaryField|  |
 | photo_1 ||CloudinaryField|  |
@@ -308,6 +316,8 @@ Car model
 | photo_6 ||CloudinaryField|  |
 | date ||DateField| Set default as now(timestamp) |
 
+[Back to Top](#table-of-contents)
+
 Booking model
 
 - The Booking model contains a collection of data submitted by the user when booking a test drive.
@@ -315,13 +325,15 @@ Booking model
 | Name | Key | Type | Other Details |
 | -- | -- | -- | -- |
 | car | | CharField | Max length 100 |
-| car_id | | IntegerField | Set default date as 0 |
+| car_id | | IntegerField | Set default as 0 |
 | name | | CharField | Max length 200|
 | email || CharField | Max length 100 |
 | phone || CharField | Max length 100 |
 | date || DateField | Set default date as today's date |
 | meassage || TextField | |
-| user_id || IntegerField | Set default date as 0 |
+| user_id || IntegerField | Set default as 0 |
+
+[Back to Top](#table-of-contents)
 
 Employee model
 
@@ -341,9 +353,11 @@ Employee model
 
 ### Home page background
 
-As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that, in my opinion, was perfect for this project. The video clip used in the project reflects the theme of the site very well and, at the same time, does not distract the user's attention from other parts of the site, therfore I decided to use it as a looped video background for the site.
+As I wanted a more attractive and dynamic home page, I decided to use a video as a background. After analyzing some interesting video clips, I found one that, in my opinion, was perfect for this project. The video clip used in the project reflects the theme of the site very well and, at the same time, does not distract the user's attention from other parts of the site. Therefore, I decided to use it as a looped video background on the home page.
 
 ![Home page background](docs/images/existing-features/homepage/home-page-video-background.gif)
+
+[Back to Top](#table-of-contents)
 
 ### Fonts
 
@@ -352,6 +366,8 @@ I visited the Google fonts website to explore the available font options for my 
 - The [Bebas Neue font](https://fonts.google.com/?query=bebas "Bebas Neue font") font is used in navigation bar and to display the slogan on the home page.
 - The [Orbitron font](https://fonts.google.com/?query=orbitron "Orbitron font") font is used to display the business name in the navbar.
 - The [Abel font](https://fonts.google.com/?query=abel "Abel font") font is used to display all other text information.
+
+[Back to Top](#table-of-contents)
 
 ### Colours
 
@@ -374,6 +390,8 @@ The color palette was intended to create a fairly neutral background so that the
 
 The website has been designed using Bootstrap 5 therefore it's fully responsive on all screen sizes.
 
+[Back to Top](#table-of-contents)
+
 ### Homepage
 
 The home page is a simple set of navigation elements, a background video, and a short slogan displayed on the screen.
@@ -381,6 +399,8 @@ The home page is a simple set of navigation elements, a background video, and a 
 The video background fits perfectly into the context of the project and the purpose of the website.
 ![Home page](docs/images/existing-features/homepage/home-page.JPG)
 ![Home page](docs/images/existing-features/homepage/home-page-mobile.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Navigation Menu
 
@@ -415,9 +435,11 @@ Depending on whether the user is logged in or not, different links are made avai
 ![Navbar for hover effect](docs/images/existing-features/navbar/navigation-bar-hover-effect.JPG)
 ![Navbar for hover efect mobile](docs/images/existing-features/navbar/navigation-bar-hover-effect-mobile.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Cars page
 
-When the user clicks on the **Cars** link in the navigation bar, they will be redirected to a page where they can view all the cars that are available for sale.
+When the user clicks on the **Cars** link in the navigation bar, they will be redirected to the page where they can view all the cars that are available for sale.
 
 ![Cars page view](docs/images/existing-features/cars-page/cars-page-view.JPG)
 
@@ -435,15 +457,19 @@ The **More info** button allows the user to be redirected to a page where additi
 
 ![Car form presentation](docs/images/existing-features/cars-page/car-form-presentation.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Pagination
 
 Each **Cars** page may contain up to six cars displayed on the page. If the number of cars in the database does not exceed six, then pagination is not visible.
 
 ![No pagination](docs/images/existing-features/pagination/no-pagination.JPG)
 
-However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). The user can then change pages by clicking on arrows or directly clicking on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page one is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
+However, if the number of cars exceeds six, then the pagination is active(displayed in the middle of the screen). The user can then change pages by clicking on the arrow buttons or directly clicking on the page they want to move to. If the user is on the first page, then the left arrow icon is inactive as page one is the start page. On the other hand, when the user is on the last page, the right arrow is inactive because it is the last page available.
 
 ![Pagination](docs/images/existing-features/pagination/pagination.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Car details page
 
@@ -468,9 +494,11 @@ The user also has an option to return to viewing all cars by clicking on the **B
 
 ![Car page view](docs/images/existing-features/car-page/car-page-view.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Thumbinals
 
-When the user clicks on the **More info** button, they will be redirected to the page to view more details about the car they are interested in.
+When the user clicks on the **More info** button on the car's card, they will be redirected to the page to view more details about the car they are interested in.
 
 ![Thumbinails main picture](docs/images/existing-features/thumbinails/thumbinails-main-picture.JPG)
 
@@ -481,6 +509,8 @@ The images presentation can be closed by clicking on the **X** button(upper righ
 ![Thumbinails example 1](docs/images/existing-features/thumbinails/thumbinails-example-1.JPG)
 
 ![Thumbinails example 2](docs/images/existing-features/thumbinails/thumbinails-example-2.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Ability to book a test drive with a specific car
 
@@ -509,6 +539,8 @@ An appropriate message will be displayed on the screen to confirm that the test 
 
 Important - the user cannot book a test drive twice in the same car, as the booking process will be canceled and an appropriate message will be displayed on the screen(please read about the message system below).
 
+[Back to Top](#table-of-contents)
+
 ### Search page
 
 The search page consists of two sections:
@@ -524,7 +556,7 @@ The user can use the following search options:
 - Fuel type - select fuel type from the dropped-down menu
 - Body type - select a body type from the dropped-down menu
 - Engine size - select an engine size from the dropped-down menu
-- Price - select a car price from the dropped-down menu. This will display all cars up to the value selected by the user.
+- Price - select the car price from the dropped-down menu. This will display all cars up to the value selected by the user.
 
 ![Search page](docs/images/existing-features/search-page/search-page.JPG)
 
@@ -536,10 +568,14 @@ If the search result does not exist an appropriate message will be displayed on 
 
 ![Search page no cars found](docs/images/existing-features/search-page/search-results-no-cars-found.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Preserving search inputs selected by the user
 
 The search form does not reset the values ​​entered or selected by the user after each search, which can be very helpful i.e., the user can search for a specific car model (which they selected earlier) by changing only the price range — no need to make all selections again.
 To reset the form to its default values, the user has to click on the **Search** link located in the navigation bar.
+
+[Back to Top](#table-of-contents)
 
 ### About page
 
@@ -557,6 +593,8 @@ On the **About** page, the user can:
 
 ![Info about team](docs/images/existing-features/about-page/info-about-team.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Dashboard
 
 The dashboard panel is accessible only to logged-in users, and it is accessible from the navigation bar.
@@ -564,12 +602,12 @@ The link to the dashboard is always highlighted in white to stand out from other
 
 ![Dashboard link](docs/images/existing-features/dashboard/dashboard-page-link.JPG)
 
-On the dashboard page, the user can check if they have booked any test drives.
+On the dashboard page, the user can manage their booked test drives.
 If the user has not booked any test drives, the appropriate information will be displayed on the screen.
 
 ![Dashboard page no test drives booked](docs/images/existing-features/dashboard/dashboard-page-no-test-drives-booked.JPG)
 
-If the user has booked test drives, all of them will be displayed on the screen.
+If the user has test drives booked, all of them will be displayed on the screen.
 
 ![Dashboard page with booked test drives](docs/images/existing-features/dashboard/dashboard-page-with-booked-test-drives.JPG)
 
@@ -580,7 +618,7 @@ The information about booked test drives contains:
 
 The logged-in user has the following options in the dashboard panel if they have booked at least one test drive:
 
-- by using the **View** button to view the car booked for a test drive
+- by using the **View** button to view the car booked for a test drive(the user will be redirected to the relevant page)
 - by using the **Edit** button to edit the information provided when booking a test drive (i.e. phone number, email address, test drive date).
 Important - Car and Name fields are not editable as this information is pulled from the database.
 
@@ -594,6 +632,8 @@ If the user clicks on the **Yes** button, the test drive will be canceled (delet
 If the user clicks on the **Cancel** button, they will be redirected to the dashboard panel.
 
 ![Dashboard cancellation page](docs/images/existing-features/dashboard/test-drive-cancellation.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Messages system to provide feedback to the user
 
@@ -627,10 +667,11 @@ Messages are displayed for continual feedback to the user on their interactions 
 
 ![Edit test drive confirmation message](docs/images/existing-features/messages/edit-test-drive-message.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Footer
 
 Footer is kept very simple as set of links and the businnes name. Footer layout remians the same on all screen sizes.
-The javascript function automatically update the year which is displayed on the footer.
 A special javascript function automatically updates the year which is displayed on the footer.
 
 Please also note that the footer is displayed only on selected pages.
@@ -640,6 +681,8 @@ Please also note that the footer is displayed only on selected pages.
 A hover effect is implemented if the user hovers over the social media links
 
 ![Footer hover effect](docs/images/existing-features/footer/footer-hover-effect.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Dynamic page titles
 
@@ -681,6 +724,8 @@ Each page has an individual name located on the tab which can help the user quic
 
 ![Register page tab](docs/images/existing-features/dynamic-page-titles/register-page.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Authentication
 
 The authentication process for the application is handled by Django allauth and consists of three parts.
@@ -715,6 +760,8 @@ If the user decides to log out, they will be redirected to the page to confirm t
 
 ![Sign out page](docs/images/existing-features/authentication/sign-out-page.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Error handling
 
 404 page
@@ -728,6 +775,8 @@ The user can return to the home page by pressing the home button. There is no ne
 
 A 500 server error page was also created to handle internal server errors.
 
+[Back to Top](#table-of-contents)
+
 ### Customized Admin (the business owner) panel
 
 The admin panel was adjusted with the following changes:
@@ -740,12 +789,16 @@ The changes above were only cosmetic, but thanks to that, the panel looks a litt
 
 ![Business owner panel](docs/images/existing-features/admin-area/business-owner-panel.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Admin panel - ability to add a new car
 
 The business owner can add a new car to the website via the admin panel.
-In this panel, there is also an option to delete the car from the database.
+In this panel, there is also an option to delete the car from the database by clicking on **Delete** button
 
 ![Add car](docs/images/existing-features/admin-area/add-car.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Admin panel - ability to add a new employee
 
@@ -754,6 +807,8 @@ All the information about the staff(photo, name, email, etc.) that is displayed 
 Therefore, in the event of any changes(i.e. new employee), the updated information will be automatically displayed on the website.
 
 ![Add employee](docs/images/existing-features/admin-area/add-employee.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Admin panel - ability to review booked driving tests
 
@@ -769,6 +824,8 @@ The panel contains the following information regarding booked test drives:
 - Phone (phone number that the user provided during the test drive booking process)
 
 ![Test drive booking panel](docs/images/existing-features/admin-area/test-drive-booking-view-panel.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Admin panel - ability to select cars that will be displayed on the page
 
@@ -800,7 +857,7 @@ If all **Is for sale** check boxes are deselected, an appropriate message will b
 - Ability to view testimonials about Speedy Cars
 - Ability to approve testimonials by the business owner(after approval, testimonials can be displayed on the page).
 - Add more car searching options(i.e. model, mileage, min year, max year, etc.).
-- Add the business location on Google Maps.
+- Add the business location on the page(Google Maps).
 
 All the features mentioned above would be a great improvement for this website. However, due to the upcoming deadline to submit this project, it is not possible to implement them all at this stage.
 
@@ -811,11 +868,11 @@ All the features mentioned above would be a great improvement for this website. 
 | User requirements | Implemented | Tested | Comments
 | ------------ | ----------- | ------ | --------
 |I want to be able to view all available cars in one of the categories:Petrol, Diesel, Hybrid, Electric|Yes|Yes|On the search page, the user can select the cars in each of the four available categories.
-|I want to see descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the 'More info' button on the car card, additional photos of the car and a description will be shown.
+|I want to see descriptions of each car available for sale along with relevant pictures|Yes|Yes|When the user clicks on the **More info** button on the car card, additional photos of the car and a description will be shown.
 |I want to be able to navigate the website quickly and easily|Yes|Yes| The website is uncomplicated in layout and has clear and intuitive navigation.
 |I want to be able to use the search option to find the car I’m looking for|Yes|Yes| On the search page, the user has the option to search for a car according to specific user requirements.
 |I want to be able to view the price of the cars|Yes|Yes| Each car presented on the website has a label with the price.
-|I want to be able to read other user’s testimonials|No|No| Future feature - see the section above
+|I want to be able to read other users' testimonials|No|No| Future feature - see the section above
 |I want to be able to make an inquiry about the car|No|No| Future feature - see the section above
 |I want to be able to book a test drive|Yes|Yes| When the user is logged in, they have the option to book a test drive by clicking on the **Book test drive** button located beneath the sales executive card.
 |I want to be able to edit or delete a test drive I have made|Yes|Yes| The logged-in user has an option to edit or cancel their booked test drive(CRUD functionality).
@@ -855,7 +912,7 @@ All the features mentioned above would be a great improvement for this website. 
 
 ## Manual Testing
 
-Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs and fixes were fixed on an ongoing basis during the project creation. After each fix, manual tests were performed to make sure that everything is working as intended and that the fixes did not cause other errors. Manual tests and checks include:
+Manually testing the design was an ongoing process to make sure everything was working as expected. All bugs were fixed on an ongoing basis during the project creation. After each fix, manual tests were performed to make sure that everything is working as intended and that the fixes did not cause other errors. Manual tests and checks include:
 
 - Navbar
   - All links navigate to the correct endpoint.
@@ -981,6 +1038,8 @@ The HTML code within the application was validated by [W3C Markup Validation Ser
 - [Logout page](docs/validation/html/logout-page.JPG)
 - [Register page](docs/validation/html/signup-page.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Python
 
 The Python code within the application was validated by [PEP8 online validation service](http://pep8online.com/). Files were put through the validator separately, and the results can be seen below.
@@ -1020,6 +1079,8 @@ The Python code within the application was validated by [PEP8 online validation 
 - [urls.py validation results](docs/validation/python/home/home-urls-python-validation.JPG)
 - [views.py validation results](docs/validation/python/home/home-views-python-validation.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### CSS
 
 The CSS code within the application was validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
@@ -1027,17 +1088,23 @@ The CSS code within the application was validated by [W3C CSS Validation Service
 [CSS Admin validation results](docs/validation/css/css-validation-admin-area.JPG)
 [CSS validation results](docs/validation/css/css-validation.jpg)
 
+[Back to Top](#table-of-contents)
+
 ### JS
 
 The JavaScript and JQuery code within the application was validated by [JSHint](https://jshint.com/), and the results can be seen below.
 
 [JS validation results](docs/validation/js/js-validation-results.JPG)
 
+[Back to Top](#table-of-contents)
+
 ### Color Contrast Accessibility Validator
 
 The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used to check if there is no contrast issue on the web page.
 
 [Contrast validation results](docs/validation/contrast-validation/color-contrast-accessibility-validator-results.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Lighthouse testing
 
@@ -1048,6 +1115,8 @@ The Lighthouse tool was used to assess the website's performance, accessibility,
 - [Car page](docs/validation/lighthouse-testing/lighthouse-testing-car-page.JPG)
 - [Search page](docs/validation/lighthouse-testing/lighthouse-testing-search-page.JPG)
 - [About page](docs/validation/lighthouse-testing/lighthouse-testing-about-page.JPG)
+
+[Back to Top](#table-of-contents)
 
 ### Accessibility testing
 
@@ -1072,7 +1141,9 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/templates/)
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-#### Python Libraries
+[Back to Top](#table-of-contents)
+
+### Python Libraries
 
 - asgiref==3.5.2
 - cloudinary==1.29.0
@@ -1092,12 +1163,16 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
 - sqlparse==0.4.2
 - whitenoise==6.2.0
 
+[Back to Top](#table-of-contents)
+
 ### Database
 
 - [Sqlite](https://www.sqlite.org/index.html)
   - This database was used in local development.
 - [PostgreSQL](https://www.postgresql.org/)
   - The site is deployed on Heroku using a Postgress database.
+
+[Back to Top](#table-of-contents)
 
 ### Frameworks
 
@@ -1107,6 +1182,8 @@ I have tested the pages of the application using [WAVE](https://wave.webaim.org/
   - Used for general site layout.
 - [Lightbox](https://trvswgnr.github.io/bs5-lightbox/)
   - Used to implement a lightbox gallery.
+
+[Back to Top](#table-of-contents)
 
 ### Programs and Tools
 
@@ -1306,6 +1383,8 @@ Log into heroku
 - When development is complete change the debug setting to: DEBUG = False in settings.py
 - In Heroku settings, delete the config vars for DISABLE_COLLECTSTATIC = 1
 
+[Back to Top](#table-of-contents)
+
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
@@ -1313,6 +1392,8 @@ By forking the GitHub Repository you will be able to make a copy of the original
 - Log in to GitHub and locate the GitHub Repository
 - At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 - You should now have a copy of the original repository in your GitHub account.
+
+[Back to Top](#table-of-contents)
 
 ### Cloning This Project
 
