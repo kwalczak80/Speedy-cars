@@ -85,7 +85,7 @@ def edit(request, booking_id):
                                  "in the past, please"
                                  " choose a date in"
                                  " the future.")
-            return redirect('/cars')
+            return redirect('dashboard')
     form = BookingForm(instance=booking_id)
     context = {
         'form': form
