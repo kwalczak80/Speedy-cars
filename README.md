@@ -1085,8 +1085,8 @@ The Python code within the application was validated by [PEP8 online validation 
 
 The CSS code within the application was validated by [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/), and the results can be seen below.
 
-[CSS Admin validation results](docs/validation/css/css-validation-admin-area.JPG)
-[CSS validation results](docs/validation/css/css-validation.jpg)
+- [CSS Admin validation results](docs/validation/css/css-validation-admin-area.JPG)
+- [CSS validation results](docs/validation/css/css-validation.jpg)
 
 [Back to Top](#table-of-contents)
 
@@ -1094,7 +1094,7 @@ The CSS code within the application was validated by [W3C CSS Validation Service
 
 The JavaScript and JQuery code within the application was validated by [JSHint](https://jshint.com/), and the results can be seen below.
 
-[JS validation results](docs/validation/js/js-validation-results.JPG)
+- [JS validation results](docs/validation/js/js-validation-results.JPG)
 
 [Back to Top](#table-of-contents)
 
@@ -1102,7 +1102,7 @@ The JavaScript and JQuery code within the application was validated by [JSHint](
 
 The [Color Contrast Accessibility Validator](https://color.a11y.com/) was used to check if there is no contrast issue on the web page.
 
-[Contrast validation results](docs/validation/contrast-validation/color-contrast-accessibility-validator-results.JPG)
+- [Contrast validation results](docs/validation/contrast-validation/color-contrast-accessibility-validator-results.JPG)
 
 [Back to Top](#table-of-contents)
 
