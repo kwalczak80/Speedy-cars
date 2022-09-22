@@ -9,28 +9,31 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        {% if user.is_authenticated %}
         <h2>Welcome {{ user.username }}</h2>
         {% if booking %}
         <p class="lead">Here are the booked test drives that you have made with Speedy Cars</p>
-        
-          {% for item in booking %}
-
-          <div class="row">
-            <div class="col-md-8">
-              <div><strong>Car: {{ item.car }}</strong></div>
-              <div><strong>Test Drive Date: {{ item.date | date:"D d M Y" }}</strong></div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-evenly">
-              <a class="btn btn-info" aria-label="View the car" href="{% url 'car' item.car_id %}">View</a>
-              <a class="btn btn-success" aria-label="Edit test drive" href="{% url 'edit' item.id %}">Edit</a>
-              <a class="btn btn-danger" aria-label="Cancel test drive" href="{% url 'cancellation' item.id %}">Cancel</a>
-            </div>
+        {% for item in booking %}
+        <div class="row">
+          <div class="col-md-8">
+            <div><strong>Car: {{ item.car }}</strong></div>
+            <div><strong>Test Drive Date: {{ item.date | date:"D d M Y" }}</strong></div>
           </div>
-          <hr>
-          {% endfor %}
-       
+          <div class="col-md-4 d-flex justify-content-evenly">
+            <a class="btn btn-info" aria-label="View the car" href="{% url 'car' item.car_id %}">View</a>
+            <a class="btn btn-success" aria-label="Edit test drive" href="{% url 'edit' item.id %}">Edit</a>
+            <a class="btn btn-danger" aria-label="Cancel test drive" href="{% url 'cancellation' item.id %}">Cancel</a>
+          </div>
+        </div>
+        <hr>
+        {% endfor %}
         {% else %}
         <h3>You have not booked any test drives yet.</h3>
+        {% endif %}
+        {% else %}
+        <div class="text-center text-danger mt-5">
+        <h3>Access restriced. Please login.</h3>
+        </div>
         {% endif %}
       </div>
     </div>

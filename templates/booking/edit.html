@@ -3,9 +3,10 @@
 
 {% load static %}
 {% block content %}
-<!-- Edint item -->
-<div class="row action_field center">
+<!-- Edit test drive booking -->
+<div class="row action_field">
     <div class="col md-12">
+        {% if user.is_authenticated %}
         <h2>Please edit your booked test drive details</h2>
         <!-- form -->
         <form method="POST" enctype="multipart/form-data">
@@ -17,10 +18,17 @@
             <!-- spacing -->
             <br>
             <!-- button -->
-             <div class="d-grid text-center mb-3">
+            <div class="d-grid text-center mb-3">
                 <button class="btn btn-danger" type="submit">Change</button>
-              </div>
+            </div>
         </form>
+        {% else %}
+        <div class="vh-100">
+            <div class="text-center text-danger mt-5">
+                <h3>Access restriced. Please login.</h3>
+            </div>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% include 'partials/_footer.html' %}

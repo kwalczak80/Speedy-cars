@@ -1,15 +1,19 @@
 {% extends 'base.html' %}
 {% block title %} | Cancellation {% endblock %}
-
 {% load static %}
-
 {% block content %}
 <div class="container text-center">
+    {% if user.is_authenticated %}
     <h1>Do you really want to cancel your test drive ?</h1>
     <form method="POST" action="">
         {% csrf_token %}
         <input type="submit" class="btn btn-danger" value="YES">
         <a class="btn btn-info" href={% url 'dashboard' %}>Cancel</a>
     </form>
+    {% else %}
+    <div class="text-center text-danger mt-5">
+        <h3>Access restriced. Please login.</h3>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
